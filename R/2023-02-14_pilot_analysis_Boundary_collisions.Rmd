@@ -1,0 +1,156 @@
+---
+title: "Pilot boundary haplotyping"
+output:
+  html_document: default
+  word_document: default
+  pdf_document: default
+  editor_options:
+  chunk_output_type: console
+date: "2023-02-14"
+
+---
+
+```{r setup, include=FALSE}
+#Define where is my data and what I want to plot
+#serverDir="/Users/pelechano/OneDrive\ -\ KI.SE/" #my macbook
+#serverDir="/Users/pelechano/Library/CloudStorage/OneDrive-KarolinskaInstitutet" #my macbook
+serverDir="/Users/vicent.pelechano/Library/CloudStorage/OneDrive-KarolinskaInstitutet" #my iMac
+
+projectDir=file.path(serverDir,"SciLifeLab/Projects/Sophia Genetics/2022-06_boundary_haplotyping/202301_pilot")
+resDir=file.path(projectDir,"res")
+setwd(resDir)
+
+```
+
+## Select data to use
+
+
+```{r,echo=FALSE}
+setwd(resDir)
+# Fist I get the potential tables of interres
+bound<-read.delim(file.path(projectDir,"bound_clean.txt"))
+bound_noise<-read.delim(file.path(projectDir,"bound_noise.txt"))
+#define the positions of the 2 SNPs to compare
+SNP1=197
+SNP2=242
+
+#cut distance. represents the minimum distance between 2 reads from the same molecule
+cdist=1# minimum distance will be 1 (as 1 base can not be in 2 molecules)
+dist=SNP2-(SNP1+cdist) #distance between the 2 SNPs considered
+
+# criteria to call the genotypes
+minreads=2 #number of reads to trust a SNP
+xtimes=2 #the maximum genotype has more than the minimum
+
+#empty dataframe to keep scores
+
+res<-data.frame(posF=rep(0,dist),posR=0,existF=0,existR=0, #look for positions
+                SNP1_0=0,SNP1_1=0,SNP2_0=0,SNP2_1=0,# this are the count of reads supporting each genotype
+                SNP1_M="U",SNP2_M="U",haplo="U" ) #this are the concatenated and the haplotype
+
+```
+
+
+
+```{r extractCollisions, echo=FALSE}
+# Functyion to define the collisions
+
+#i is the position of the theoretical cut counted from the forward read
+#for(i in (SNP1+cdist):SNP2){ # 
+ extractCollisions<-function(bound=bound,SNP1=SNP1,SNP2=SNP2,cdist=cdist){
+   
+for(i in 1:dist){ # 
+  #define the positions of the reads to compare
+  res$posF[i]=SNP1+cdist+i-1 #first base after the cut for the forward strand
+  res$posR[i]=SNP1+i-1 #first base before the cut for the reverse strand
+  #call if are relevant forward reads at that position
+  res$existF[i]<-(res$posF[i]%in%subset(bound, Orient=="Forward")$Start)
+  #call if are relevant reverse reads at that position
+  res$existR[i]<-(res$posR[i]%in%subset(bound, Orient=="Reverse")$Start)
+  
+  
+  #count number of SNP2 (as forward read always counts the SNP2)
+  subreadF<-subset(bound, Orient=="Forward" & Start==res$posF[i])
+  #count SNP2
+  res$SNP2_0[i]=length(subset(subreadF, SNP2==0)$SNP2)
+  res$SNP2_1[i]=length(subset(subreadF, SNP2==1)$SNP2)
+  
+  #count number of SNP1 (as reverse read always counts the SNP1)
+  subreadR<-subset(bound, Orient=="Reverse" & Start==res$posR[i])
+  #count SNP2
+  res$SNP1_0[i]=length(subset(subreadR, SNP1==0)$SNP1)
+  res$SNP1_1[i]=length(subset(subreadR, SNP1==1)$SNP1)
+
+  rm(subreadF,subreadR)# to remove the dataset every cycle
+  
+}
+   
+#call the positions where there are collisions
+collisions<-subset(res, existF==1 & existR==1)
+
+return(collisions)
+}
+
+```
+
+
+
+
+```{r callgenotype, echo=FALSE}
+# Function to call the genotypes
+
+# collisions<-extractCollisions(bound=bound,SNP1=SNP1,SNP2=SNP2,cdist=cdist)
+# collisions
+
+
+
+callgenotype<-function(collisions=collisions,minreads=2,xtimes=2){
+
+for (j in 1:length(collisions[,1])){
+  
+  #call SNP1
+  if ( collisions$SNP1_0[j]>(minreads-1) | collisions$SNP1_1[j]>(minreads-1)) # at least un allele is supported by more       number of reads than the minimum
+  {#the maximum genotype has more than x
+    
+    if(max(collisions$SNP1_0[j],collisions$SNP1_1[j])>(min(collisions$SNP1_0[j],collisions$SNP1_1[j])*xtimes)){
+      if(collisions$SNP1_0[j]>collisions$SNP1_1[j]){collisions$SNP1_M[j]=0} else{collisions$SNP1_M[j]=1}
+    }else{""}
+  }  else   {""}
+  
+    #call SNP2
+  if ( collisions$SNP2_0[j]>(minreads-1) | collisions$SNP2_1[j]>(minreads-1)) # at least un allele is supported by more       number of reads than the minimum
+  {#the maximum genotype has more than x
+    
+    if(max(collisions$SNP2_0[j],collisions$SNP2_1[j])>(min(collisions$SNP2_0[j],collisions$SNP2_1[j])*xtimes)){
+      if(collisions$SNP2_0[j]>collisions$SNP2_1[j]){collisions$SNP2_M[j]=0} else{collisions$SNP2_M[j]=1}
+    }else{""}
+  }  else   {""}
+ 
+  #Call the haplotype
+  
+  collisions$haplo[j]<-paste(collisions$SNP1_M[j],collisions$SNP2_M[j],sep="_")
+  
+  if(collisions$haplo[j]%in%c("0_0","0_1","1_0","1_1")) {""}else{collisions$haplo[j]<-"U"} #I collapse all the undertermined
+}
+  return(collisions)
+ } 
+
+```
+
+We cound number of boundaries suporting each genotype. In the ideal conditions we should have a maximum of 2 genotupes suported.
+
+```{r }
+#We load a dataset that should work
+collisions<-extractCollisions(bound=bound,SNP1=SNP1,SNP2=SNP2,cdist=cdist)
+collisions<-callgenotype(collisions=collisions,minreads=2,xtimes=2)
+collisions
+barplot(table(collisions[,11]),main="Boundary supported Genotypes")
+
+#now I load one with a lot of noise
+
+collisions<-extractCollisions(bound=bound_noise,SNP1=SNP1,SNP2=SNP2,cdist=cdist)
+collisions<-callgenotype(collisions=collisions,minreads=2,xtimes=2)
+collisions
+barplot(table(collisions[,11]),main="Boundary supported Genotypes")
+
+```

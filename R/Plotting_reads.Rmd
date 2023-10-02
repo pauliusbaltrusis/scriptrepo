@@ -1,0 +1,139 @@
+---
+title: "R Notebook"
+output:
+  html_document:
+    df_print: paged
+---
+
+
+# Plotting total reads for all HCS targets @ Kapa_23_reseq
+```{r warning=TRUE}
+setwd('/Users/paulius.baltrusis/OneDrive-KarolinskaInstitutet/Different projects/Project 2.Kapa_BoundaryHAP_22/Kapa_Boundary_Exp_22_reseq_23/Read_info')
+
+library(tidyverse)
+library(forcats)
+library(ggpubr)
+
+## variable for legend names
+read_info<-rep(c("target", "mapped", "total"), 16)
+
+## reading in the data table
+x<-read.csv('HCS_reads_all_reseq23.txt', header = FALSE, sep='\t', col.names = c('K1A','K2A','K2B', "K2C","K2D","K2E","K3A","K3B","K3C","K3D","K3E","K4A","K4B","K4C","K4D","K4E" ))
+
+## Converting the table into a longer format
+ HCS_stats<- x %>% pivot_longer(cols = K1A:K4E, names_to = ('sample'), values_to = c('reads')) %>% arrange(sample, reads) %>% mutate(read_info=read_info)
+
+## plotting
+HCS_stats %>%
+  mutate(read_info=fct_relevel(read_info,'target','mapped','total')) %>%
+  ggplot()+
+  geom_bar(aes(x=sample, y=reads, fill=read_info), stat = 'identity', position='dodge')+
+  theme_bw()+
+  guides(fill=guide_legend(title="Reads" ))+
+  scale_fill_discrete(labels=c("on targets", "mapped", "total"))
+
+ggsave("HCS_reads_reseq23.png")
+  
+```
+# Plotting total reads for each of the HCS targets; Chromosome-wise
+
+```{r}
+setwd('/Users/paulius.baltrusis/Desktop/Kapa_BoundaryHAP_22/HCS_read_stats/HCS_target/HCS_reads_pertarget_All')
+library(tidyverse)
+library(forcats)
+
+## importing table (Excel)
+HCS_each<-read.delim2('S1_Kapa_S_All.txt', header =TRUE, sep='\t')
+
+
+## Converting the table into a longer format
+ HCS_each<- HCS_each %>% pivot_longer(cols = S1:K4E, names_to = ('sample'), values_to = c('reads'))
+ 
+ 
+## Plotting
+
+HCS_each %>%
+  mutate(sample=fct_relevel(sample,"S1","K2A","K2B","K2C","K2D","K2E","K3A","K3B","K3C","K3D","K3E","K4A","K4B","K4C","K4D","K4E")) %>%
+  ggplot()+
+  geom_bar(aes(x=Target, y=reads, fill=Chr), stat = 'identity', position='dodge')+
+  theme_bw()+
+  scale_fill_distiller(direction = -1)+
+  facet_wrap(.~sample)
+
+ #ggsave("HCS_reads_each.png", width=16,  height=9)
+```
+# Plotting theoretical coverage per HCS target in all samples; Chromosome-wise
+```{r}
+setwd('/Users/paulius.baltrusis/Desktop/Kapa_BoundaryHAP_22/HCS_read_stats/HCS_target/HCS_reads_pertarget_All')
+library(tidyverse)
+library(forcats)
+
+## importing table (Excel)
+HCS_each_cov<-read.delim2('S1_Kapa_S_All.txt', header = TRUE, sep='\t')
+
+
+## Converting the table into a longer format
+ HCS_each_cov<- HCS_each_cov %>% pivot_longer(cols = S1_cov:K4E_cov, names_to = ('sample'), values_to = c('Coverage_per_bp'))
+
+## plotting
+HCS_each_cov %>%
+  mutate(sample=fct_relevel(sample,"S1_cov","K2A_cov","K2B_cov","K2C_cov","K2D_cov","K2E_cov","K3A_cov","K3B_cov","K3C_cov"
+                            ,"K3D_cov","K3E_cov","K4A_cov","K4B_cov","K4C_cov","K4D_cov","K4E_cov")) %>%
+  ggplot()+
+  geom_bar(aes(x=Target, y=Coverage_per_bp, fill=Chr), stat = 'identity', position='dodge')+
+  ylab(label="Coverage (per nt)")+
+  theme_bw()+
+  scale_fill_distiller(direction = -1)+
+  facet_wrap(.~sample)
+
+ #ggsave("HCS_cov_each.png", width=16,  height=9)
+
+```
+
+# Target length vs coverage
+```{r}
+HCS_each_cov %>%
+  mutate(sample=fct_relevel(sample,"S1_cov","K2A_cov","K2B_cov","K2C_cov","K2D_cov","K2E_cov","K3A_cov","K3B_cov","K3C_cov"
+                            ,"K3D_cov","K3E_cov","K4A_cov","K4B_cov","K4C_cov","K4D_cov","K4E_cov")) %>%
+  ggplot(aes(x=target_length, y=Coverage_per_bp))+
+  geom_line(aes())+
+  ylab(label="Coverage (per nt)")+
+  theme_bw()+
+  facet_wrap(.~sample)
+```
+
+# Plotting total reads for all HCS targets @ Tn5_1ng_Bhap
+```{r warning=TRUE}
+setwd('/Users/paulius.baltrusis/OneDrive-KarolinskaInstitutet/Different projects/Project 4.Tn5_BoundaryHAP_22/Boundary_Haplotyping_23_Tn51ng/Read_info_tn5')
+
+library(tidyverse)
+library(forcats)
+library(ggpubr)
+
+## variable for legend names
+read_info_tn5<-rep(c("target", "mapped", "total"), 36)
+
+## reading in the data table
+x_tn5<-read.csv('HCS_reads_all_reseq23.txt', header = FALSE, sep='\t', col.names = c('1_1',	'1_2',	'1_3',	'1_4',	'1_5',	'1_6',
+'2_1',	'2_2',	'2_3',	'2_4',	'2_5',	'2_6',
+'3_1',	'3_2',	'3_3',	'3_4',	'3_5',	'3_6',
+'4_1',	'4_2',	'4_3',	'4_4',	'4_5',	'4_6',
+'5_1',	'5_2',	'5_3',	'5_4',	'5_5',	'5_6',
+'6_1',	'6_2',	'6_3',	'6_4',	'6_5',	'6_6'))
+
+## Converting the table into a longer format
+ HCS_stats_tn5<- x_tn5 %>% pivot_longer(cols = X1_1:X6_6, names_to = ('sample'), values_to = c('reads')) %>% arrange(sample, reads) %>% mutate(read_info_tn5=read_info_tn5)
+
+## plotting
+HCS_stats_tn5 %>%
+  mutate(read_info_tn5=fct_relevel(read_info_tn5,'target','mapped','total')) %>%
+  ggplot()+
+  geom_bar(aes(x=sample, y=reads, fill=read_info_tn5), stat = 'identity', position='dodge')+
+  theme_bw()+
+  guides(fill=guide_legend(title="Reads" ))+
+  scale_fill_discrete(labels=c("on targets", "mapped", "total"))+
+  scale_x_discrete(labels=c("11","12", "13","14", "15", "16", '21' ,'22' ,'23' ,'24' ,'25' ,'26' ,'31' ,'32', '33' ,'34' ,'35' ,'36' ,'41' ,'42' ,'43' ,'44' ,'45' ,'46', '51' ,'52' ,'53' ,'54' ,'55' ,'56' ,'61' ,'62' ,'63' ,'64' ,'65' ,'66'))
+
+ggsave("HCS_reads_reseq23_tn5.png")
+  
+```

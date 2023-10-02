@@ -1,0 +1,203 @@
+---
+title: "SNPs in chr13:32889968G>A and 32890026C>T"
+output:
+  html_document:
+    df_print: paged
+    
+---
+#### a. PrepareTable function
+```{r, echo=FALSE}
+PrepareTable<-function(Samplelist=Samplelist,path=path, SNP1pattern=SNP1pattern, SNP2pattern=SNP2pattern){
+  library(tidyverse)
+  library(data.table)
+  table_list<-list()
+  element_no=1
+  for (i in Samplelist){
+    setwd(path)
+    table1<-read.delim(i,header =F, sep='\t' ) ### Needs to be streamlined for multiple files! 
+    ##Maybe:assign(paste0("table_", i), read.delim(i, header =F, sep='\t' ))
+    table2<-table1[,-11][,-9][,-8][,-7][,-5][,-3][,-2] ## Remove columns containing unnecessary info
+    colnames(table2) <- c('Read_name', "Start", "CIGAR", "Seq", "File", "Barcode_combination", "Orient") 
+    ## Add a column with seq lengths
+    table2$Length<-nchar(table2$Seq)
+    ## Sum Lengths with Start in a new column - End
+    table2$End<-rowSums(table2[,c('Start', 'Length')])
+    ## Adjust the length to correct for position (x-1)
+    table2$End<- table2$End-1
+    ## Switch up the columns "Start" and "End" for Reverse reads
+    Forward_reads<-table2[table2$Orient=="Forward",]
+    Reverse_reads<-table2[table2$Orient=="Reverse",]
+    colnames(Reverse_reads)[9]<-"Start"
+    colnames(Reverse_reads)[2]<-"End"
+    ## Merge reads back
+    table3<-rbind(Forward_reads,Reverse_reads)
+    
+    ##add two columns SNP1 and SNP2
+    table3 <- table3 %>% mutate(SNP1="0") %>% mutate(SNP2="0")
+    
+    
+    SNP1<-table3[table3$Seq %like% SNP1pattern,] %>%
+      mutate(SNP1='1')
+    
+    SNP2<-table3[table3$Seq %like% SNP2pattern,] %>%
+      mutate(SNP2='1')
+    
+    # Read in/assign input by reference to the dataframes
+    setDT(table3)
+    setDT(SNP1)
+    setDT(SNP2)
+    
+    # change table3, by SNP1/SNP2, using the 'Seq' column; specifically the SNP1/2 column values by using SNP1/2 column values (where the 'Seq' matches)
+    table3[SNP1, on="Seq", SNP1:=i.SNP1]
+    table3[SNP2, on="Seq", SNP2:=i.SNP2]
+    
+    # Split the barcode column and add names
+    table4<-table3 %>% separate(Barcode_combination, c("P5", "P7"))
+    table5<-table4
+    # Replace P5 and P7 with actual barcode sequences
+    
+    ### Needs conditional statements to check what kind of barcodes i have at each column for every table!!
+    #P5tags<- data.frame(P5=c('1','2'), P5_BC_seq=c("XXX","YYY"))
+    #P7tags<- data.frame(P7=c('1','2'), P7_BC_seq=c("XXX","YYY"))
+    
+    #table5<-dplyr::left_join(table5, P5tags, by='P5')
+    #table5<-dplyr::left_join(table5, P7tags, by='P7')
+    ###
+    
+    table_list[[element_no]]<- table5
+    
+    element_no=element_no+1
+    
+    #append(table_list, table5)
+    # 
+    ## Remember if no barcode present, do this filter(... !="") initially
+    ## loop ends here
+  }
+  names(table_list)<- Samplelist
+  return(table_list)
+}
+
+```
+
+#### b. Extract Collisions function
+```{r extractCollisions, echo=FALSE}
+# Functyion to define the collisions
+
+#i is the position of the theoretical cut counted from the forward read
+#for(i in (SNP1+cdist):SNP2){ # 
+ extractCollisions<-function(bound=bound,SNP1=SNP1,SNP2=SNP2,cdist=cdist){
+   
+for(i in 1:dist){ # 
+  #define the positions of the reads to compare
+  res$posF[i]=SNP1+cdist+i-1 #first base after the cut for the forward strand
+  res$posR[i]=SNP1+i-1 #first base before the cut for the reverse strand
+  #call if are relevant forward reads at that position
+  res$existF[i]<-(res$posF[i]%in%subset(bound, Orient=="Forward")$Start)
+  #call if are relevant reverse reads at that position
+  res$existR[i]<-(res$posR[i]%in%subset(bound, Orient=="Reverse")$Start)
+  
+  
+  #count number of SNP2 (as forward read always counts the SNP2)
+  subreadF<-subset(bound, Orient=="Forward" & Start==res$posF[i])
+  #count SNP2
+  res$SNP2_0[i]=length(subset(subreadF, SNP2==0)$SNP2)
+  res$SNP2_1[i]=length(subset(subreadF, SNP2==1)$SNP2)
+  
+  #count number of SNP1 (as reverse read always counts the SNP1)
+  subreadR<-subset(bound, Orient=="Reverse" & Start==res$posR[i])
+  #count SNP2
+  res$SNP1_0[i]=length(subset(subreadR, SNP1==0)$SNP1)
+  res$SNP1_1[i]=length(subset(subreadR, SNP1==1)$SNP1)
+
+  rm(subreadF,subreadR)# to remove the dataset every cycle
+  
+}
+   
+#call the positions where there are collisions
+collisions<-subset(res, existF==1 & existR==1)
+
+return(collisions)
+}
+
+```
+
+#### c. Call genotypes function
+```{r callgenotype, echo=FALSE}
+# Function to call the genotypes
+
+# collisions<-extractCollisions(bound=bound,SNP1=SNP1,SNP2=SNP2,cdist=cdist)
+# collisions
+
+
+
+callgenotype<-function(collisions=collisions,minreads=2,xtimes=2){
+
+for (j in 1:length(collisions[,1])){
+  
+  #call SNP1
+  if ( collisions$SNP1_0[j]>(minreads-1) | collisions$SNP1_1[j]>(minreads-1)) # at least un allele is supported by more       number of reads than the minimum
+  {#the maximum genotype has more than x
+    
+    if(max(collisions$SNP1_0[j],collisions$SNP1_1[j])>(min(collisions$SNP1_0[j],collisions$SNP1_1[j])*xtimes)){
+      if(collisions$SNP1_0[j]>collisions$SNP1_1[j]){collisions$SNP1_M[j]=0} else{collisions$SNP1_M[j]=1}
+    }else{""}
+  }  else   {""}
+  
+    #call SNP2
+  if ( collisions$SNP2_0[j]>(minreads-1) | collisions$SNP2_1[j]>(minreads-1)) # at least un allele is supported by more       number of reads than the minimum
+  {#the maximum genotype has more than x
+    
+    if(max(collisions$SNP2_0[j],collisions$SNP2_1[j])>(min(collisions$SNP2_0[j],collisions$SNP2_1[j])*xtimes)){
+      if(collisions$SNP2_0[j]>collisions$SNP2_1[j]){collisions$SNP2_M[j]=0} else{collisions$SNP2_M[j]=1}
+    }else{""}
+  }  else   {""}
+ 
+  #Call the haplotype
+  
+  collisions$haplo[j]<-paste(collisions$SNP1_M[j],collisions$SNP2_M[j],sep="_")
+  
+  if(collisions$haplo[j]%in%c("0_0","0_1","1_0","1_1")) {""}else{collisions$haplo[j]<-"U"} #I collapse all the undertermined
+}
+  return(collisions)
+ } 
+
+```
+
+### Set a working path and extract file names
+```{r, echo=FALSE, warning=F, comment=F}
+path<-'/Users/paulius.baltrusis/OneDrive - Karolinska Institutet/Kapa_BoundaryHAP_22/SNPs_all_samples/chr13_outputs'
+read_files<-sort(list.files(path, pattern="output.txt", full.names=TRUE))
+Samplelist <- basename(read_files)
+```
+
+
+## Prepare the input table
+```{r, echo = T, warning=F, message=F}
+Collisions_input<-PrepareTable(Samplelist = Samplelist, path=path, SNP1pattern = "GATTT", SNP2pattern = "TGGCCC")
+```
+## Determine colliding reads and genotype combinations
+```{r}
+SNP1=32889968
+SNP2=32890026
+
+cdist=1# minimum distance will be 1 (as 1 base can not be in 2 molecules)
+dist=SNP2-(SNP1+cdist) #distance between the 2 SNPs considered
+
+# criteria to call the genotypes
+minreads=2 #number of reads to trust a SNP
+xtimes=2 #the maximum genotype has more than the minimum
+
+#empty dataframe to keep scores
+plot_list<-list()
+for (x in seq(from=1, to=16, by=1)){
+res<-data.frame(posF=rep(0,dist),posR=0,existF=0,existR=0,
+                SNP1_0=0,SNP1_1=0,SNP2_0=0,SNP2_1=0,
+                SNP1_M="U",SNP2_M="U",haplo="U" )
+
+collisions<-extractCollisions(bound=Collisions_input[[x]],SNP1=SNP1,SNP2=SNP2,cdist=cdist)
+collisions<-callgenotype(collisions=collisions,minreads=2,xtimes=1)
+
+barplot(table(collisions[,11]),main="Boundary supported Haplotypes", sub = names(Collisions_input[x]))
+}
+```
+

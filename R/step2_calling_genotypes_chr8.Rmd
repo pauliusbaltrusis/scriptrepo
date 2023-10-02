@@ -1,0 +1,42 @@
+---
+title: "SNPs_chr8"
+output: html_notebook
+---
+## Set a working path and extract file names
+```{r, results='hide'}
+path<-'/Users/paulius.baltrusis/OneDrive - Karolinska Institutet/Kapa_BoundaryHAP_22/SNPs_all_samples/chr8_outputs'
+read_files<-sort(list.files(path, pattern="output.txt", full.names=TRUE))
+Samplelist <- basename(read_files)
+```
+## Prepare the input table
+```{r, warning=FALSE, echo=F, message=F}
+Collisions_input<-PrepareTable(Samplelist=Samplelist,path=path, SNP1pattern="TAGAC", SNP2pattern="TACGA")
+```
+## Determine and plot collisions and genotype combinations
+```{r}
+SNP1=90970862
+SNP2=90970935
+
+cdist=1
+dist=SNP2-(SNP1+cdist)
+
+# criteria to call the genotypes
+minreads=2 #number of reads to trust a SNP
+xtimes=2 #the maximum genotype has more than the minimum
+
+plot_list<-list()
+for (x in seq(from=1, to=16, by=1)){
+  #empty df
+  res<-data.frame(posF=rep(0,dist),posR=0,existF=0,existR=0,
+                SNP1_0=0,SNP1_1=0,SNP2_0=0,SNP2_1=0,
+                SNP1_M="U",SNP2_M="U",haplo="U" )
+
+
+  collisions<-extractCollisions(bound=Collisions_input[[x]],SNP1=SNP1,SNP2=SNP2,cdist=cdist)
+
+  collisions<-callgenotype(collisions=collisions,minreads=2,xtimes=1)
+collisions
+
+barplot(table(collisions[,11]),main="Boundary supported Genotypes",sub = names(Collisions_input[x]))
+}
+```

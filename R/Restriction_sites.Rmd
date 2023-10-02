@@ -1,0 +1,53 @@
+---
+title: "Restriction_calculations"
+author: "Paulius"
+date: "2023-05-26"
+output: html_document
+---
+
+```{r}
+#install.packages('BiocManager')
+#install.packages('seqinr')
+#BiocManager::install("Biostrings")
+#browseVignettes('Biostrings')
+library(Biostrings)
+require(Biostrings)
+library(seqinr)
+```
+```{r}
+find_pattern <- function(sequence, pattern="GATC") {
+  positions <- vector("numeric")
+  i <- 1
+  while (i <= nchar(sequence)) {
+    if (substr(sequence, i, i + 3) == pattern) {
+      positions <- c(positions, i)
+      i <- i + 4
+    } else {
+      i <- i + 1
+    }
+  }
+  
+  return(positions)
+}
+```
+
+
+```{r}
+dir<-'/Users/paulius.baltrusis/Downloads/Human_chr'
+
+
+files<-list.files(dir, pattern=".fa", full.names=FALSE)
+
+
+
+#for (i in files){
+setwd('/Users/paulius.baltrusis/Downloads/Human_chr')
+fasta_long <- readDNAStringSet(files[1],"fasta")[[1]]
+fasta_short <- unname(as.character(fasta_long))
+
+chr1<- find_pattern(fasta_short)
+#}
+
+
+
+```

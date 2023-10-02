@@ -1,0 +1,284 @@
+---
+title: "Boundaries_Kapa_Meta_Read_position_Only"
+author: "Paulius"
+date: "2023-04-26"
+output: html_document
+---
+
+---
+title: "Metatable_Boundaries"
+output: html_notebook
+---
+#### Functions
+#### a. PrepareTable function
+```{r, echo=FALSE}
+PrepareTable_NoReadpos<-function(Samplelist=Samplelist,path=path, SNP1pattern=SNP1pattern, SNP2pattern=SNP2pattern){
+  library(tidyverse)
+  library(data.table)
+  table_list<-list()
+  element_no=1
+  for (i in Samplelist){
+    setwd(path)
+    table1<-read.delim(i,header =F, sep='\t' ) ### Needs to be streamlined for multiple files! 
+    ## Remove Soft-clipped reads using CIGAR
+    table1<-table1[!grepl("S", table1$V6),]
+    ## Remove reads mapping to different chromosomes (with distance length=0; V9)
+    table1<-subset(table1, V9!=0)
+    table2<-table1[,-11][,-9][,-8][,-7][,-5][,-3][,-2] ## Remove columns containing unnecessary info
+    colnames(table2) <- c('Read_name', "Start", "CIGAR", "Seq", "File", "Barcode_combination") 
+    ## Add a column with seq lengths
+    table2$Length<-nchar(table2$Seq)
+    ## Sum Lengths with Start in a new column - End
+    table2$End<-rowSums(table2[,c('Start', 'Length')])
+    ## Adjust the length to correct for position (x-1)
+    table2$End<- table2$End-1
+    ## Switch up the columns "Start" and "End" for Reverse reads
+    #Forward_reads<-table2[table2$Orient=="Forward",]
+    #Reverse_reads<-table2[table2$Orient=="Reverse",]
+    #colnames(Reverse_reads)[9]<-"Start"
+    #colnames(Reverse_reads)[2]<-"End"
+    ## Merge reads back
+    #table3<-rbind(Forward_reads,Reverse_reads)
+    
+    ##add two columns SNP1 and SNP2
+    table3 <- table2 %>% mutate(SNP1="0") %>% mutate(SNP2="0")
+    
+    
+    SNP1<-table3[table3$Seq %like% SNP1pattern,] %>%
+      mutate(SNP1='1')
+    
+    SNP2<-table3[table3$Seq %like% SNP2pattern,] %>%
+      mutate(SNP2='1')
+    
+    # Read in/assign input by reference to the dataframes
+    setDT(table3)
+    setDT(SNP1)
+    setDT(SNP2)
+    
+    # change table3, by SNP1/SNP2, using the 'Seq' column; specifically the SNP1/2 column values by using SNP1/2 column values (where the 'Seq' matches)
+    table3[SNP1, on="Read_name", SNP1:=i.SNP1]
+    table3[SNP2, on="Read_name", SNP2:=i.SNP2]
+    
+    # Split the barcode column and add names
+    table4<-table3 %>% separate(Barcode_combination, c("P5", "P7"))
+    table5<-table4
+    # Replace P5 and P7 with actual barcode sequences
+    
+    ### Needs conditional statements to check what kind of barcodes i have at each column for every table!!
+    #P5tags<- data.frame(P5=c('1','2'), P5_BC_seq=c("XXX","YYY"))
+    #P7tags<- data.frame(P7=c('1','2'), P7_BC_seq=c("XXX","YYY"))
+    
+    #table5<-dplyr::left_join(table5, P5tags, by='P5')
+    #table5<-dplyr::left_join(table5, P7tags, by='P7')
+    ###
+    
+    table_list[[element_no]]<- table5
+    
+    element_no=element_no+1
+    
+    #append(table_list, table5)
+    # 
+    ## Remember if no barcode present, do this filter(... !="") initially
+    ## loop ends here
+  }
+  names(table_list)<- Samplelist
+  return(table_list)
+}
+
+```
+#### b. Extract Collisions function
+```{r extractCollisions, echo=FALSE}
+# Function to define the collisions
+
+#i is the position of the theoretical cut counted from the forward read
+ extractCollisions_NoreadPos<-function(bound=bound,SNP1=SNP1,SNP2=SNP2,cdist=cdist){
+  for(i in 1:dist){ # 
+  #define the positions of the reads to compare
+  res$pos1[i]=SNP1+cdist+i-1 #first base after the cut for the forward strand
+  res$pos2[i]=SNP1+i-1 #first base before the cut for the reverse strand
+  #call if are relevant forward reads at that position
+  res$exist1[i]<-(res$pos1[i]%in%bound$Start)
+  #call if are relevant reverse reads at that position
+  res$exist2[i]<-(res$pos2[i]%in%bound$Start)
+  
+  
+  #count number of SNP2 (as forward read always counts the SNP2)
+  subread1<-subset(bound, Start==res$pos1[i])
+  #count SNP2
+  res$SNP2_0[i]=length(subset(subread1, SNP2==0)$SNP2)
+  res$SNP2_1[i]=length(subset(subread1, SNP2==1)$SNP2)
+  
+  #count number of SNP1 (as reverse read always counts the SNP1)
+  subread2<-subset(bound, Start==res$pos2[i])
+  #count SNP2
+  res$SNP1_0[i]=length(subset(subread2, SNP1==0)$SNP1)
+  res$SNP1_1[i]=length(subset(subread2, SNP1==1)$SNP1)
+
+  rm(subread1,subread2)# to remove the dataset every cycle
+  
+}
+   
+#call the positions where there are collisions
+collisions<-subset(res, exist1==1 & exist2==1)
+
+return(collisions)
+}
+```
+
+#### c. Call genotypes function
+```{r callgenotype, echo=FALSE}
+# Function to call the haplotypes
+
+callgenotype<-function(collisions=collisions,minreads=1,xtimes=1){
+
+for (j in 1:length(collisions[,1])){
+  
+  #call SNP1
+  if ( collisions$SNP1_0[j]>(minreads-1) | collisions$SNP1_1[j]>(minreads-1)) # at least an allele is supported by more number of reads than the minimum
+  { #the maximum allele has more than x
+    
+    if(max(collisions$SNP1_0[j],collisions$SNP1_1[j])>(min(collisions$SNP1_0[j],collisions$SNP1_1[j])*xtimes)){
+      if(collisions$SNP1_0[j]>collisions$SNP1_1[j]){collisions$SNP1_M[j]=0} else{collisions$SNP1_M[j]=1}
+    }else{""}
+  }  else   {""}
+  
+    #call SNP2
+  if ( collisions$SNP2_0[j]>(minreads-1) | collisions$SNP2_1[j]>(minreads-1)) # at least un allele is supported by more       number of reads than the minimum
+  {#the maximum genotype has more than x
+    
+    if(max(collisions$SNP2_0[j],collisions$SNP2_1[j])>(min(collisions$SNP2_0[j],collisions$SNP2_1[j])*xtimes)){
+      if(collisions$SNP2_0[j]>collisions$SNP2_1[j]){collisions$SNP2_M[j]=0} else{collisions$SNP2_M[j]=1}
+    }else{""}
+  }  else   {""}
+ 
+  #Call the haplotype
+  
+  collisions$haplo[j]<-paste(collisions$SNP1_M[j],collisions$SNP2_M[j],sep="_")
+  
+  if(collisions$haplo[j]%in%c("0_0","0_1","1_0","1_1")) {""}else{collisions$haplo[j]<-"U"} #I collapse all the undertermined
+}
+  return(collisions)
+ } 
+
+```
+#### Functions end
+
+
+### Set a working path and extract file names
+```{r, echo=FALSE, warning=F, comment=F}
+path<-'/Users/paulius.baltrusis/OneDrive-KarolinskaInstitutet/Different projects/Project 2.Kapa_BoundaryHAP_22/SNPs_all_samples_localBowtie/chr13_bothOrients0425_outputs'
+read_files<-sort(list.files(path, pattern="output.txt", full.names=TRUE))
+Samplelist <- basename(read_files)
+```
+
+## Prepare the input table
+```{r, echo = T, warning=F, message=F}
+Collisions_input<-PrepareTable_NoReadpos(Samplelist = Samplelist, path=path, SNP1pattern = "GATTT", SNP2pattern = "TGGCCC")
+```
+## OBSOLETE ALTERNATIVE! Filter out reads with any soft clipping whatsoever and store them in another list
+```{r}
+Collisions_input_nosoft<-lapply(Collisions_input, function(df) {
+  df[!grepl("S", df$CIGAR),]
+})
+
+Collisions_input_soft_clipped_reads<-lapply(Collisions_input, function(df) {
+  df[grepl("S", df$CIGAR),]
+})
+```
+
+## Determine colliding reads and allele combinations for all samples in a loop for cdist=-10(overlapping)...10 (diverging)
+```{r}
+SNP1=32889968
+SNP2=32890026
+
+cdist=1
+dist=SNP2-(SNP1+cdist) 
+
+# criteria to call the genotypes
+minreads=1 #number of reads to trust a SNP DEFAULT 1
+xtimes=1 #the maximum allele has more than the minimum DEFAULT 1
+master_collisions_list<-list()
+for (j in 1:length(Collisions_input_nosoft)){
+res<-data.frame(pos1=rep(0,dist),pos2=0,exist1=0,exist2=0,
+                SNP1_0=0,SNP1_1=0,SNP2_0=0,SNP2_1=0,
+                SNP1_M="U",SNP2_M="U",haplo="U" )
+collisions_list<-list()
+y=1
+for (i in seq(-10,10,1)){
+  collisions<-extractCollisions_NoreadPos(bound=Collisions_input_nosoft[[j]],SNP1=SNP1,SNP2=SNP2,cdist=i)
+#collisions_allelesum<-collisions %>% 
+  #mutate(Reads_SNP1=rowSums(collisions[,5:6])) %>% mutate(Reads_SNP2=rowSums(collisions[,7:8])) %>%
+  #filter(Reads_SNP1>3 & Reads_SNP2>3)
+collisions_list[[y]]<-collisions
+y=y+1
+}
+master_collisions_list[[j]]<-collisions_list
+}
+names(master_collisions_list)<-Samplelist
+```
+## Concatenate the dataframes in a master_boundary_list
+```{r}
+## do.call will apply a function to the entire list!
+l1 <- do.call('c', master_collisions_list)
+##
+## Remove empty dataframes!!
+l1_nonempty<-l1[sapply(l1, function(x) dim(x)[1]) > 0]
+##
+master_boundaries_file<-list()
+for (i in 1:length(l1_nonempty)){
+master_boundaries_file[[i]]<-callgenotype(collisions=l1_nonempty[[i]],minreads=2,xtimes=2)
+}
+names(master_boundaries_file)<-names(l1_nonempty)
+
+```
+## Convert list into a df and split sample name/distance/row columns into Sample and Distance 
+```{r}
+master_boundaries_df<-do.call(rbind, master_boundaries_file)
+master_boundaries_df<-rownames_to_column(master_boundaries_df, var="Sample")
+## Split the sample column
+master_boundaries_df_final <- master_boundaries_df %>% separate(Sample, into=c("Sample", "Dist"), sep="_mapped_file_RG_NODUP.bothOrients.output.txt") %>%
+    mutate(Dist =  sub("[.].*", "", Dist))
+``` 
+## Plot some stats
+```{r}
+master_boundaries_df_final %>% mutate(Sample= sub("Kapa_S._._","",Sample)) %>%
+  ggplot(aes())+
+  labs(x="Collision distance (d)", y="Number of Collisions", title = "Collision distance d= -10 to +10")+
+  geom_histogram(aes(x=as.numeric(Dist), color=Sample),fill="white",binwidth = 1)+
+  facet_wrap(.~Sample)+
+  theme_bw()
+ggsave('CollisionNumber.Distance-10to10.png', width=10, height=7)
+```
+## Plot unfiltered haplotypes, where d=-10..0
+```{r}
+master_boundaries_df_final$Dist<-as.numeric(master_boundaries_df_final$Dist)
+subset(master_boundaries_df_final, Dist<12) %>% mutate(Sample= sub("Kapa_S._._","",Sample)) %>%
+  ggplot(aes())+
+labs(x="Haplotypes", y="Number of Collisions", title = "Haplotypes with distance (d)=-10 to 0")+
+  geom_bar(aes(x=haplo, color=Sample),fill="white",binwidth = 1)+
+  facet_wrap(.~Sample)+
+  theme_bw()
+ggsave("CollisionNumber_Distance-10to0_Haps.png", width=10, height=7)
+```
+## Plot unfiltered haplotypes, where d=1..10
+```{r}
+master_boundaries_df_final$Dist<-as.numeric(master_boundaries_df_final$Dist)
+subset(master_boundaries_df_final, Dist>11) %>% mutate(Sample= sub("Kapa_S._._","",Sample)) %>%
+  ggplot(aes())+
+  labs(x="Haplotypes", y="Number of Collisions", title = "Haplotypes with distance (d)=1-10")+
+  geom_bar(aes(x=haplo, color=Sample),fill="white",binwidth = 1)+
+  facet_wrap(.~Sample)+
+  theme_bw()
+ggsave("CollisionNumber_Distance1-10_Haps.png", width=10, height=7)
+```
+## Plot unfiltered haplotypes, where d=0 (=11th element)
+```{r}
+master_boundaries_df_final$Dist<-as.numeric(master_boundaries_df_final$Dist)
+subset(master_boundaries_df_final, Dist=='11') %>% mutate(Sample= sub("Kapa_S._._","",Sample)) %>%
+  ggplot(aes())+
+  labs(x="Haplotypes", y="Number of Collisions", title = "Haplotypes with distance (d)=1-10")+
+  geom_bar(aes(x=haplo, color=Sample),fill="white",binwidth = 1)+
+  facet_wrap(.~Sample)+
+  theme_bw()
+ggsave("CollisionNumber_Distance1-10_Haps.png", width=10, height=7)
+```

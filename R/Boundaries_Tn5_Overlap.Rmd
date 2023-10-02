@@ -1,0 +1,25 @@
+---
+title: "Tn5_Bhap_overlap"
+author: "Paulius"
+date: "2023-04-11"
+output: html_document
+---
+
+### Open up the file 
+```{r, echo=FALSE, warning=F, comment=F}
+setwd('/Users/paulius.baltrusis/OneDrive - Karolinska Institutet/Different projects/Project 4.Tn5_BoundaryHAP_22/New_libraries_2023-04')
+tn5_dummy<-read.csv2("Dummy_dataset_Tn5_Bhap.csv")
+```
+```{r}
+Logicalsize <- list()
+for (i in 1:length(Collisions_input)) {
+  Logicalsize[[i]]<-(Collisions_input[[i]]$Length== 65 | Collisions_input[[i]]$Length==49)}
+
+empty<-c()
+for (i in 1:16) {
+empty<-grep("FALSE", Logicalsize[[i]])
+print(empty)
+}
+
+```
+
