@@ -1,0 +1,545 @@
+BCL to FASTQ file converter
+bcl2fastq v2.20.0.422
+Copyright (c) 2007-2017 Illumina, Inc.
+
+2023-09-11 14:44:00 [2ba26fedd8c0] Command-line invocation: bcl2fastq -R /proj/snic2019-30-56/nobackup/projects/230908_VH00349_150_AACVLCGM5 -o /home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP --sample-sheet /home/pauliusb/seq_sample_sheets/2023_08_21_seq_sheet_template_2.csv --no-lane-splitting --barcode-mismatches 1 
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: Minimum log level: INFO
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: Sample sheet: '/home/pauliusb/seq_sample_sheets/2023_08_21_seq_sheet_template_2.csv'
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: Runfolder path: '/proj/snic2019-30-56/nobackup/projects/230908_VH00349_150_AACVLCGM5'
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: Input path: '/proj/snic2019-30-56/nobackup/projects/230908_VH00349_150_AACVLCGM5/Data/Intensities/BaseCalls/'
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: Intensities path: '/proj/snic2019-30-56/nobackup/projects/230908_VH00349_150_AACVLCGM5/Data/Intensities/'
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: Output path: '/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP'
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: InterOp path: '/proj/snic2019-30-56/nobackup/projects/230908_VH00349_150_AACVLCGM5/InterOp/'
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: Stats path: '/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Stats/'
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: Reports path: '/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/'
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: Detected CPUs: 20
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: Loading threads: 4
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: Processing threads: 20
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: Writing threads: 4
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: Allowed barcode mismatches: 1 
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: Tiles: <ALL>
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: Minimum trimmed read length: 35
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: Use bases masks: <NONE>
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: Mask short adapter reads: 22
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: Adapter stringency: 0.9
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: Adapter trimming method: Allow matches with indels
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: Ignore missing BCLs: NO
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: Ignore missing filters: NO
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: Ignore missing positions: NO
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: Ignore missing controls: NO
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: Include non-PF clusters: NO
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: Create FASTQs for index reads: NO
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: Use bgzf compression for FASTQ files: YES
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: FASTQ compression level: 4
+2023-09-11 14:44:00 [2ba26fedd8c0] INFO: RunInfo.xml: '"/proj/snic2019-30-56/nobackup/projects/230908_VH00349_150_AACVLCGM5/RunInfo.xml"'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO: Lane: 1
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO: Mask: 
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #0 'unknown' 'Undetermined' [default]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #1 'SF_WT1' 'SF_WT1' [Prefoldin]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'TAAGATTA+TAGGCATG'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #2 'SF_WT2' 'SF_WT2' [Prefoldin]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'TAAGATTA+CTCTCTAC'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #3 'SF_KO1' 'SF_KO1' [Prefoldin]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'TAAGATTA+CAGAGAGG'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #4 'SF_KO2' 'SF_KO2' [Prefoldin]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'TAAGATTA+GCTACGCT'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #5 'loop_v3' 'l3' [MILoop]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'CGCTCATT+AGGCTATA'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #6 'p1_2_D5' 'p1_2_D5' [co-occur]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'GTAGAGAT+GCCTCTAT'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #7 'p1_2_D6' 'p1_2_D6' [co-occur]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'GTCCGCAT+GCCTCTAT'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #8 'p1_2_D7' 'p1_2_D7' [co-occur]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'GTGAAAAT+GCCTCTAT'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #9 'p1_2_D8' 'p1_2_D8' [co-occur]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'GTGGCCAT+GCCTCTAT'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #10 'p1_2_E5' 'p1_2_E5' [co-occur]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'GTTTCGAT+GCCTCTAT'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #11 'p1_2_E6' 'p1_2_E6' [co-occur]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'CGTACGAT+GCCTCTAT'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #12 'p1_2_E7' 'p1_2_E7' [co-occur]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'GAGTGGAT+GCCTCTAT'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #13 'p1_2_E8' 'p1_2_E8' [co-occur]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'ACTGATAT+GCCTCTAT'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #14 'p7_8_D5' 'p7_8_D5' [co-occur]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'ATGAGCAT+GCCTCTAT'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #15 'p7_8_D6' 'p7_8_D6' [co-occur]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'CAAAAGAT+GCCTCTAT'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #16 'p7_8_E5' 'p7_8_E5' [co-occur]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'CAACTAAT+GCCTCTAT'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #17 'p7_8_E6' 'p7_8_E6' [co-occur]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'CACCGGAT+GCCTCTAT'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #18 'FFPE_MiLOOPgDNA1' 'V3Hong10min100ng' [RNA_FFPE_5Pseq]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'ATCACGAT+CTTCGCCT'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #19 'FFPE_MiLOOPgDNA2' 'V3Hong10min100ngPEG' [RNA_FFPE_5Pseq]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'CGATGTAT+CTTCGCCT'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #20 'FFPE_MiLOOPgDNA3' 'V4HongHF10min101' [RNA_FFPE_5Pseq]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'TTAGGCAT+TCAGAGCC'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #21 'FFPE_MiLOOPgDNA4' 'V4HongHF10min501' [RNA_FFPE_5Pseq]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'TTAGGCAT+CTTCGCCT'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #22 'FFPE_MiLOOPgDNA5' 'V4HongNF200ng101' [RNA_FFPE_5Pseq]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'TTAGGCAT+TAAGATTA'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #23 'FFPE_MiLOOPgDNA6' 'V4HongNF200ng501' [RNA_FFPE_5Pseq]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'CGATGTAT+TAAGATTA'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #24 'FFPE_MiLOOPgDNA7' 'MiLoop_gDNA_1ng_ABlong' [MiLoop_gDNA]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'ATTACTCG+AGGCTATA'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #25 'FFPE_MiLOOPgDNA8' 'MiLoop_gDNA_1ng_BClong' [MiLoop_gDNA]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'ATTACTCG+GCCTCTAT'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #26 'FFPE_MiLOOPgDNA9' 'MiLoop_gDNA_1ng_ABshort' [MiLoop_gDNA]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'ATTACTCG+AGGATAGG'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #27 'FFPE_MiLOOPgDNA10' 'MiLoop_gDNA_1ng_BCshort' [MiLoop_gDNA]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'ATTACTCG+TCAGAGCC'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #28 'Homop_Cm' 'Cm' [homopolymer_test]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'CAGATCAT+GTCAGTAC'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #29 'Homop_T1m' 'T1m' [homopolymer_test]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'ACTTGAAT+GTCAGTAC'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #30 'Homop_T2m' 'T2m' [homopolymer_test]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'GATCAGAT+GTCAGTAC'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #31 'Homop_T3m' 'T3m' [homopolymer_test]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'TAGCTTAT+GTCAGTAC'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #32 'Homop_T4m' 'T4m' [homopolymer_test]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'GGCTACAT+GTCAGTAC'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #33 'Homop_T5m' 'T5m' [homopolymer_test]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'CTTGTAAT+GTCAGTAC'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #34 'Homop_Cwt' 'Cwt' [homopolymer_test]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'CAGATCAT+AACCTCTC'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #35 'Homop_T1wt' 'T1wt' [homopolymer_test]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'ACTTGAAT+AACCTCTC'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #36 'Homop_T2wt' 'T2wt' [homopolymer_test]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'GATCAGAT+AACCTCTC'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #37 'Homop_T3wt' 'T3wt' [homopolymer_test]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'TAGCTTAT+AACCTCTC'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #38 'Homop_T4wt' 'T4wt' [homopolymer_test]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'GGCTACAT+AACCTCTC'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #39 'Homop_T5wt' 'T5wt' [homopolymer_test]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'CTTGTAAT+AACCTCTC'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Sample: #40 'short_oligo' 'short_oligo' [ARTs]
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:     Barcode: 'GGACTCCT+CTCCTTAC'
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO: Read: 1 data read
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Cycles: 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO: Read: 1 index read
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Cycles: 52,53,54,55,56,57,58,59
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO: Read: 2 index read
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Cycles: 60,61,62,63,64,65,66,67
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO: Read: 2 data read
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Cycles: 68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO: Patterned flowcell detected
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1101 (index: 0, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1102 (index: 1, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1103 (index: 2, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1104 (index: 3, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1105 (index: 4, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1106 (index: 5, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1107 (index: 6, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1108 (index: 7, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1109 (index: 8, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1110 (index: 9, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1111 (index: 10, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1201 (index: 11, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1202 (index: 12, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1203 (index: 13, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1204 (index: 14, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1205 (index: 15, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1206 (index: 16, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1207 (index: 17, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1208 (index: 18, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1209 (index: 19, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1210 (index: 20, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1211 (index: 21, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1301 (index: 22, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1302 (index: 23, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1303 (index: 24, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1304 (index: 25, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1305 (index: 26, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1306 (index: 27, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1307 (index: 28, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1308 (index: 29, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1309 (index: 30, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1310 (index: 31, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1311 (index: 32, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1401 (index: 33, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1402 (index: 34, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1403 (index: 35, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1404 (index: 36, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1405 (index: 37, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1406 (index: 38, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1407 (index: 39, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1408 (index: 40, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1409 (index: 41, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1410 (index: 42, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1411 (index: 43, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1501 (index: 44, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1502 (index: 45, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1503 (index: 46, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1504 (index: 47, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1505 (index: 48, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1506 (index: 49, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1507 (index: 50, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1508 (index: 51, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1509 (index: 52, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1510 (index: 53, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1511 (index: 54, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1601 (index: 55, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1602 (index: 56, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1603 (index: 57, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1604 (index: 58, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1605 (index: 59, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1606 (index: 60, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1607 (index: 61, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1608 (index: 62, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1609 (index: 63, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1610 (index: 64, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 1611 (index: 65, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2101 (index: 66, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2102 (index: 67, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2103 (index: 68, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2104 (index: 69, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2105 (index: 70, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2106 (index: 71, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2107 (index: 72, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2108 (index: 73, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2109 (index: 74, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2110 (index: 75, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2111 (index: 76, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2201 (index: 77, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2202 (index: 78, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2203 (index: 79, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2204 (index: 80, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2205 (index: 81, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2206 (index: 82, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2207 (index: 83, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2208 (index: 84, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2209 (index: 85, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2210 (index: 86, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2211 (index: 87, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2301 (index: 88, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2302 (index: 89, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2303 (index: 90, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2304 (index: 91, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2305 (index: 92, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2306 (index: 93, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2307 (index: 94, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2308 (index: 95, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2309 (index: 96, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2310 (index: 97, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2311 (index: 98, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2401 (index: 99, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2402 (index: 100, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2403 (index: 101, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2404 (index: 102, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2405 (index: 103, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2406 (index: 104, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2407 (index: 105, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2408 (index: 106, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2409 (index: 107, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2410 (index: 108, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2411 (index: 109, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2501 (index: 110, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2502 (index: 111, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2503 (index: 112, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2504 (index: 113, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2505 (index: 114, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2506 (index: 115, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2507 (index: 116, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2508 (index: 117, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2509 (index: 118, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2510 (index: 119, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2511 (index: 120, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2601 (index: 121, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2602 (index: 122, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2603 (index: 123, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2604 (index: 124, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2605 (index: 125, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2606 (index: 126, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2607 (index: 127, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2608 (index: 128, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2609 (index: 129, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2610 (index: 130, skipped tiles: 0)
+2023-09-11 14:44:01 [2ba26fedd8c0] INFO:   Tile: 2611 (index: 131, skipped tiles: 0)
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Stats"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Undetermined_S0_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Undetermined_S0_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Prefoldin/SF_WT1_S1_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Prefoldin/SF_WT1_S1_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Prefoldin/SF_WT2_S2_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Prefoldin/SF_WT2_S2_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Prefoldin/SF_KO1_S3_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Prefoldin/SF_KO1_S3_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Prefoldin/SF_KO2_S4_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Prefoldin/SF_KO2_S4_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/MILoop/loop_v3/l3_S5_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/MILoop/loop_v3/l3_S5_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/co-occur/p1_2_D5_S6_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/co-occur/p1_2_D5_S6_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/co-occur/p1_2_D6_S7_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/co-occur/p1_2_D6_S7_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/co-occur/p1_2_D7_S8_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/co-occur/p1_2_D7_S8_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/co-occur/p1_2_D8_S9_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/co-occur/p1_2_D8_S9_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/co-occur/p1_2_E5_S10_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/co-occur/p1_2_E5_S10_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/co-occur/p1_2_E6_S11_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/co-occur/p1_2_E6_S11_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/co-occur/p1_2_E7_S12_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/co-occur/p1_2_E7_S12_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/co-occur/p1_2_E8_S13_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/co-occur/p1_2_E8_S13_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/co-occur/p7_8_D5_S14_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/co-occur/p7_8_D5_S14_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/co-occur/p7_8_D6_S15_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/co-occur/p7_8_D6_S15_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/co-occur/p7_8_E5_S16_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/co-occur/p7_8_E5_S16_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/co-occur/p7_8_E6_S17_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/co-occur/p7_8_E6_S17_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/RNA_FFPE_5Pseq/FFPE_MiLOOPgDNA1/V3Hong10min100ng_S18_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/RNA_FFPE_5Pseq/FFPE_MiLOOPgDNA1/V3Hong10min100ng_S18_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/RNA_FFPE_5Pseq/FFPE_MiLOOPgDNA2/V3Hong10min100ngPEG_S19_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/RNA_FFPE_5Pseq/FFPE_MiLOOPgDNA2/V3Hong10min100ngPEG_S19_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/RNA_FFPE_5Pseq/FFPE_MiLOOPgDNA3/V4HongHF10min101_S20_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/RNA_FFPE_5Pseq/FFPE_MiLOOPgDNA3/V4HongHF10min101_S20_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/RNA_FFPE_5Pseq/FFPE_MiLOOPgDNA4/V4HongHF10min501_S21_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/RNA_FFPE_5Pseq/FFPE_MiLOOPgDNA4/V4HongHF10min501_S21_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/RNA_FFPE_5Pseq/FFPE_MiLOOPgDNA5/V4HongNF200ng101_S22_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/RNA_FFPE_5Pseq/FFPE_MiLOOPgDNA5/V4HongNF200ng101_S22_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/RNA_FFPE_5Pseq/FFPE_MiLOOPgDNA6/V4HongNF200ng501_S23_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/RNA_FFPE_5Pseq/FFPE_MiLOOPgDNA6/V4HongNF200ng501_S23_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/MiLoop_gDNA/FFPE_MiLOOPgDNA7/MiLoop_gDNA_1ng_ABlong_S24_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/MiLoop_gDNA/FFPE_MiLOOPgDNA7/MiLoop_gDNA_1ng_ABlong_S24_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/MiLoop_gDNA/FFPE_MiLOOPgDNA8/MiLoop_gDNA_1ng_BClong_S25_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/MiLoop_gDNA/FFPE_MiLOOPgDNA8/MiLoop_gDNA_1ng_BClong_S25_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/MiLoop_gDNA/FFPE_MiLOOPgDNA9/MiLoop_gDNA_1ng_ABshort_S26_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/MiLoop_gDNA/FFPE_MiLOOPgDNA9/MiLoop_gDNA_1ng_ABshort_S26_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/MiLoop_gDNA/FFPE_MiLOOPgDNA10/MiLoop_gDNA_1ng_BCshort_S27_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/MiLoop_gDNA/FFPE_MiLOOPgDNA10/MiLoop_gDNA_1ng_BCshort_S27_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/homopolymer_test/Homop_Cm/Cm_S28_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/homopolymer_test/Homop_Cm/Cm_S28_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/homopolymer_test/Homop_T1m/T1m_S29_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/homopolymer_test/Homop_T1m/T1m_S29_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/homopolymer_test/Homop_T2m/T2m_S30_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/homopolymer_test/Homop_T2m/T2m_S30_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/homopolymer_test/Homop_T3m/T3m_S31_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/homopolymer_test/Homop_T3m/T3m_S31_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/homopolymer_test/Homop_T4m/T4m_S32_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/homopolymer_test/Homop_T4m/T4m_S32_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/homopolymer_test/Homop_T5m/T5m_S33_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/homopolymer_test/Homop_T5m/T5m_S33_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/homopolymer_test/Homop_Cwt/Cwt_S34_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/homopolymer_test/Homop_Cwt/Cwt_S34_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/homopolymer_test/Homop_T1wt/T1wt_S35_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/homopolymer_test/Homop_T1wt/T1wt_S35_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/homopolymer_test/Homop_T2wt/T2wt_S36_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/homopolymer_test/Homop_T2wt/T2wt_S36_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/homopolymer_test/Homop_T3wt/T3wt_S37_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/homopolymer_test/Homop_T3wt/T3wt_S37_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/homopolymer_test/Homop_T4wt/T4wt_S38_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/homopolymer_test/Homop_T4wt/T4wt_S38_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/homopolymer_test/Homop_T5wt/T5wt_S39_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/homopolymer_test/Homop_T5wt/T5wt_S39_R2_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/ARTs/short_oligo_S40_R1_001.fastq.gz"
+2023-09-11 14:44:03 [2ba26fedd8c0] INFO: Created FASTQ file '"/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/ARTs/short_oligo_S40_R2_001.fastq.gz"
+2023-09-11 14:48:30 [2ba26fedd8c0] WARNING: Unable to open Interop file '/proj/snic2019-30-56/nobackup/projects/230908_VH00349_150_AACVLCGM5/InterOp/IndexMetricsOut.bin' for writing
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/ARTs"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/ARTs/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/ARTs/all/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/ARTs/all/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/ARTs/short_oligo"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/ARTs/short_oligo/GGACTCCT+CTCCTTAC"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/ARTs/short_oligo/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/ARTs/short_oligo/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/MILoop"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/MILoop/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/MILoop/all/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/MILoop/all/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/MILoop/l3"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/MILoop/l3/CGCTCATT+AGGCTATA"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/MILoop/l3/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/MILoop/l3/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/MiLoop_gDNA"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/MiLoop_gDNA/MiLoop_gDNA_1ng_ABlong"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/MiLoop_gDNA/MiLoop_gDNA_1ng_ABlong/ATTACTCG+AGGCTATA"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/MiLoop_gDNA/MiLoop_gDNA_1ng_ABlong/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/MiLoop_gDNA/MiLoop_gDNA_1ng_ABlong/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/MiLoop_gDNA/MiLoop_gDNA_1ng_ABshort"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/MiLoop_gDNA/MiLoop_gDNA_1ng_ABshort/ATTACTCG+AGGATAGG"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/MiLoop_gDNA/MiLoop_gDNA_1ng_ABshort/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/MiLoop_gDNA/MiLoop_gDNA_1ng_ABshort/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/MiLoop_gDNA/MiLoop_gDNA_1ng_BClong"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/MiLoop_gDNA/MiLoop_gDNA_1ng_BClong/ATTACTCG+GCCTCTAT"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/MiLoop_gDNA/MiLoop_gDNA_1ng_BClong/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/MiLoop_gDNA/MiLoop_gDNA_1ng_BClong/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/MiLoop_gDNA/MiLoop_gDNA_1ng_BCshort"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/MiLoop_gDNA/MiLoop_gDNA_1ng_BCshort/ATTACTCG+TCAGAGCC"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/MiLoop_gDNA/MiLoop_gDNA_1ng_BCshort/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/MiLoop_gDNA/MiLoop_gDNA_1ng_BCshort/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/MiLoop_gDNA/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/MiLoop_gDNA/all/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/MiLoop_gDNA/all/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/Prefoldin"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/Prefoldin/SF_KO1"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/Prefoldin/SF_KO1/TAAGATTA+CAGAGAGG"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/Prefoldin/SF_KO1/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/Prefoldin/SF_KO1/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/Prefoldin/SF_KO2"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/Prefoldin/SF_KO2/TAAGATTA+GCTACGCT"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/Prefoldin/SF_KO2/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/Prefoldin/SF_KO2/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/Prefoldin/SF_WT1"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/Prefoldin/SF_WT1/TAAGATTA+TAGGCATG"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/Prefoldin/SF_WT1/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/Prefoldin/SF_WT1/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/Prefoldin/SF_WT2"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/Prefoldin/SF_WT2/TAAGATTA+CTCTCTAC"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/Prefoldin/SF_WT2/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/Prefoldin/SF_WT2/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/Prefoldin/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/Prefoldin/all/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/Prefoldin/all/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/RNA_FFPE_5Pseq"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/RNA_FFPE_5Pseq/V3Hong10min100ng"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/RNA_FFPE_5Pseq/V3Hong10min100ng/ATCACGAT+CTTCGCCT"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/RNA_FFPE_5Pseq/V3Hong10min100ng/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/RNA_FFPE_5Pseq/V3Hong10min100ng/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/RNA_FFPE_5Pseq/V3Hong10min100ngPEG"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/RNA_FFPE_5Pseq/V3Hong10min100ngPEG/CGATGTAT+CTTCGCCT"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/RNA_FFPE_5Pseq/V3Hong10min100ngPEG/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/RNA_FFPE_5Pseq/V3Hong10min100ngPEG/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/RNA_FFPE_5Pseq/V4HongHF10min101"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/RNA_FFPE_5Pseq/V4HongHF10min101/TTAGGCAT+TCAGAGCC"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/RNA_FFPE_5Pseq/V4HongHF10min101/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/RNA_FFPE_5Pseq/V4HongHF10min101/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/RNA_FFPE_5Pseq/V4HongHF10min501"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/RNA_FFPE_5Pseq/V4HongHF10min501/TTAGGCAT+CTTCGCCT"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/RNA_FFPE_5Pseq/V4HongHF10min501/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/RNA_FFPE_5Pseq/V4HongHF10min501/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/RNA_FFPE_5Pseq/V4HongNF200ng101"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/RNA_FFPE_5Pseq/V4HongNF200ng101/TTAGGCAT+TAAGATTA"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/RNA_FFPE_5Pseq/V4HongNF200ng101/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/RNA_FFPE_5Pseq/V4HongNF200ng101/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/RNA_FFPE_5Pseq/V4HongNF200ng501"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/RNA_FFPE_5Pseq/V4HongNF200ng501/CGATGTAT+TAAGATTA"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/RNA_FFPE_5Pseq/V4HongNF200ng501/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/RNA_FFPE_5Pseq/V4HongNF200ng501/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/RNA_FFPE_5Pseq/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/RNA_FFPE_5Pseq/all/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/RNA_FFPE_5Pseq/all/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/all/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/all/all/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/all/all/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/all/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/all/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_D5"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_D5/GTAGAGAT+GCCTCTAT"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_D5/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_D5/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_D6"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_D6/GTCCGCAT+GCCTCTAT"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_D6/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_D6/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_D7"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_D7/GTGAAAAT+GCCTCTAT"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_D7/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_D7/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_D8"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_D8/GTGGCCAT+GCCTCTAT"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_D8/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_D8/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_E5"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_E5/GTTTCGAT+GCCTCTAT"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_E5/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_E5/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_E6"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_E6/CGTACGAT+GCCTCTAT"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_E6/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_E6/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_E7"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_E7/GAGTGGAT+GCCTCTAT"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_E7/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_E7/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_E8"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_E8/ACTGATAT+GCCTCTAT"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_E8/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p1_2_E8/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p7_8_D5"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p7_8_D5/ATGAGCAT+GCCTCTAT"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p7_8_D5/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p7_8_D5/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p7_8_D6"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p7_8_D6/CAAAAGAT+GCCTCTAT"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p7_8_D6/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p7_8_D6/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p7_8_E5"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p7_8_E5/CAACTAAT+GCCTCTAT"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p7_8_E5/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p7_8_E5/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p7_8_E6"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p7_8_E6/CACCGGAT+GCCTCTAT"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p7_8_E6/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/co-occur/p7_8_E6/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/default"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/default/Undetermined"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/default/Undetermined/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/default/Undetermined/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/default/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/default/all/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/default/all/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/Cm"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/Cm/CAGATCAT+GTCAGTAC"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/Cm/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/Cm/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/Cwt"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/Cwt/CAGATCAT+AACCTCTC"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/Cwt/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/Cwt/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T1m"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T1m/ACTTGAAT+GTCAGTAC"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T1m/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T1m/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T1wt"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T1wt/ACTTGAAT+AACCTCTC"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T1wt/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T1wt/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T2m"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T2m/GATCAGAT+GTCAGTAC"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T2m/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T2m/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T2wt"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T2wt/GATCAGAT+AACCTCTC"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T2wt/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T2wt/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T3m"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T3m/TAGCTTAT+GTCAGTAC"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T3m/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T3m/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T3wt"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T3wt/TAGCTTAT+AACCTCTC"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T3wt/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T3wt/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T4m"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T4m/GGCTACAT+GTCAGTAC"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T4m/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T4m/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T4wt"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T4wt/GGCTACAT+AACCTCTC"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T4wt/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T4wt/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T5m"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T5m/CTTGTAAT+GTCAGTAC"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T5m/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T5m/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T5wt"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T5wt/CTTGTAAT+AACCTCTC"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T5wt/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/T5wt/unknown"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/all/all"
+2023-09-11 14:48:32 [2ba26fedd8c0] INFO: creating directory "/home/pauliusb/sllstore2017018/paulius/2023_08_21_SEYAP/Reports/html/AACVLCGM5/homopolymer_test/all/unknown"
+2023-09-11 14:48:34 [2ba26fedd8c0] Processing completed with 0 errors and 1 warnings.

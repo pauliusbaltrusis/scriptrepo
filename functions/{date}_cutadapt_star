@@ -1,0 +1,4863 @@
+Started analysis of FFPE_1_PNK_S41_R1_001.fastq.gz
+Analysis complete for FFPE_1_PNK_S41_R1_001.fastq.gz
+Failed to process QC_raw
+java.io.FileNotFoundException: QC_raw (Is a directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at uk.ac.babraham.FastQC.Sequence.FastQFile.<init>(FastQFile.java:73)
+	at uk.ac.babraham.FastQC.Sequence.SequenceFactory.getSequenceFile(SequenceFactory.java:106)
+	at uk.ac.babraham.FastQC.Sequence.SequenceFactory.getSequenceFile(SequenceFactory.java:62)
+	at uk.ac.babraham.FastQC.Analysis.OfflineRunner.processFile(OfflineRunner.java:159)
+	at uk.ac.babraham.FastQC.Analysis.OfflineRunner.<init>(OfflineRunner.java:121)
+	at uk.ac.babraham.FastQC.FastQCApplication.main(FastQCApplication.java:316)
+Failed to process RAW
+java.io.FileNotFoundException: RAW (Is a directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at uk.ac.babraham.FastQC.Sequence.FastQFile.<init>(FastQFile.java:73)
+	at uk.ac.babraham.FastQC.Sequence.SequenceFactory.getSequenceFile(SequenceFactory.java:106)
+	at uk.ac.babraham.FastQC.Sequence.SequenceFactory.getSequenceFile(SequenceFactory.java:62)
+	at uk.ac.babraham.FastQC.Analysis.OfflineRunner.processFile(OfflineRunner.java:159)
+	at uk.ac.babraham.FastQC.Analysis.OfflineRunner.<init>(OfflineRunner.java:121)
+	at uk.ac.babraham.FastQC.FastQCApplication.main(FastQCApplication.java:316)
+Started analysis of FFPE_1_PNK_S41_R2_001.fastq.gz
+Analysis complete for FFPE_1_PNK_S41_R2_001.fastq.gz
+Started analysis of FFPE_1_PNK_S41_R2_trimmed.fastq
+Analysis complete for FFPE_1_PNK_S41_R2_trimmed.fastq
+Started analysis of FFPE1_S39_R1_001.fastq.gz
+Approx 5% complete for FFPE1_S39_R1_001.fastq.gz
+Approx 10% complete for FFPE1_S39_R1_001.fastq.gz
+Approx 15% complete for FFPE1_S39_R1_001.fastq.gz
+Approx 20% complete for FFPE1_S39_R1_001.fastq.gz
+Approx 25% complete for FFPE1_S39_R1_001.fastq.gz
+Approx 30% complete for FFPE1_S39_R1_001.fastq.gz
+Approx 35% complete for FFPE1_S39_R1_001.fastq.gz
+Approx 40% complete for FFPE1_S39_R1_001.fastq.gz
+Approx 45% complete for FFPE1_S39_R1_001.fastq.gz
+Approx 50% complete for FFPE1_S39_R1_001.fastq.gz
+Approx 55% complete for FFPE1_S39_R1_001.fastq.gz
+Approx 60% complete for FFPE1_S39_R1_001.fastq.gz
+Approx 65% complete for FFPE1_S39_R1_001.fastq.gz
+Approx 70% complete for FFPE1_S39_R1_001.fastq.gz
+Approx 75% complete for FFPE1_S39_R1_001.fastq.gz
+Approx 80% complete for FFPE1_S39_R1_001.fastq.gz
+Approx 85% complete for FFPE1_S39_R1_001.fastq.gz
+Approx 90% complete for FFPE1_S39_R1_001.fastq.gz
+Approx 95% complete for FFPE1_S39_R1_001.fastq.gz
+Analysis complete for FFPE1_S39_R1_001.fastq.gz
+Started analysis of FFPE1_S39_R2_001.fastq.gz
+Approx 5% complete for FFPE1_S39_R2_001.fastq.gz
+Approx 10% complete for FFPE1_S39_R2_001.fastq.gz
+Approx 15% complete for FFPE1_S39_R2_001.fastq.gz
+Approx 20% complete for FFPE1_S39_R2_001.fastq.gz
+Approx 25% complete for FFPE1_S39_R2_001.fastq.gz
+Approx 30% complete for FFPE1_S39_R2_001.fastq.gz
+Approx 35% complete for FFPE1_S39_R2_001.fastq.gz
+Approx 40% complete for FFPE1_S39_R2_001.fastq.gz
+Approx 45% complete for FFPE1_S39_R2_001.fastq.gz
+Approx 50% complete for FFPE1_S39_R2_001.fastq.gz
+Approx 55% complete for FFPE1_S39_R2_001.fastq.gz
+Approx 60% complete for FFPE1_S39_R2_001.fastq.gz
+Approx 65% complete for FFPE1_S39_R2_001.fastq.gz
+Approx 70% complete for FFPE1_S39_R2_001.fastq.gz
+Approx 75% complete for FFPE1_S39_R2_001.fastq.gz
+Approx 80% complete for FFPE1_S39_R2_001.fastq.gz
+Approx 85% complete for FFPE1_S39_R2_001.fastq.gz
+Approx 90% complete for FFPE1_S39_R2_001.fastq.gz
+Approx 95% complete for FFPE1_S39_R2_001.fastq.gz
+Analysis complete for FFPE1_S39_R2_001.fastq.gz
+Started analysis of FFPE1_S39_R2_trimmed.fastq
+Approx 5% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 10% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 15% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 20% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 25% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 30% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 35% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 40% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 45% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 50% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 55% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 60% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 65% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 70% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 75% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 80% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 85% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 90% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 95% complete for FFPE1_S39_R2_trimmed.fastq
+Analysis complete for FFPE1_S39_R2_trimmed.fastq
+Started analysis of FFPE_3_PNK_S42_R1_001.fastq.gz
+Analysis complete for FFPE_3_PNK_S42_R1_001.fastq.gz
+Started analysis of FFPE_3_PNK_S42_R2_001.fastq.gz
+Analysis complete for FFPE_3_PNK_S42_R2_001.fastq.gz
+Started analysis of FFPE_3_PNK_S42_R2_trimmed.fastq
+Analysis complete for FFPE_3_PNK_S42_R2_trimmed.fastq
+Started analysis of FFPE3_S40_R1_001.fastq.gz
+Approx 5% complete for FFPE3_S40_R1_001.fastq.gz
+Approx 10% complete for FFPE3_S40_R1_001.fastq.gz
+Approx 15% complete for FFPE3_S40_R1_001.fastq.gz
+Approx 20% complete for FFPE3_S40_R1_001.fastq.gz
+Approx 25% complete for FFPE3_S40_R1_001.fastq.gz
+Approx 30% complete for FFPE3_S40_R1_001.fastq.gz
+Approx 35% complete for FFPE3_S40_R1_001.fastq.gz
+Approx 40% complete for FFPE3_S40_R1_001.fastq.gz
+Approx 45% complete for FFPE3_S40_R1_001.fastq.gz
+Approx 50% complete for FFPE3_S40_R1_001.fastq.gz
+Approx 55% complete for FFPE3_S40_R1_001.fastq.gz
+Approx 60% complete for FFPE3_S40_R1_001.fastq.gz
+Approx 65% complete for FFPE3_S40_R1_001.fastq.gz
+Approx 70% complete for FFPE3_S40_R1_001.fastq.gz
+Approx 75% complete for FFPE3_S40_R1_001.fastq.gz
+Approx 80% complete for FFPE3_S40_R1_001.fastq.gz
+Approx 85% complete for FFPE3_S40_R1_001.fastq.gz
+Approx 90% complete for FFPE3_S40_R1_001.fastq.gz
+Approx 95% complete for FFPE3_S40_R1_001.fastq.gz
+Analysis complete for FFPE3_S40_R1_001.fastq.gz
+Started analysis of FFPE3_S40_R2_001.fastq.gz
+Approx 5% complete for FFPE3_S40_R2_001.fastq.gz
+Approx 10% complete for FFPE3_S40_R2_001.fastq.gz
+Approx 15% complete for FFPE3_S40_R2_001.fastq.gz
+Approx 20% complete for FFPE3_S40_R2_001.fastq.gz
+Approx 25% complete for FFPE3_S40_R2_001.fastq.gz
+Approx 30% complete for FFPE3_S40_R2_001.fastq.gz
+Approx 35% complete for FFPE3_S40_R2_001.fastq.gz
+Approx 40% complete for FFPE3_S40_R2_001.fastq.gz
+Approx 45% complete for FFPE3_S40_R2_001.fastq.gz
+Approx 50% complete for FFPE3_S40_R2_001.fastq.gz
+Approx 55% complete for FFPE3_S40_R2_001.fastq.gz
+Approx 60% complete for FFPE3_S40_R2_001.fastq.gz
+Approx 65% complete for FFPE3_S40_R2_001.fastq.gz
+Approx 70% complete for FFPE3_S40_R2_001.fastq.gz
+Approx 75% complete for FFPE3_S40_R2_001.fastq.gz
+Approx 80% complete for FFPE3_S40_R2_001.fastq.gz
+Approx 85% complete for FFPE3_S40_R2_001.fastq.gz
+Approx 90% complete for FFPE3_S40_R2_001.fastq.gz
+Approx 95% complete for FFPE3_S40_R2_001.fastq.gz
+Analysis complete for FFPE3_S40_R2_001.fastq.gz
+Started analysis of FFPE3_S40_R2_trimmed.fastq
+Analysis complete for FFPE3_S40_R2_trimmed.fastq
+Started analysis of FFPE_WC_S1_R1_001.fastq.gz
+Approx 10% complete for FFPE_WC_S1_R1_001.fastq.gz
+Approx 20% complete for FFPE_WC_S1_R1_001.fastq.gz
+Approx 30% complete for FFPE_WC_S1_R1_001.fastq.gz
+Approx 40% complete for FFPE_WC_S1_R1_001.fastq.gz
+Approx 50% complete for FFPE_WC_S1_R1_001.fastq.gz
+Approx 60% complete for FFPE_WC_S1_R1_001.fastq.gz
+Approx 70% complete for FFPE_WC_S1_R1_001.fastq.gz
+Approx 80% complete for FFPE_WC_S1_R1_001.fastq.gz
+Approx 95% complete for FFPE_WC_S1_R1_001.fastq.gz
+Analysis complete for FFPE_WC_S1_R1_001.fastq.gz
+Started analysis of FFPE_WC_S1_R2_001.fastq.gz
+Approx 10% complete for FFPE_WC_S1_R2_001.fastq.gz
+Approx 20% complete for FFPE_WC_S1_R2_001.fastq.gz
+Approx 30% complete for FFPE_WC_S1_R2_001.fastq.gz
+Approx 40% complete for FFPE_WC_S1_R2_001.fastq.gz
+Approx 50% complete for FFPE_WC_S1_R2_001.fastq.gz
+Approx 60% complete for FFPE_WC_S1_R2_001.fastq.gz
+Approx 70% complete for FFPE_WC_S1_R2_001.fastq.gz
+Approx 80% complete for FFPE_WC_S1_R2_001.fastq.gz
+Approx 95% complete for FFPE_WC_S1_R2_001.fastq.gz
+Analysis complete for FFPE_WC_S1_R2_001.fastq.gz
+Started analysis of FFPE_WC_S1_R2_trimmed.fastq
+Analysis complete for FFPE_WC_S1_R2_trimmed.fastq
+Started analysis of HF_HI_P_S37_R1_001.fastq.gz
+Approx 5% complete for HF_HI_P_S37_R1_001.fastq.gz
+Approx 10% complete for HF_HI_P_S37_R1_001.fastq.gz
+Approx 15% complete for HF_HI_P_S37_R1_001.fastq.gz
+Approx 20% complete for HF_HI_P_S37_R1_001.fastq.gz
+Approx 25% complete for HF_HI_P_S37_R1_001.fastq.gz
+Approx 30% complete for HF_HI_P_S37_R1_001.fastq.gz
+Approx 35% complete for HF_HI_P_S37_R1_001.fastq.gz
+Approx 40% complete for HF_HI_P_S37_R1_001.fastq.gz
+Approx 45% complete for HF_HI_P_S37_R1_001.fastq.gz
+Approx 50% complete for HF_HI_P_S37_R1_001.fastq.gz
+Approx 55% complete for HF_HI_P_S37_R1_001.fastq.gz
+Approx 60% complete for HF_HI_P_S37_R1_001.fastq.gz
+Approx 65% complete for HF_HI_P_S37_R1_001.fastq.gz
+Approx 70% complete for HF_HI_P_S37_R1_001.fastq.gz
+Approx 75% complete for HF_HI_P_S37_R1_001.fastq.gz
+Approx 80% complete for HF_HI_P_S37_R1_001.fastq.gz
+Approx 85% complete for HF_HI_P_S37_R1_001.fastq.gz
+Approx 90% complete for HF_HI_P_S37_R1_001.fastq.gz
+Approx 95% complete for HF_HI_P_S37_R1_001.fastq.gz
+Analysis complete for HF_HI_P_S37_R1_001.fastq.gz
+Started analysis of HF_HI_P_S37_R2_001.fastq.gz
+Approx 5% complete for HF_HI_P_S37_R2_001.fastq.gz
+Approx 10% complete for HF_HI_P_S37_R2_001.fastq.gz
+Approx 15% complete for HF_HI_P_S37_R2_001.fastq.gz
+Approx 20% complete for HF_HI_P_S37_R2_001.fastq.gz
+Approx 25% complete for HF_HI_P_S37_R2_001.fastq.gz
+Approx 30% complete for HF_HI_P_S37_R2_001.fastq.gz
+Approx 35% complete for HF_HI_P_S37_R2_001.fastq.gz
+Approx 40% complete for HF_HI_P_S37_R2_001.fastq.gz
+Approx 45% complete for HF_HI_P_S37_R2_001.fastq.gz
+Approx 50% complete for HF_HI_P_S37_R2_001.fastq.gz
+Approx 55% complete for HF_HI_P_S37_R2_001.fastq.gz
+Approx 60% complete for HF_HI_P_S37_R2_001.fastq.gz
+Approx 65% complete for HF_HI_P_S37_R2_001.fastq.gz
+Approx 70% complete for HF_HI_P_S37_R2_001.fastq.gz
+Approx 75% complete for HF_HI_P_S37_R2_001.fastq.gz
+Approx 80% complete for HF_HI_P_S37_R2_001.fastq.gz
+Approx 85% complete for HF_HI_P_S37_R2_001.fastq.gz
+Approx 90% complete for HF_HI_P_S37_R2_001.fastq.gz
+Approx 95% complete for HF_HI_P_S37_R2_001.fastq.gz
+Analysis complete for HF_HI_P_S37_R2_001.fastq.gz
+Started analysis of HF_HI_P_S37_R2_trimmed.fastq
+Approx 5% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 10% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 15% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 20% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 25% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 30% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 35% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 40% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 45% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 50% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 55% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 60% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 65% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 70% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 75% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 80% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 85% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 90% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 95% complete for HF_HI_P_S37_R2_trimmed.fastq
+Analysis complete for HF_HI_P_S37_R2_trimmed.fastq
+Started analysis of HF_PC_P_S38_R1_001.fastq.gz
+Approx 5% complete for HF_PC_P_S38_R1_001.fastq.gz
+Approx 10% complete for HF_PC_P_S38_R1_001.fastq.gz
+Approx 15% complete for HF_PC_P_S38_R1_001.fastq.gz
+Approx 20% complete for HF_PC_P_S38_R1_001.fastq.gz
+Approx 25% complete for HF_PC_P_S38_R1_001.fastq.gz
+Approx 30% complete for HF_PC_P_S38_R1_001.fastq.gz
+Approx 35% complete for HF_PC_P_S38_R1_001.fastq.gz
+Approx 40% complete for HF_PC_P_S38_R1_001.fastq.gz
+Approx 45% complete for HF_PC_P_S38_R1_001.fastq.gz
+Approx 50% complete for HF_PC_P_S38_R1_001.fastq.gz
+Approx 55% complete for HF_PC_P_S38_R1_001.fastq.gz
+Approx 60% complete for HF_PC_P_S38_R1_001.fastq.gz
+Approx 65% complete for HF_PC_P_S38_R1_001.fastq.gz
+Approx 70% complete for HF_PC_P_S38_R1_001.fastq.gz
+Approx 75% complete for HF_PC_P_S38_R1_001.fastq.gz
+Approx 80% complete for HF_PC_P_S38_R1_001.fastq.gz
+Approx 85% complete for HF_PC_P_S38_R1_001.fastq.gz
+Approx 90% complete for HF_PC_P_S38_R1_001.fastq.gz
+Approx 95% complete for HF_PC_P_S38_R1_001.fastq.gz
+Analysis complete for HF_PC_P_S38_R1_001.fastq.gz
+Started analysis of HF_PC_P_S38_R2_001.fastq.gz
+Approx 5% complete for HF_PC_P_S38_R2_001.fastq.gz
+Approx 10% complete for HF_PC_P_S38_R2_001.fastq.gz
+Approx 15% complete for HF_PC_P_S38_R2_001.fastq.gz
+Approx 20% complete for HF_PC_P_S38_R2_001.fastq.gz
+Approx 25% complete for HF_PC_P_S38_R2_001.fastq.gz
+Approx 30% complete for HF_PC_P_S38_R2_001.fastq.gz
+Approx 35% complete for HF_PC_P_S38_R2_001.fastq.gz
+Approx 40% complete for HF_PC_P_S38_R2_001.fastq.gz
+Approx 45% complete for HF_PC_P_S38_R2_001.fastq.gz
+Approx 50% complete for HF_PC_P_S38_R2_001.fastq.gz
+Approx 55% complete for HF_PC_P_S38_R2_001.fastq.gz
+Approx 60% complete for HF_PC_P_S38_R2_001.fastq.gz
+Approx 65% complete for HF_PC_P_S38_R2_001.fastq.gz
+Approx 70% complete for HF_PC_P_S38_R2_001.fastq.gz
+Approx 75% complete for HF_PC_P_S38_R2_001.fastq.gz
+Approx 80% complete for HF_PC_P_S38_R2_001.fastq.gz
+Approx 85% complete for HF_PC_P_S38_R2_001.fastq.gz
+Approx 90% complete for HF_PC_P_S38_R2_001.fastq.gz
+Approx 95% complete for HF_PC_P_S38_R2_001.fastq.gz
+Analysis complete for HF_PC_P_S38_R2_001.fastq.gz
+Started analysis of HF_P_S36_R1_001.fastq.gz
+Approx 5% complete for HF_P_S36_R1_001.fastq.gz
+Approx 10% complete for HF_P_S36_R1_001.fastq.gz
+Approx 15% complete for HF_P_S36_R1_001.fastq.gz
+Approx 20% complete for HF_P_S36_R1_001.fastq.gz
+Approx 25% complete for HF_P_S36_R1_001.fastq.gz
+Approx 30% complete for HF_P_S36_R1_001.fastq.gz
+Approx 35% complete for HF_P_S36_R1_001.fastq.gz
+Approx 40% complete for HF_P_S36_R1_001.fastq.gz
+Approx 45% complete for HF_P_S36_R1_001.fastq.gz
+Approx 50% complete for HF_P_S36_R1_001.fastq.gz
+Approx 55% complete for HF_P_S36_R1_001.fastq.gz
+Approx 60% complete for HF_P_S36_R1_001.fastq.gz
+Approx 65% complete for HF_P_S36_R1_001.fastq.gz
+Approx 70% complete for HF_P_S36_R1_001.fastq.gz
+Approx 75% complete for HF_P_S36_R1_001.fastq.gz
+Approx 80% complete for HF_P_S36_R1_001.fastq.gz
+Approx 85% complete for HF_P_S36_R1_001.fastq.gz
+Approx 90% complete for HF_P_S36_R1_001.fastq.gz
+Approx 95% complete for HF_P_S36_R1_001.fastq.gz
+Analysis complete for HF_P_S36_R1_001.fastq.gz
+Started analysis of HF_P_S36_R2_001.fastq.gz
+Approx 5% complete for HF_P_S36_R2_001.fastq.gz
+Approx 10% complete for HF_P_S36_R2_001.fastq.gz
+Approx 15% complete for HF_P_S36_R2_001.fastq.gz
+Approx 20% complete for HF_P_S36_R2_001.fastq.gz
+Approx 25% complete for HF_P_S36_R2_001.fastq.gz
+Approx 30% complete for HF_P_S36_R2_001.fastq.gz
+Approx 35% complete for HF_P_S36_R2_001.fastq.gz
+Approx 40% complete for HF_P_S36_R2_001.fastq.gz
+Approx 45% complete for HF_P_S36_R2_001.fastq.gz
+Approx 50% complete for HF_P_S36_R2_001.fastq.gz
+Approx 55% complete for HF_P_S36_R2_001.fastq.gz
+Approx 60% complete for HF_P_S36_R2_001.fastq.gz
+Approx 65% complete for HF_P_S36_R2_001.fastq.gz
+Approx 70% complete for HF_P_S36_R2_001.fastq.gz
+Approx 75% complete for HF_P_S36_R2_001.fastq.gz
+Approx 80% complete for HF_P_S36_R2_001.fastq.gz
+Approx 85% complete for HF_P_S36_R2_001.fastq.gz
+Approx 90% complete for HF_P_S36_R2_001.fastq.gz
+Approx 95% complete for HF_P_S36_R2_001.fastq.gz
+Analysis complete for HF_P_S36_R2_001.fastq.gz
+/var/spool/slurmd/job42351684/slurm_script: line 33: [-d: command not found
+mkdir: cannot create directory ‘QC_raw’: File exists
+This is cutadapt 4.0 with Python 3.9.5
+Command line parameters: -m 20 -j 0 -n 2 -a AGATCGGAAGAGC -a GGGGGG -o FFPE_1_PNK_S41_R2_trimmed.fastq FFPE_1_PNK_S41_R2_001.fastq.gz
+Processing single-end reads on 4 cores ...
+Finished in 0.05 s (532 µs/read; 0.11 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                     101
+Reads with adapters:                        94 (93.1%)
+
+== Read fate breakdown ==
+Reads that were too short:                  75 (74.3%)
+Reads written (passing filters):            26 (25.7%)
+
+Total basepairs processed:        15,251 bp
+Total written (filtered):          2,188 bp (14.3%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 89 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 14.6%
+  C: 27.0%
+  G: 33.7%
+  T: 24.7%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+9	1	0.0	0	1
+33	1	0.0	1	1
+46	1	0.0	1	1
+47	1	0.0	1	1
+84	1	0.0	1	1
+96	1	0.0	1	1
+123	1	0.0	1	0 1
+127	2	0.0	1	1 1
+128	1	0.0	1	1
+129	2	0.0	1	2
+130	1	0.0	1	1
+131	2	0.0	1	2
+133	1	0.0	1	1
+140	2	0.0	1	2
+142	2	0.0	1	2
+143	10	0.0	1	9 1
+144	19	0.0	1	19
+145	20	0.0	1	18 2
+146	15	0.0	1	13 2
+147	4	0.0	1	4
+148	1	0.0	1	1
+
+
+=== Adapter 2 ===
+
+Sequence: GGGGGG; Type: regular 3'; Length: 6; Trimmed: 8 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-6 bp: 0
+
+Bases preceding removed adapters:
+  A: 12.5%
+  C: 75.0%
+  G: 0.0%
+  T: 12.5%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+4	1	0.4	0	1
+5	2	0.1	0	2
+58	1	0.0	0	1
+59	1	0.0	0	1
+65	1	0.0	0	1
+86	1	0.0	0	1
+147	1	0.0	0	1
+This is cutadapt 4.0 with Python 3.9.5
+Command line parameters: -m 20 -j 0 -n 2 -a AGATCGGAAGAGC -a GGGGGG -o FFPE1_S39_R2_trimmed.fastq FFPE1_S39_R2_001.fastq.gz
+Processing single-end reads on 4 cores ...
+Finished in 4.82 s (4 µs/read; 14.20 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               1,141,480
+Reads with adapters:                 1,059,233 (92.8%)
+
+== Read fate breakdown ==
+Reads that were too short:             867,044 (76.0%)
+Reads written (passing filters):       274,436 (24.0%)
+
+Total basepairs processed:   172,363,480 bp
+Total written (filtered):     25,330,152 bp (14.7%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 1033709 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 16.6%
+  C: 27.2%
+  G: 30.8%
+  T: 24.8%
+  none/other: 0.6%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	7528	17835.6	0	7528
+4	2001	4458.9	0	2001
+5	492	1114.7	0	492
+6	200	278.7	0	200
+7	131	69.7	0	131
+8	138	17.4	0	138
+9	273	4.4	0	268 5
+10	622	1.1	1	588 34
+11	623	0.3	1	597 26
+12	1817	0.1	1	1764 53
+13	915	0.0	1	885 30
+14	549	0.0	1	530 19
+15	453	0.0	1	433 20
+16	209	0.0	1	198 11
+17	382	0.0	1	363 19
+18	421	0.0	1	408 13
+19	247	0.0	1	241 6
+20	259	0.0	1	248 11
+21	191	0.0	1	184 7
+22	177	0.0	1	171 6
+23	403	0.0	1	392 11
+24	1663	0.0	1	1611 52
+25	890	0.0	1	857 33
+26	493	0.0	1	470 23
+27	713	0.0	1	688 25
+28	825	0.0	1	796 29
+29	632	0.0	1	616 16
+30	1254	0.0	1	1214 40
+31	941	0.0	1	918 23
+32	339	0.0	1	323 16
+33	228	0.0	1	216 12
+34	227	0.0	1	216 11
+35	197	0.0	1	188 9
+36	359	0.0	1	339 20
+37	329	0.0	1	312 17
+38	635	0.0	1	592 43
+39	472	0.0	1	450 22
+40	271	0.0	1	251 20
+41	387	0.0	1	367 20
+42	731	0.0	1	710 21
+43	668	0.0	1	652 16
+44	427	0.0	1	416 11
+45	505	0.0	1	494 11
+46	730	0.0	1	701 29
+47	716	0.0	1	694 22
+48	1606	0.0	1	1557 49
+49	3792	0.0	1	3696 96
+50	7334	0.0	1	7162 172
+51	961	0.0	1	927 34
+52	612	0.0	1	597 15
+53	412	0.0	1	392 20
+54	341	0.0	1	326 15
+55	243	0.0	1	233 10
+56	257	0.0	1	243 14
+57	306	0.0	1	298 8
+58	378	0.0	1	354 24
+59	970	0.0	1	937 33
+60	3235	0.0	1	3146 89
+61	370	0.0	1	357 13
+62	397	0.0	1	387 10
+63	337	0.0	1	327 10
+64	325	0.0	1	320 5
+65	508	0.0	1	492 16
+66	814	0.0	1	794 20
+67	1873	0.0	1	1833 40
+68	2125	0.0	1	2071 54
+69	5554	0.0	1	5379 175
+70	14548	0.0	1	14075 473
+71	8536	0.0	1	8236 300
+72	719	0.0	1	696 23
+73	354	0.0	1	344 10
+74	487	0.0	1	477 10
+75	474	0.0	1	465 9
+76	706	0.0	1	683 23
+77	228	0.0	1	212 16
+78	379	0.0	1	363 16
+79	459	0.0	1	447 12
+80	354	0.0	1	328 26
+81	306	0.0	1	297 9
+82	550	0.0	1	525 25
+83	198	0.0	1	189 9
+84	212	0.0	1	199 13
+85	442	0.0	1	429 13
+86	192	0.0	1	188 4
+87	210	0.0	1	203 7
+88	213	0.0	1	204 9
+89	196	0.0	1	183 13
+90	171	0.0	1	158 13
+91	165	0.0	1	154 11
+92	245	0.0	1	235 10
+93	179	0.0	1	168 11
+94	142	0.0	1	124 18
+95	113	0.0	1	96 17
+96	122	0.0	1	115 7
+97	146	0.0	1	126 20
+98	179	0.0	1	160 19
+99	146	0.0	1	123 23
+100	212	0.0	1	195 17
+101	174	0.0	1	145 29
+102	212	0.0	1	178 34
+103	188	0.0	1	165 23
+104	249	0.0	1	199 50
+105	166	0.0	1	133 33
+106	534	0.0	1	486 48
+107	187	0.0	1	143 44
+108	173	0.0	1	129 44
+109	173	0.0	1	138 35
+110	194	0.0	1	155 39
+111	229	0.0	1	186 43
+112	250	0.0	1	210 40
+113	374	0.0	1	309 65
+114	317	0.0	1	241 76
+115	347	0.0	1	267 80
+116	274	0.0	1	210 64
+117	353	0.0	1	250 103
+118	399	0.0	1	314 85
+119	486	0.0	1	377 109
+120	483	0.0	1	366 117
+121	496	0.0	1	360 136
+122	589	0.0	1	481 108
+123	954	0.0	1	717 237
+124	1109	0.0	1	895 214
+125	1496	0.0	1	1271 225
+126	2817	0.0	1	2530 287
+127	6621	0.0	1	6256 365
+128	8713	0.0	1	8294 419
+129	14085	0.0	1	13451 634
+130	21923	0.0	1	20941 982
+131	18557	0.0	1	17742 815
+132	12398	0.0	1	11888 510
+133	7477	0.0	1	7166 311
+134	3968	0.0	1	3819 149
+135	2240	0.0	1	2163 77
+136	2358	0.0	1	2260 98
+137	2159	0.0	1	2076 83
+138	3184	0.0	1	3075 109
+139	7260	0.0	1	7006 254
+140	10525	0.0	1	10084 441
+141	12119	0.0	1	11731 388
+142	20121	0.0	1	19413 708
+143	74213	0.0	1	72272 1941
+144	212931	0.0	1	207543 5388
+145	204849	0.0	1	199765 5084
+146	160020	0.0	1	154751 5269
+147	73508	0.0	1	70491 3017
+148	23274	0.0	1	21705 1569
+149	11790	0.0	1	10892 898
+150	3068	0.0	1	2790 278
+151	6129	0.0	1	5349 780
+
+
+=== Adapter 2 ===
+
+Sequence: GGGGGG; Type: regular 3'; Length: 6; Trimmed: 78850 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-6 bp: 0
+
+Bases preceding removed adapters:
+  A: 17.5%
+  C: 28.7%
+  G: 0.0%
+  T: 30.0%
+  none/other: 23.8%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	24528	17835.6	0	24528
+4	11407	4458.9	0	11407
+5	3902	1114.7	0	3902
+6	2912	278.7	0	2912
+7	2112	278.7	0	2112
+8	1239	278.7	0	1239
+9	786	278.7	0	786
+10	757	278.7	0	757
+11	1052	278.7	0	1052
+12	815	278.7	0	815
+13	489	278.7	0	489
+14	371	278.7	0	371
+15	363	278.7	0	363
+16	340	278.7	0	340
+17	368	278.7	0	368
+18	372	278.7	0	372
+19	355	278.7	0	355
+20	322	278.7	0	322
+21	337	278.7	0	337
+22	322	278.7	0	322
+23	316	278.7	0	316
+24	300	278.7	0	300
+25	242	278.7	0	242
+26	244	278.7	0	244
+27	218	278.7	0	218
+28	209	278.7	0	209
+29	269	278.7	0	269
+30	175	278.7	0	175
+31	198	278.7	0	198
+32	157	278.7	0	157
+33	178	278.7	0	178
+34	136	278.7	0	136
+35	167	278.7	0	167
+36	146	278.7	0	146
+37	154	278.7	0	154
+38	189	278.7	0	189
+39	161	278.7	0	161
+40	138	278.7	0	138
+41	128	278.7	0	128
+42	110	278.7	0	110
+43	177	278.7	0	177
+44	187	278.7	0	187
+45	167	278.7	0	167
+46	224	278.7	0	224
+47	199	278.7	0	199
+48	216	278.7	0	216
+49	199	278.7	0	199
+50	176	278.7	0	176
+51	146	278.7	0	146
+52	191	278.7	0	191
+53	158	278.7	0	158
+54	139	278.7	0	139
+55	119	278.7	0	119
+56	158	278.7	0	158
+57	195	278.7	0	195
+58	161	278.7	0	161
+59	152	278.7	0	152
+60	138	278.7	0	138
+61	165	278.7	0	165
+62	547	278.7	0	547
+63	182	278.7	0	182
+64	223	278.7	0	223
+65	199	278.7	0	199
+66	282	278.7	0	282
+67	421	278.7	0	421
+68	589	278.7	0	589
+69	339	278.7	0	339
+70	317	278.7	0	317
+71	432	278.7	0	432
+72	311	278.7	0	311
+73	228	278.7	0	228
+74	133	278.7	0	133
+75	163	278.7	0	163
+76	125	278.7	0	125
+77	106	278.7	0	106
+78	124	278.7	0	124
+79	97	278.7	0	97
+80	132	278.7	0	132
+81	115	278.7	0	115
+82	114	278.7	0	114
+83	79	278.7	0	79
+84	72	278.7	0	72
+85	84	278.7	0	84
+86	68	278.7	0	68
+87	62	278.7	0	62
+88	87	278.7	0	87
+89	81	278.7	0	81
+90	69	278.7	0	69
+91	166	278.7	0	166
+92	112	278.7	0	112
+93	117	278.7	0	117
+94	114	278.7	0	114
+95	113	278.7	0	113
+96	90	278.7	0	90
+97	76	278.7	0	76
+98	68	278.7	0	68
+99	99	278.7	0	99
+100	144	278.7	0	144
+101	153	278.7	0	153
+102	136	278.7	0	136
+103	83	278.7	0	83
+104	51	278.7	0	51
+105	50	278.7	0	50
+106	33	278.7	0	33
+107	23	278.7	0	23
+108	22	278.7	0	22
+109	50	278.7	0	50
+110	29	278.7	0	29
+111	35	278.7	0	35
+112	46	278.7	0	46
+113	33	278.7	0	33
+114	39	278.7	0	39
+115	20	278.7	0	20
+116	19	278.7	0	19
+117	28	278.7	0	28
+118	49	278.7	0	49
+119	377	278.7	0	377
+120	49	278.7	0	49
+121	15	278.7	0	15
+122	11	278.7	0	11
+123	20	278.7	0	20
+124	20	278.7	0	20
+125	15	278.7	0	15
+126	28	278.7	0	28
+127	15	278.7	0	15
+128	15	278.7	0	15
+129	5	278.7	0	5
+130	8	278.7	0	8
+131	8	278.7	0	8
+132	31	278.7	0	31
+133	44	278.7	0	44
+134	8	278.7	0	8
+135	17	278.7	0	17
+136	21	278.7	0	21
+137	13	278.7	0	13
+138	18	278.7	0	18
+139	21	278.7	0	21
+140	23	278.7	0	23
+141	31	278.7	0	31
+142	18	278.7	0	18
+143	20	278.7	0	20
+144	10	278.7	0	10
+145	20	278.7	0	20
+146	42	278.7	0	42
+147	68	278.7	0	68
+148	79	278.7	0	79
+149	60	278.7	0	60
+150	307	278.7	0	307
+151	9383	278.7	0	9383
+This is cutadapt 4.0 with Python 3.9.5
+Command line parameters: -m 20 -j 0 -n 2 -a AGATCGGAAGAGC -a GGGGGG -o FFPE_3_PNK_S42_R2_trimmed.fastq FFPE_3_PNK_S42_R2_001.fastq.gz
+Processing single-end reads on 4 cores ...
+Finished in 0.04 s (1319 µs/read; 0.05 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                      32
+Reads with adapters:                        29 (90.6%)
+
+== Read fate breakdown ==
+Reads that were too short:                  13 (40.6%)
+Reads written (passing filters):            19 (59.4%)
+
+Total basepairs processed:         4,832 bp
+Total written (filtered):          1,826 bp (37.8%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 24 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 12.5%
+  C: 29.2%
+  G: 12.5%
+  T: 45.8%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+24	3	0.0	1	3
+27	1	0.0	1	1
+41	1	0.0	1	1
+44	1	0.0	1	1
+54	1	0.0	1	1
+69	1	0.0	1	1
+71	1	0.0	1	0 1
+81	1	0.0	1	1
+125	1	0.0	1	1
+129	1	0.0	1	1
+131	1	0.0	1	1
+132	1	0.0	1	0 1
+136	1	0.0	1	1
+138	1	0.0	1	1
+141	1	0.0	1	1
+144	3	0.0	1	3
+145	3	0.0	1	3
+146	1	0.0	1	1
+
+
+=== Adapter 2 ===
+
+Sequence: GGGGGG; Type: regular 3'; Length: 6; Trimmed: 6 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-6 bp: 0
+
+Bases preceding removed adapters:
+  A: 33.3%
+  C: 16.7%
+  G: 0.0%
+  T: 16.7%
+  none/other: 33.3%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+21	1	0.0	0	1
+67	2	0.0	0	2
+68	1	0.0	0	1
+127	1	0.0	0	1
+151	1	0.0	0	1
+This is cutadapt 4.0 with Python 3.9.5
+Command line parameters: -m 20 -j 0 -n 2 -a AGATCGGAAGAGC -a GGGGGG -o FFPE3_S40_R2_trimmed.fastq FFPE3_S40_R2_001.fastq.gz
+Processing single-end reads on 4 cores ...
+Finished in 0.86 s (6 µs/read; 9.82 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                 140,655
+Reads with adapters:                   132,382 (94.1%)
+
+== Read fate breakdown ==
+Reads that were too short:             106,888 (76.0%)
+Reads written (passing filters):        33,767 (24.0%)
+
+Total basepairs processed:    21,238,905 bp
+Total written (filtered):      2,966,300 bp (14.0%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 129645 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 17.2%
+  C: 26.0%
+  G: 30.8%
+  T: 25.4%
+  none/other: 0.6%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	978	2197.7	0	978
+4	289	549.4	0	289
+5	71	137.4	0	71
+6	27	34.3	0	27
+7	11	8.6	0	11
+8	28	2.1	0	28
+9	28	0.5	0	26 2
+10	72	0.1	1	69 3
+11	63	0.0	1	60 3
+12	223	0.0	1	218 5
+13	114	0.0	1	114
+14	59	0.0	1	56 3
+15	61	0.0	1	59 2
+16	27	0.0	1	22 5
+17	43	0.0	1	42 1
+18	41	0.0	1	40 1
+19	39	0.0	1	38 1
+20	25	0.0	1	24 1
+21	25	0.0	1	25
+22	31	0.0	1	29 2
+23	73	0.0	1	69 4
+24	220	0.0	1	215 5
+25	133	0.0	1	129 4
+26	69	0.0	1	66 3
+27	103	0.0	1	100 3
+28	118	0.0	1	110 8
+29	79	0.0	1	76 3
+30	183	0.0	1	176 7
+31	150	0.0	1	144 6
+32	49	0.0	1	43 6
+33	18	0.0	1	18
+34	20	0.0	1	19 1
+35	30	0.0	1	27 3
+36	65	0.0	1	63 2
+37	49	0.0	1	44 5
+38	75	0.0	1	69 6
+39	66	0.0	1	62 4
+40	30	0.0	1	29 1
+41	60	0.0	1	57 3
+42	100	0.0	1	98 2
+43	93	0.0	1	88 5
+44	73	0.0	1	71 2
+45	52	0.0	1	51 1
+46	105	0.0	1	103 2
+47	132	0.0	1	127 5
+48	231	0.0	1	227 4
+49	517	0.0	1	501 16
+50	1058	0.0	1	1041 17
+51	134	0.0	1	130 4
+52	76	0.0	1	72 4
+53	48	0.0	1	46 2
+54	54	0.0	1	51 3
+55	27	0.0	1	27
+56	41	0.0	1	40 1
+57	38	0.0	1	36 2
+58	38	0.0	1	35 3
+59	126	0.0	1	121 5
+60	458	0.0	1	441 17
+61	66	0.0	1	62 4
+62	59	0.0	1	58 1
+63	48	0.0	1	48
+64	46	0.0	1	44 2
+65	82	0.0	1	78 4
+66	130	0.0	1	127 3
+67	280	0.0	1	269 11
+68	316	0.0	1	311 5
+69	854	0.0	1	831 23
+70	2216	0.0	1	2139 77
+71	1308	0.0	1	1263 45
+72	91	0.0	1	89 2
+73	49	0.0	1	47 2
+74	64	0.0	1	63 1
+75	68	0.0	1	68
+76	99	0.0	1	95 4
+77	27	0.0	1	26 1
+78	38	0.0	1	38
+79	62	0.0	1	62
+80	53	0.0	1	50 3
+81	39	0.0	1	38 1
+82	78	0.0	1	76 2
+83	20	0.0	1	19 1
+84	39	0.0	1	36 3
+85	50	0.0	1	50
+86	23	0.0	1	23
+87	26	0.0	1	26
+88	30	0.0	1	27 3
+89	25	0.0	1	24 1
+90	33	0.0	1	31 2
+91	29	0.0	1	29
+92	21	0.0	1	21
+93	21	0.0	1	20 1
+94	8	0.0	1	5 3
+95	18	0.0	1	16 2
+96	26	0.0	1	24 2
+97	19	0.0	1	16 3
+98	21	0.0	1	20 1
+99	23	0.0	1	23
+100	29	0.0	1	28 1
+101	26	0.0	1	23 3
+102	30	0.0	1	28 2
+103	30	0.0	1	23 7
+104	31	0.0	1	29 2
+105	23	0.0	1	21 2
+106	64	0.0	1	53 11
+107	26	0.0	1	18 8
+108	22	0.0	1	20 2
+109	21	0.0	1	16 5
+110	22	0.0	1	18 4
+111	25	0.0	1	20 5
+112	42	0.0	1	34 8
+113	39	0.0	1	32 7
+114	40	0.0	1	32 8
+115	43	0.0	1	29 14
+116	53	0.0	1	42 11
+117	48	0.0	1	37 11
+118	47	0.0	1	35 12
+119	58	0.0	1	43 15
+120	54	0.0	1	41 13
+121	82	0.0	1	64 18
+122	68	0.0	1	49 19
+123	120	0.0	1	95 25
+124	183	0.0	1	151 32
+125	212	0.0	1	177 35
+126	384	0.0	1	346 38
+127	830	0.0	1	792 38
+128	1138	0.0	1	1083 55
+129	1703	0.0	1	1607 96
+130	2836	0.0	1	2692 144
+131	2326	0.0	1	2222 104
+132	1634	0.0	1	1552 82
+133	1032	0.0	1	993 39
+134	518	0.0	1	496 22
+135	324	0.0	1	307 17
+136	293	0.0	1	286 7
+137	295	0.0	1	285 10
+138	418	0.0	1	407 11
+139	950	0.0	1	919 31
+140	1415	0.0	1	1359 56
+141	1582	0.0	1	1536 46
+142	2594	0.0	1	2494 100
+143	9270	0.0	1	9033 237
+144	26862	0.0	1	26133 729
+145	25190	0.0	1	24508 682
+146	19034	0.0	1	18374 660
+147	8640	0.0	1	8313 327
+148	2682	0.0	1	2466 216
+149	1381	0.0	1	1268 113
+150	375	0.0	1	343 32
+151	750	0.0	1	651 99
+
+
+=== Adapter 2 ===
+
+Sequence: GGGGGG; Type: regular 3'; Length: 6; Trimmed: 9400 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-6 bp: 0
+
+Bases preceding removed adapters:
+  A: 17.2%
+  C: 27.0%
+  G: 0.0%
+  T: 31.6%
+  none/other: 24.2%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	2919	2197.7	0	2919
+4	1335	549.4	0	1335
+5	407	137.4	0	407
+6	353	34.3	0	353
+7	244	34.3	0	244
+8	149	34.3	0	149
+9	118	34.3	0	118
+10	98	34.3	0	98
+11	155	34.3	0	155
+12	95	34.3	0	95
+13	62	34.3	0	62
+14	35	34.3	0	35
+15	45	34.3	0	45
+16	39	34.3	0	39
+17	37	34.3	0	37
+18	34	34.3	0	34
+19	42	34.3	0	42
+20	35	34.3	0	35
+21	35	34.3	0	35
+22	41	34.3	0	41
+23	39	34.3	0	39
+24	24	34.3	0	24
+25	31	34.3	0	31
+26	30	34.3	0	30
+27	15	34.3	0	15
+28	34	34.3	0	34
+29	20	34.3	0	20
+30	23	34.3	0	23
+31	19	34.3	0	19
+32	22	34.3	0	22
+33	21	34.3	0	21
+34	18	34.3	0	18
+35	24	34.3	0	24
+36	16	34.3	0	16
+37	22	34.3	0	22
+38	15	34.3	0	15
+39	16	34.3	0	16
+40	22	34.3	0	22
+41	19	34.3	0	19
+42	25	34.3	0	25
+43	24	34.3	0	24
+44	33	34.3	0	33
+45	18	34.3	0	18
+46	12	34.3	0	12
+47	38	34.3	0	38
+48	39	34.3	0	39
+49	25	34.3	0	25
+50	33	34.3	0	33
+51	21	34.3	0	21
+52	31	34.3	0	31
+53	22	34.3	0	22
+54	22	34.3	0	22
+55	15	34.3	0	15
+56	18	34.3	0	18
+57	14	34.3	0	14
+58	14	34.3	0	14
+59	15	34.3	0	15
+60	11	34.3	0	11
+61	24	34.3	0	24
+62	85	34.3	0	85
+63	29	34.3	0	29
+64	23	34.3	0	23
+65	31	34.3	0	31
+66	47	34.3	0	47
+67	69	34.3	0	69
+68	80	34.3	0	80
+69	38	34.3	0	38
+70	34	34.3	0	34
+71	38	34.3	0	38
+72	31	34.3	0	31
+73	21	34.3	0	21
+74	19	34.3	0	19
+75	15	34.3	0	15
+76	17	34.3	0	17
+77	5	34.3	0	5
+78	14	34.3	0	14
+79	6	34.3	0	6
+80	14	34.3	0	14
+81	12	34.3	0	12
+82	9	34.3	0	9
+83	10	34.3	0	10
+84	7	34.3	0	7
+85	13	34.3	0	13
+86	9	34.3	0	9
+87	7	34.3	0	7
+88	5	34.3	0	5
+89	10	34.3	0	10
+90	7	34.3	0	7
+91	24	34.3	0	24
+92	17	34.3	0	17
+93	14	34.3	0	14
+94	12	34.3	0	12
+95	14	34.3	0	14
+96	9	34.3	0	9
+97	6	34.3	0	6
+98	10	34.3	0	10
+99	13	34.3	0	13
+100	15	34.3	0	15
+101	14	34.3	0	14
+102	9	34.3	0	9
+103	10	34.3	0	10
+104	9	34.3	0	9
+105	3	34.3	0	3
+106	3	34.3	0	3
+107	3	34.3	0	3
+108	2	34.3	0	2
+109	8	34.3	0	8
+110	3	34.3	0	3
+111	3	34.3	0	3
+112	6	34.3	0	6
+113	3	34.3	0	3
+114	6	34.3	0	6
+115	4	34.3	0	4
+116	5	34.3	0	5
+117	5	34.3	0	5
+118	3	34.3	0	3
+119	32	34.3	0	32
+120	4	34.3	0	4
+121	5	34.3	0	5
+122	1	34.3	0	1
+123	2	34.3	0	2
+124	3	34.3	0	3
+125	4	34.3	0	4
+126	4	34.3	0	4
+127	8	34.3	0	8
+128	2	34.3	0	2
+129	1	34.3	0	1
+130	2	34.3	0	2
+131	2	34.3	0	2
+132	1	34.3	0	1
+133	6	34.3	0	6
+136	4	34.3	0	4
+137	1	34.3	0	1
+138	4	34.3	0	4
+139	3	34.3	0	3
+140	3	34.3	0	3
+141	1	34.3	0	1
+142	1	34.3	0	1
+144	2	34.3	0	2
+145	1	34.3	0	1
+146	6	34.3	0	6
+147	13	34.3	0	13
+148	15	34.3	0	15
+149	7	34.3	0	7
+150	32	34.3	0	32
+151	1130	34.3	0	1130
+This is cutadapt 4.0 with Python 3.9.5
+Command line parameters: -m 20 -j 0 -n 2 -a AGATCGGAAGAGC -a GGGGGG -o FFPE_WC_S1_R2_trimmed.fastq FFPE_WC_S1_R2_001.fastq.gz
+Processing single-end reads on 4 cores ...
+Finished in 0.25 s (26 µs/read; 2.31 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                   9,482
+Reads with adapters:                     9,334 (98.4%)
+
+== Read fate breakdown ==
+Reads that were too short:               8,642 (91.1%)
+Reads written (passing filters):           840 (8.9%)
+
+Total basepairs processed:     1,431,782 bp
+Total written (filtered):         69,007 bp (4.8%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 9016 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 15.7%
+  C: 28.2%
+  G: 29.7%
+  T: 25.4%
+  none/other: 0.9%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	51	148.2	0	51
+4	17	37.0	0	17
+5	1	9.3	0	1
+12	2	0.0	1	2
+14	2	0.0	1	2
+16	1	0.0	1	1
+17	1	0.0	1	1
+18	1	0.0	1	0 1
+20	1	0.0	1	1
+24	1	0.0	1	1
+25	1	0.0	1	1
+29	1	0.0	1	1
+32	1	0.0	1	1
+36	1	0.0	1	1
+39	2	0.0	1	2
+41	1	0.0	1	1
+42	3	0.0	1	2 1
+43	1	0.0	1	1
+46	2	0.0	1	1 1
+47	1	0.0	1	1
+49	7	0.0	1	6 1
+50	11	0.0	1	10 1
+51	4	0.0	1	3 1
+52	1	0.0	1	1
+53	1	0.0	1	1
+57	1	0.0	1	1
+60	6	0.0	1	6
+61	1	0.0	1	1
+65	1	0.0	1	1
+67	2	0.0	1	2
+68	4	0.0	1	4
+69	8	0.0	1	7 1
+70	14	0.0	1	14
+71	7	0.0	1	6 1
+72	1	0.0	1	1
+78	1	0.0	1	1
+79	1	0.0	1	1
+81	1	0.0	1	1
+91	1	0.0	1	1
+93	1	0.0	1	1
+99	1	0.0	1	1
+100	1	0.0	1	1
+108	1	0.0	1	0 1
+110	1	0.0	1	1
+112	1	0.0	1	0 1
+116	3	0.0	1	2 1
+117	1	0.0	1	1
+118	1	0.0	1	1
+119	1	0.0	1	1
+120	3	0.0	1	2 1
+122	3	0.0	1	1 2
+123	4	0.0	1	3 1
+124	1	0.0	1	1
+125	6	0.0	1	5 1
+126	13	0.0	1	10 3
+127	20	0.0	1	17 3
+128	34	0.0	1	29 5
+129	38	0.0	1	34 4
+130	88	0.0	1	82 6
+131	73	0.0	1	60 13
+132	75	0.0	1	67 8
+133	31	0.0	1	27 4
+134	22	0.0	1	19 3
+135	19	0.0	1	17 2
+136	17	0.0	1	16 1
+137	14	0.0	1	13 1
+138	23	0.0	1	20 3
+139	43	0.0	1	39 4
+140	47	0.0	1	42 5
+141	51	0.0	1	48 3
+142	134	0.0	1	117 17
+143	673	0.0	1	617 56
+144	2081	0.0	1	1937 144
+145	2133	0.0	1	1987 146
+146	1791	0.0	1	1679 112
+147	874	0.0	1	818 56
+148	260	0.0	1	233 27
+149	150	0.0	1	135 15
+150	37	0.0	1	32 5
+151	81	0.0	1	71 10
+
+
+=== Adapter 2 ===
+
+Sequence: GGGGGG; Type: regular 3'; Length: 6; Trimmed: 745 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-6 bp: 0
+
+Bases preceding removed adapters:
+  A: 26.6%
+  C: 26.4%
+  G: 0.0%
+  T: 27.9%
+  none/other: 19.1%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	175	148.2	0	175
+4	92	37.0	0	92
+5	35	9.3	0	35
+6	32	2.3	0	32
+7	17	2.3	0	17
+8	10	2.3	0	10
+9	3	2.3	0	3
+10	3	2.3	0	3
+11	4	2.3	0	4
+12	4	2.3	0	4
+13	4	2.3	0	4
+14	3	2.3	0	3
+16	5	2.3	0	5
+17	3	2.3	0	3
+19	4	2.3	0	4
+20	3	2.3	0	3
+21	2	2.3	0	2
+22	2	2.3	0	2
+24	5	2.3	0	5
+25	5	2.3	0	5
+26	3	2.3	0	3
+27	2	2.3	0	2
+28	2	2.3	0	2
+31	4	2.3	0	4
+33	4	2.3	0	4
+34	3	2.3	0	3
+35	1	2.3	0	1
+36	1	2.3	0	1
+37	6	2.3	0	6
+38	3	2.3	0	3
+39	3	2.3	0	3
+40	2	2.3	0	2
+41	1	2.3	0	1
+43	2	2.3	0	2
+44	1	2.3	0	1
+45	5	2.3	0	5
+46	3	2.3	0	3
+47	6	2.3	0	6
+48	3	2.3	0	3
+49	8	2.3	0	8
+50	6	2.3	0	6
+51	1	2.3	0	1
+52	5	2.3	0	5
+53	2	2.3	0	2
+54	1	2.3	0	1
+55	4	2.3	0	4
+56	2	2.3	0	2
+57	3	2.3	0	3
+58	3	2.3	0	3
+59	7	2.3	0	7
+60	2	2.3	0	2
+61	8	2.3	0	8
+62	4	2.3	0	4
+63	4	2.3	0	4
+64	11	2.3	0	11
+65	7	2.3	0	7
+66	16	2.3	0	16
+67	38	2.3	0	38
+68	41	2.3	0	41
+69	10	2.3	0	10
+70	4	2.3	0	4
+71	3	2.3	0	3
+72	5	2.3	0	5
+74	1	2.3	0	1
+78	1	2.3	0	1
+79	1	2.3	0	1
+83	1	2.3	0	1
+92	1	2.3	0	1
+93	1	2.3	0	1
+94	1	2.3	0	1
+95	1	2.3	0	1
+107	1	2.3	0	1
+119	1	2.3	0	1
+127	1	2.3	0	1
+133	1	2.3	0	1
+136	1	2.3	0	1
+137	1	2.3	0	1
+144	1	2.3	0	1
+147	2	2.3	0	2
+150	1	2.3	0	1
+151	66	2.3	0	66
+This is cutadapt 4.0 with Python 3.9.5
+Command line parameters: -m 20 -j 0 -n 2 -a AGATCGGAAGAGC -a GGGGGG -o HF_HI_P_S37_R2_trimmed.fastq HF_HI_P_S37_R2_001.fastq.gz
+Processing single-end reads on 4 cores ...
+Finished in 10.50 s (5 µs/read; 12.66 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               2,217,022
+Reads with adapters:                 1,856,756 (83.8%)
+
+== Read fate breakdown ==
+Reads that were too short:             849,076 (38.3%)
+Reads written (passing filters):     1,367,946 (61.7%)
+
+Total basepairs processed:   334,770,322 bp
+Total written (filtered):    139,162,173 bp (41.6%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 1849686 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 19.9%
+  C: 24.3%
+  G: 29.4%
+  T: 26.1%
+  none/other: 0.2%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	29003	34641.0	0	29003
+4	11083	8660.2	0	11083
+5	6588	2165.1	0	6588
+6	5704	541.3	0	5704
+7	4858	135.3	0	4858
+8	5599	33.8	0	5599
+9	5767	8.5	0	5715 52
+10	6138	2.1	1	5922 216
+11	6052	0.5	1	5871 181
+12	7593	0.1	1	7396 197
+13	6120	0.0	1	5949 171
+14	5800	0.0	1	5629 171
+15	5946	0.0	1	5780 166
+16	5927	0.0	1	5747 180
+17	5845	0.0	1	5703 142
+18	6285	0.0	1	6112 173
+19	6039	0.0	1	5879 160
+20	6037	0.0	1	5885 152
+21	6592	0.0	1	6420 172
+22	6556	0.0	1	6383 173
+23	7591	0.0	1	7397 194
+24	9929	0.0	1	9622 307
+25	8640	0.0	1	8431 209
+26	6928	0.0	1	6758 170
+27	7334	0.0	1	7128 206
+28	7035	0.0	1	6815 220
+29	6568	0.0	1	6407 161
+30	6996	0.0	1	6799 197
+31	7130	0.0	1	6936 194
+32	7050	0.0	1	6887 163
+33	7336	0.0	1	7152 184
+34	6633	0.0	1	6444 189
+35	6311	0.0	1	6164 147
+36	6436	0.0	1	6271 165
+37	6615	0.0	1	6430 185
+38	6904	0.0	1	6741 163
+39	6822	0.0	1	6673 149
+40	6729	0.0	1	6565 164
+41	6856	0.0	1	6712 144
+42	7033	0.0	1	6884 149
+43	7215	0.0	1	7051 164
+44	6446	0.0	1	6293 153
+45	6707	0.0	1	6563 144
+46	7167	0.0	1	6997 170
+47	7329	0.0	1	7172 157
+48	9352	0.0	1	9130 222
+49	15344	0.0	1	15026 318
+50	30619	0.0	1	30034 585
+51	8564	0.0	1	8384 180
+52	7624	0.0	1	7455 169
+53	7647	0.0	1	7464 183
+54	7253	0.0	1	7093 160
+55	7342	0.0	1	7193 149
+56	7288	0.0	1	7141 147
+57	7052	0.0	1	6872 180
+58	7404	0.0	1	7229 175
+59	9319	0.0	1	9081 238
+60	18446	0.0	1	18045 401
+61	7416	0.0	1	7242 174
+62	7364	0.0	1	7201 163
+63	7083	0.0	1	6934 149
+64	6761	0.0	1	6616 145
+65	8249	0.0	1	8086 163
+66	8302	0.0	1	8119 183
+67	11176	0.0	1	10947 229
+68	12201	0.0	1	11900 301
+69	25814	0.0	1	25119 695
+70	44661	0.0	1	43384 1277
+71	30868	0.0	1	29743 1125
+72	7828	0.0	1	7576 252
+73	7280	0.0	1	7098 182
+74	7455	0.0	1	7270 185
+75	7369	0.0	1	7179 190
+76	7796	0.0	1	7600 196
+77	6684	0.0	1	6536 148
+78	6568	0.0	1	6397 171
+79	6655	0.0	1	6440 215
+80	5882	0.0	1	5689 193
+81	5633	0.0	1	5452 181
+82	6725	0.0	1	6553 172
+83	5655	0.0	1	5538 117
+84	5343	0.0	1	5192 151
+85	6328	0.0	1	6200 128
+86	5410	0.0	1	5255 155
+87	6019	0.0	1	5867 152
+88	6079	0.0	1	5939 140
+89	5811	0.0	1	5670 141
+90	5868	0.0	1	5735 133
+91	5782	0.0	1	5654 128
+92	5738	0.0	1	5622 116
+93	5378	0.0	1	5233 145
+94	4971	0.0	1	4846 125
+95	4656	0.0	1	4517 139
+96	4571	0.0	1	4437 134
+97	4326	0.0	1	4211 115
+98	4531	0.0	1	4407 124
+99	4263	0.0	1	4178 85
+100	4122	0.0	1	4026 96
+101	4143	0.0	1	4052 91
+102	4180	0.0	1	4076 104
+103	4026	0.0	1	3877 149
+104	4273	0.0	1	4129 144
+105	4041	0.0	1	3868 173
+106	5867	0.0	1	5610 257
+107	3448	0.0	1	3282 166
+108	3264	0.0	1	3133 131
+109	3017	0.0	1	2891 126
+110	3010	0.0	1	2901 109
+111	2840	0.0	1	2743 97
+112	3187	0.0	1	3090 97
+113	3552	0.0	1	3420 132
+114	3125	0.0	1	2896 229
+115	2692	0.0	1	2478 214
+116	2806	0.0	1	2563 243
+117	2680	0.0	1	2462 218
+118	2626	0.0	1	2430 196
+119	2725	0.0	1	2503 222
+120	2791	0.0	1	2497 294
+121	2873	0.0	1	2530 343
+122	2960	0.0	1	2604 356
+123	3893	0.0	1	3212 681
+124	3936	0.0	1	3447 489
+125	4041	0.0	1	3559 482
+126	6442	0.0	1	5785 657
+127	12136	0.0	1	11575 561
+128	15915	0.0	1	15245 670
+129	22909	0.0	1	21980 929
+130	37931	0.0	1	36661 1270
+131	33281	0.0	1	32145 1136
+132	21217	0.0	1	20556 661
+133	13470	0.0	1	13026 444
+134	7802	0.0	1	7552 250
+135	5109	0.0	1	4931 178
+136	4617	0.0	1	4454 163
+137	3817	0.0	1	3669 148
+138	5596	0.0	1	5433 163
+139	11952	0.0	1	11575 377
+140	17711	0.0	1	17112 599
+141	18880	0.0	1	18248 632
+142	25233	0.0	1	24375 858
+143	72155	0.0	1	70330 1825
+144	192322	0.0	1	187950 4372
+145	185653	0.0	1	181148 4505
+146	141878	0.0	1	136202 5676
+147	64014	0.0	1	59998 4016
+148	18232	0.0	1	16527 1705
+149	8396	0.0	1	7505 891
+150	2115	0.0	1	1815 300
+151	3760	0.0	1	2661 1099
+
+
+=== Adapter 2 ===
+
+Sequence: GGGGGG; Type: regular 3'; Length: 6; Trimmed: 107691 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-6 bp: 0
+
+Bases preceding removed adapters:
+  A: 17.3%
+  C: 22.5%
+  G: 0.0%
+  T: 30.1%
+  none/other: 30.1%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	35877	34641.0	0	35877
+4	14266	8660.2	0	14266
+5	5415	2165.1	0	5415
+6	4502	541.3	0	4502
+7	2996	541.3	0	2996
+8	1782	541.3	0	1782
+9	1289	541.3	0	1289
+10	1165	541.3	0	1165
+11	2066	541.3	0	2066
+12	1143	541.3	0	1143
+13	571	541.3	0	571
+14	381	541.3	0	381
+15	216	541.3	0	216
+16	270	541.3	0	270
+17	315	541.3	0	315
+18	349	541.3	0	349
+19	252	541.3	0	252
+20	256	541.3	0	256
+21	275	541.3	0	275
+22	288	541.3	0	288
+23	301	541.3	0	301
+24	316	541.3	0	316
+25	235	541.3	0	235
+26	224	541.3	0	224
+27	185	541.3	0	185
+28	180	541.3	0	180
+29	208	541.3	0	208
+30	212	541.3	0	212
+31	186	541.3	0	186
+32	196	541.3	0	196
+33	255	541.3	0	255
+34	209	541.3	0	209
+35	250	541.3	0	250
+36	264	541.3	0	264
+37	269	541.3	0	269
+38	266	541.3	0	266
+39	386	541.3	0	386
+40	300	541.3	0	300
+41	308	541.3	0	308
+42	245	541.3	0	245
+43	422	541.3	0	422
+44	442	541.3	0	442
+45	415	541.3	0	415
+46	563	541.3	0	563
+47	579	541.3	0	579
+48	618	541.3	0	618
+49	505	541.3	0	505
+50	419	541.3	0	419
+51	396	541.3	0	396
+52	320	541.3	0	320
+53	277	541.3	0	277
+54	258	541.3	0	258
+55	171	541.3	0	171
+56	141	541.3	0	141
+57	159	541.3	0	159
+58	130	541.3	0	130
+59	145	541.3	0	145
+60	158	541.3	0	158
+61	171	541.3	0	171
+62	839	541.3	0	839
+63	187	541.3	0	187
+64	236	541.3	0	236
+65	214	541.3	0	214
+66	229	541.3	0	229
+67	322	541.3	0	322
+68	368	541.3	0	368
+69	213	541.3	0	213
+70	259	541.3	0	259
+71	207	541.3	0	207
+72	167	541.3	0	167
+73	173	541.3	0	173
+74	152	541.3	0	152
+75	177	541.3	0	177
+76	142	541.3	0	142
+77	155	541.3	0	155
+78	115	541.3	0	115
+79	107	541.3	0	107
+80	143	541.3	0	143
+81	105	541.3	0	105
+82	111	541.3	0	111
+83	118	541.3	0	118
+84	108	541.3	0	108
+85	109	541.3	0	109
+86	81	541.3	0	81
+87	80	541.3	0	80
+88	80	541.3	0	80
+89	99	541.3	0	99
+90	95	541.3	0	95
+91	501	541.3	0	501
+92	264	541.3	0	264
+93	127	541.3	0	127
+94	110	541.3	0	110
+95	99	541.3	0	99
+96	84	541.3	0	84
+97	104	541.3	0	104
+98	100	541.3	0	100
+99	98	541.3	0	98
+100	132	541.3	0	132
+101	134	541.3	0	134
+102	136	541.3	0	136
+103	108	541.3	0	108
+104	109	541.3	0	109
+105	112	541.3	0	112
+106	105	541.3	0	105
+107	78	541.3	0	78
+108	101	541.3	0	101
+109	121	541.3	0	121
+110	115	541.3	0	115
+111	98	541.3	0	98
+112	120	541.3	0	120
+113	101	541.3	0	101
+114	87	541.3	0	87
+115	102	541.3	0	102
+116	73	541.3	0	73
+117	77	541.3	0	77
+118	132	541.3	0	132
+119	348	541.3	0	348
+120	99	541.3	0	99
+121	88	541.3	0	88
+122	89	541.3	0	89
+123	96	541.3	0	96
+124	63	541.3	0	63
+125	82	541.3	0	82
+126	80	541.3	0	80
+127	85	541.3	0	85
+128	73	541.3	0	73
+129	89	541.3	0	89
+130	68	541.3	0	68
+131	76	541.3	0	76
+132	75	541.3	0	75
+133	77	541.3	0	77
+134	78	541.3	0	78
+135	88	541.3	0	88
+136	70	541.3	0	70
+137	81	541.3	0	81
+138	101	541.3	0	101
+139	111	541.3	0	111
+140	111	541.3	0	111
+141	106	541.3	0	106
+142	73	541.3	0	73
+143	98	541.3	0	98
+144	52	541.3	0	52
+145	54	541.3	0	54
+146	53	541.3	0	53
+147	114	541.3	0	114
+148	125	541.3	0	125
+149	135	541.3	0	135
+150	461	541.3	0	461
+151	10415	541.3	0	10415
+This is cutadapt 4.0 with Python 3.9.5
+Command line parameters: -m 20 -j 0 -n 2 -a AGATCGGAAGAGC -a GGGGGG -o HF_PC_P_S38_R2_trimmed.fastq HF_PC_P_S38_R2_001.fastq.gz
+Processing single-end reads on 4 cores ...
+Finished in 11.80 s (5 µs/read; 12.65 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               2,489,440
+Reads with adapters:                 2,010,503 (80.8%)
+
+== Read fate breakdown ==
+Reads that were too short:           1,155,463 (46.4%)
+Reads written (passing filters):     1,333,977 (53.6%)
+
+Total basepairs processed:   375,905,440 bp
+Total written (filtered):    141,207,041 bp (37.6%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 1969909 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 20.4%
+  C: 25.1%
+  G: 27.8%
+  T: 26.4%
+  none/other: 0.4%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	32175	38897.5	0	32175
+4	11060	9724.4	0	11060
+5	6042	2431.1	0	6042
+6	5245	607.8	0	5245
+7	4354	151.9	0	4354
+8	5053	38.0	0	5053
+9	5116	9.5	0	5088 28
+10	5371	2.4	1	5171 200
+11	5217	0.6	1	5022 195
+12	6683	0.1	1	6463 220
+13	5318	0.0	1	5154 164
+14	5064	0.0	1	4910 154
+15	5155	0.0	1	5010 145
+16	4927	0.0	1	4789 138
+17	4927	0.0	1	4787 140
+18	5537	0.0	1	5396 141
+19	5249	0.0	1	5098 151
+20	5216	0.0	1	5067 149
+21	5550	0.0	1	5416 134
+22	5661	0.0	1	5515 146
+23	6168	0.0	1	5999 169
+24	7850	0.0	1	7632 218
+25	6839	0.0	1	6656 183
+26	5731	0.0	1	5570 161
+27	5820	0.0	1	5665 155
+28	5743	0.0	1	5556 187
+29	5228	0.0	1	5102 126
+30	5705	0.0	1	5551 154
+31	5607	0.0	1	5463 144
+32	5973	0.0	1	5824 149
+33	5935	0.0	1	5778 157
+34	5123	0.0	1	5002 121
+35	5001	0.0	1	4861 140
+36	4930	0.0	1	4791 139
+37	5008	0.0	1	4880 128
+38	5180	0.0	1	5033 147
+39	5277	0.0	1	5139 138
+40	5115	0.0	1	4973 142
+41	5113	0.0	1	4994 119
+42	5651	0.0	1	5536 115
+43	5336	0.0	1	5229 107
+44	4834	0.0	1	4708 126
+45	4891	0.0	1	4773 118
+46	5419	0.0	1	5290 129
+47	5438	0.0	1	5314 124
+48	6974	0.0	1	6777 197
+49	11568	0.0	1	11343 225
+50	23237	0.0	1	22785 452
+51	6287	0.0	1	6155 132
+52	5250	0.0	1	5124 126
+53	5218	0.0	1	5118 100
+54	5066	0.0	1	4953 113
+55	5080	0.0	1	4968 112
+56	4956	0.0	1	4849 107
+57	4973	0.0	1	4861 112
+58	5065	0.0	1	4931 134
+59	6433	0.0	1	6272 161
+60	12368	0.0	1	12071 297
+61	5081	0.0	1	4947 134
+62	4947	0.0	1	4842 105
+63	4794	0.0	1	4696 98
+64	4503	0.0	1	4401 102
+65	4931	0.0	1	4793 138
+66	5329	0.0	1	5203 126
+67	6900	0.0	1	6753 147
+68	7313	0.0	1	7142 171
+69	13126	0.0	1	12736 390
+70	23615	0.0	1	22956 659
+71	16236	0.0	1	15671 565
+72	4590	0.0	1	4438 152
+73	4506	0.0	1	4375 131
+74	4586	0.0	1	4467 119
+75	4467	0.0	1	4346 121
+76	4704	0.0	1	4576 128
+77	4210	0.0	1	4104 106
+78	4005	0.0	1	3904 101
+79	4122	0.0	1	3991 131
+80	3618	0.0	1	3500 118
+81	3517	0.0	1	3388 129
+82	4321	0.0	1	4195 126
+83	3464	0.0	1	3360 104
+84	3464	0.0	1	3376 88
+85	4130	0.0	1	4020 110
+86	3445	0.0	1	3365 80
+87	3779	0.0	1	3677 102
+88	3744	0.0	1	3639 105
+89	3719	0.0	1	3625 94
+90	3562	0.0	1	3452 110
+91	3672	0.0	1	3575 97
+92	3718	0.0	1	3591 127
+93	3544	0.0	1	3421 123
+94	3241	0.0	1	3134 107
+95	2940	0.0	1	2808 132
+96	2994	0.0	1	2866 128
+97	3047	0.0	1	2930 117
+98	3043	0.0	1	2914 129
+99	2936	0.0	1	2775 161
+100	2894	0.0	1	2765 129
+101	2818	0.0	1	2661 157
+102	2928	0.0	1	2782 146
+103	3008	0.0	1	2800 208
+104	3070	0.0	1	2880 190
+105	2973	0.0	1	2750 223
+106	4047	0.0	1	3774 273
+107	2819	0.0	1	2590 229
+108	2840	0.0	1	2604 236
+109	2734	0.0	1	2477 257
+110	2807	0.0	1	2597 210
+111	2978	0.0	1	2742 236
+112	3387	0.0	1	3126 261
+113	3857	0.0	1	3537 320
+114	3757	0.0	1	3350 407
+115	3744	0.0	1	3287 457
+116	3861	0.0	1	3355 506
+117	3897	0.0	1	3308 589
+118	3982	0.0	1	3454 528
+119	4265	0.0	1	3702 563
+120	4820	0.0	1	4083 737
+121	5244	0.0	1	4384 860
+122	6059	0.0	1	5095 964
+123	7304	0.0	1	5924 1380
+124	8047	0.0	1	6691 1356
+125	9500	0.0	1	7876 1624
+126	13476	0.0	1	11439 2037
+127	18324	0.0	1	16707 1617
+128	21201	0.0	1	19505 1696
+129	28184	0.0	1	26046 2138
+130	37964	0.0	1	35739 2225
+131	36914	0.0	1	34697 2217
+132	35076	0.0	1	32988 2088
+133	28528	0.0	1	26845 1683
+134	20262	0.0	1	19084 1178
+135	16443	0.0	1	15446 997
+136	15029	0.0	1	14052 977
+137	12321	0.0	1	11521 800
+138	17605	0.0	1	16469 1136
+139	30157	0.0	1	28336 1821
+140	44652	0.0	1	42146 2506
+141	53813	0.0	1	50796 3017
+142	56943	0.0	1	53674 3269
+143	84530	0.0	1	80744 3786
+144	167945	0.0	1	161347 6598
+145	213313	0.0	1	204550 8763
+146	184907	0.0	1	171419 13488
+147	92655	0.0	1	81775 10880
+148	26806	0.0	1	22301 4505
+149	11749	0.0	1	9507 2242
+150	3784	0.0	1	2687 1097
+151	7515	0.0	1	3258 4257
+
+
+=== Adapter 2 ===
+
+Sequence: GGGGGG; Type: regular 3'; Length: 6; Trimmed: 149874 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-6 bp: 0
+
+Bases preceding removed adapters:
+  A: 17.3%
+  C: 26.2%
+  G: 0.0%
+  T: 25.4%
+  none/other: 31.1%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	36934	38897.5	0	36934
+4	17669	9724.4	0	17669
+5	5931	2431.1	0	5931
+6	4213	607.8	0	4213
+7	3128	607.8	0	3128
+8	2169	607.8	0	2169
+9	2521	607.8	0	2521
+10	3166	607.8	0	3166
+11	4341	607.8	0	4341
+12	2468	607.8	0	2468
+13	1413	607.8	0	1413
+14	993	607.8	0	993
+15	717	607.8	0	717
+16	705	607.8	0	705
+17	731	607.8	0	731
+18	759	607.8	0	759
+19	682	607.8	0	682
+20	718	607.8	0	718
+21	652	607.8	0	652
+22	595	607.8	0	595
+23	694	607.8	0	694
+24	732	607.8	0	732
+25	643	607.8	0	643
+26	619	607.8	0	619
+27	518	607.8	0	518
+28	534	607.8	0	534
+29	634	607.8	0	634
+30	504	607.8	0	504
+31	501	607.8	0	501
+32	463	607.8	0	463
+33	549	607.8	0	549
+34	501	607.8	0	501
+35	552	607.8	0	552
+36	648	607.8	0	648
+37	735	607.8	0	735
+38	818	607.8	0	818
+39	861	607.8	0	861
+40	801	607.8	0	801
+41	715	607.8	0	715
+42	538	607.8	0	538
+43	1029	607.8	0	1029
+44	947	607.8	0	947
+45	888	607.8	0	888
+46	1358	607.8	0	1358
+47	1589	607.8	0	1589
+48	1806	607.8	0	1806
+49	1577	607.8	0	1577
+50	1329	607.8	0	1329
+51	1151	607.8	0	1151
+52	889	607.8	0	889
+53	685	607.8	0	685
+54	485	607.8	0	485
+55	359	607.8	0	359
+56	270	607.8	0	270
+57	288	607.8	0	288
+58	243	607.8	0	243
+59	271	607.8	0	271
+60	233	607.8	0	233
+61	233	607.8	0	233
+62	703	607.8	0	703
+63	307	607.8	0	307
+64	340	607.8	0	340
+65	257	607.8	0	257
+66	327	607.8	0	327
+67	364	607.8	0	364
+68	471	607.8	0	471
+69	272	607.8	0	272
+70	336	607.8	0	336
+71	370	607.8	0	370
+72	294	607.8	0	294
+73	293	607.8	0	293
+74	300	607.8	0	300
+75	269	607.8	0	269
+76	269	607.8	0	269
+77	219	607.8	0	219
+78	166	607.8	0	166
+79	146	607.8	0	146
+80	146	607.8	0	146
+81	127	607.8	0	127
+82	116	607.8	0	116
+83	103	607.8	0	103
+84	100	607.8	0	100
+85	114	607.8	0	114
+86	103	607.8	0	103
+87	98	607.8	0	98
+88	92	607.8	0	92
+89	111	607.8	0	111
+90	96	607.8	0	96
+91	366	607.8	0	366
+92	212	607.8	0	212
+93	119	607.8	0	119
+94	104	607.8	0	104
+95	109	607.8	0	109
+96	129	607.8	0	129
+97	120	607.8	0	120
+98	97	607.8	0	97
+99	134	607.8	0	134
+100	196	607.8	0	196
+101	236	607.8	0	236
+102	228	607.8	0	228
+103	130	607.8	0	130
+104	128	607.8	0	128
+105	119	607.8	0	119
+106	136	607.8	0	136
+107	119	607.8	0	119
+108	101	607.8	0	101
+109	118	607.8	0	118
+110	128	607.8	0	128
+111	143	607.8	0	143
+112	111	607.8	0	111
+113	128	607.8	0	128
+114	80	607.8	0	80
+115	114	607.8	0	114
+116	93	607.8	0	93
+117	94	607.8	0	94
+118	206	607.8	0	206
+119	1114	607.8	0	1114
+120	94	607.8	0	94
+121	112	607.8	0	112
+122	96	607.8	0	96
+123	74	607.8	0	74
+124	75	607.8	0	75
+125	83	607.8	0	83
+126	87	607.8	0	87
+127	83	607.8	0	83
+128	95	607.8	0	95
+129	68	607.8	0	68
+130	60	607.8	0	60
+131	55	607.8	0	55
+132	73	607.8	0	73
+133	107	607.8	0	107
+134	81	607.8	0	81
+135	118	607.8	0	118
+136	100	607.8	0	100
+137	109	607.8	0	109
+138	146	607.8	0	146
+139	108	607.8	0	108
+140	121	607.8	0	121
+141	111	607.8	0	111
+142	104	607.8	0	104
+143	147	607.8	0	147
+144	62	607.8	0	62
+145	72	607.8	0	72
+146	92	607.8	0	92
+147	145	607.8	0	145
+148	135	607.8	0	135
+149	146	607.8	0	146
+150	584	607.8	0	584
+151	15615	607.8	0	15615
+This is cutadapt 4.0 with Python 3.9.5
+Command line parameters: -m 20 -j 0 -n 2 -a AGATCGGAAGAGC -a GGGGGG -o HF_P_S36_R2_trimmed.fastq HF_P_S36_R2_001.fastq.gz
+Processing single-end reads on 4 cores ...
+Finished in 10.50 s (5 µs/read; 13.20 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               2,308,652
+Reads with adapters:                 1,996,931 (86.5%)
+
+== Read fate breakdown ==
+Reads that were too short:             970,701 (42.0%)
+Reads written (passing filters):     1,337,951 (58.0%)
+
+Total basepairs processed:   348,606,452 bp
+Total written (filtered):    133,589,769 bp (38.3%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 1985699 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 18.2%
+  C: 27.4%
+  G: 29.0%
+  T: 25.2%
+  none/other: 0.2%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	19307	36072.7	0	19307
+4	7187	9018.2	0	7187
+5	3214	2254.5	0	3214
+6	1152	563.6	0	1152
+7	1094	140.9	0	1094
+8	947	35.2	0	947
+9	2969	8.8	0	2946 23
+10	5315	2.2	1	5169 146
+11	4223	0.6	1	4142 81
+12	19358	0.1	1	18994 364
+13	6585	0.0	1	6399 186
+14	3520	0.0	1	3421 99
+15	2766	0.0	1	2696 70
+16	1298	0.0	1	1253 45
+17	2317	0.0	1	2269 48
+18	5278	0.0	1	5180 98
+19	3509	0.0	1	3410 99
+20	3487	0.0	1	3390 97
+21	3555	0.0	1	3475 80
+22	2429	0.0	1	2363 66
+23	5988	0.0	1	5801 187
+24	19408	0.0	1	18879 529
+25	13333	0.0	1	13050 283
+26	4618	0.0	1	4505 113
+27	6377	0.0	1	6262 115
+28	6966	0.0	1	6799 167
+29	3076	0.0	1	3009 67
+30	6417	0.0	1	6308 109
+31	5808	0.0	1	5700 108
+32	5779	0.0	1	5692 87
+33	4853	0.0	1	4745 108
+34	2300	0.0	1	2239 61
+35	1816	0.0	1	1758 58
+36	2766	0.0	1	2692 74
+37	1946	0.0	1	1911 35
+38	4905	0.0	1	4814 91
+39	4553	0.0	1	4478 75
+40	1479	0.0	1	1436 43
+41	3816	0.0	1	3762 54
+42	10012	0.0	1	9855 157
+43	7596	0.0	1	7468 128
+44	4396	0.0	1	4319 77
+45	7630	0.0	1	7502 128
+46	9962	0.0	1	9794 168
+47	9153	0.0	1	8996 157
+48	18533	0.0	1	18198 335
+49	42490	0.0	1	41841 649
+50	124261	0.0	1	122307 1954
+51	12511	0.0	1	12320 191
+52	5848	0.0	1	5760 88
+53	3867	0.0	1	3810 57
+54	2922	0.0	1	2874 48
+55	1740	0.0	1	1705 35
+56	2007	0.0	1	1962 45
+57	2257	0.0	1	2211 46
+58	3446	0.0	1	3358 88
+59	10558	0.0	1	10381 177
+60	46273	0.0	1	45421 852
+61	6097	0.0	1	6006 91
+62	3380	0.0	1	3321 59
+63	4586	0.0	1	4520 66
+64	2157	0.0	1	2119 38
+65	7746	0.0	1	7643 103
+66	5032	0.0	1	4943 89
+67	11403	0.0	1	11180 223
+68	13887	0.0	1	13640 247
+69	56235	0.0	1	55046 1189
+70	89445	0.0	1	87285 2160
+71	47523	0.0	1	46071 1452
+72	2214	0.0	1	2151 63
+73	2245	0.0	1	2188 57
+74	3819	0.0	1	3745 74
+75	1975	0.0	1	1936 39
+76	3936	0.0	1	3865 71
+77	1380	0.0	1	1343 37
+78	1919	0.0	1	1878 41
+79	2881	0.0	1	2801 80
+80	1491	0.0	1	1439 52
+81	1766	0.0	1	1705 61
+82	7204	0.0	1	7037 167
+83	2120	0.0	1	2072 48
+84	2010	0.0	1	1965 45
+85	8814	0.0	1	8659 155
+86	1619	0.0	1	1583 36
+87	2327	0.0	1	2284 43
+88	2617	0.0	1	2557 60
+89	3092	0.0	1	3033 59
+90	2206	0.0	1	2164 42
+91	1934	0.0	1	1901 33
+92	2559	0.0	1	2499 60
+93	1684	0.0	1	1639 45
+94	1292	0.0	1	1255 37
+95	631	0.0	1	615 16
+96	921	0.0	1	892 29
+97	1041	0.0	1	1016 25
+98	1305	0.0	1	1281 24
+99	554	0.0	1	539 15
+100	565	0.0	1	550 15
+101	496	0.0	1	477 19
+102	1378	0.0	1	1335 43
+103	674	0.0	1	654 20
+104	1219	0.0	1	1161 58
+105	1013	0.0	1	968 45
+106	7818	0.0	1	7556 262
+107	522	0.0	1	477 45
+108	458	0.0	1	428 30
+109	431	0.0	1	404 27
+110	424	0.0	1	397 27
+111	584	0.0	1	561 23
+112	963	0.0	1	925 38
+113	2536	0.0	1	2464 72
+114	1533	0.0	1	1425 108
+115	746	0.0	1	680 66
+116	688	0.0	1	611 77
+117	730	0.0	1	649 81
+118	596	0.0	1	519 77
+119	914	0.0	1	823 91
+120	1035	0.0	1	882 153
+121	884	0.0	1	688 196
+122	1303	0.0	1	1122 181
+123	2010	0.0	1	1547 463
+124	2730	0.0	1	2373 357
+125	3662	0.0	1	3231 431
+126	6438	0.0	1	5864 574
+127	16670	0.0	1	16095 575
+128	20918	0.0	1	20244 674
+129	28497	0.0	1	27588 909
+130	49180	0.0	1	47835 1345
+131	42923	0.0	1	41693 1230
+132	24141	0.0	1	23541 600
+133	14149	0.0	1	13753 396
+134	9419	0.0	1	9149 270
+135	4363	0.0	1	4233 130
+136	3979	0.0	1	3873 106
+137	3029	0.0	1	2934 95
+138	4329	0.0	1	4213 116
+139	12327	0.0	1	11992 335
+140	20561	0.0	1	19967 594
+141	18140	0.0	1	17626 514
+142	21475	0.0	1	20807 668
+143	72479	0.0	1	71064 1415
+144	200610	0.0	1	197041 3569
+145	234718	0.0	1	230222 4496
+146	182232	0.0	1	177156 5076
+147	77035	0.0	1	73442 3593
+148	21756	0.0	1	20293 1463
+149	8249	0.0	1	7617 632
+150	2062	0.0	1	1869 193
+151	3885	0.0	1	3076 809
+
+
+=== Adapter 2 ===
+
+Sequence: GGGGGG; Type: regular 3'; Length: 6; Trimmed: 138492 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-6 bp: 0
+
+Bases preceding removed adapters:
+  A: 12.7%
+  C: 18.4%
+  G: 0.0%
+  T: 29.9%
+  none/other: 39.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	40770	36072.7	0	40770
+4	18226	9018.2	0	18226
+5	9027	2254.5	0	9027
+6	9393	563.6	0	9393
+7	5971	563.6	0	5971
+8	3226	563.6	0	3226
+9	1971	563.6	0	1971
+10	1776	563.6	0	1776
+11	3598	563.6	0	3598
+12	1645	563.6	0	1645
+13	544	563.6	0	544
+14	215	563.6	0	215
+15	138	563.6	0	138
+16	173	563.6	0	173
+17	148	563.6	0	148
+18	139	563.6	0	139
+19	107	563.6	0	107
+20	105	563.6	0	105
+21	174	563.6	0	174
+22	189	563.6	0	189
+23	249	563.6	0	249
+24	255	563.6	0	255
+25	182	563.6	0	182
+26	179	563.6	0	179
+27	96	563.6	0	96
+28	94	563.6	0	94
+29	262	563.6	0	262
+30	108	563.6	0	108
+31	86	563.6	0	86
+32	84	563.6	0	84
+33	85	563.6	0	85
+34	106	563.6	0	106
+35	263	563.6	0	263
+36	96	563.6	0	96
+37	128	563.6	0	128
+38	111	563.6	0	111
+39	161	563.6	0	161
+40	151	563.6	0	151
+41	166	563.6	0	166
+42	139	563.6	0	139
+43	256	563.6	0	256
+44	304	563.6	0	304
+45	316	563.6	0	316
+46	397	563.6	0	397
+47	399	563.6	0	399
+48	413	563.6	0	413
+49	418	563.6	0	418
+50	319	563.6	0	319
+51	381	563.6	0	381
+52	581	563.6	0	581
+53	515	563.6	0	515
+54	347	563.6	0	347
+55	184	563.6	0	184
+56	70	563.6	0	70
+57	147	563.6	0	147
+58	85	563.6	0	85
+59	80	563.6	0	80
+60	115	563.6	0	115
+61	181	563.6	0	181
+62	6775	563.6	0	6775
+63	193	563.6	0	193
+64	136	563.6	0	136
+65	143	563.6	0	143
+66	201	563.6	0	201
+67	275	563.6	0	275
+68	293	563.6	0	293
+69	161	563.6	0	161
+70	167	563.6	0	167
+71	149	563.6	0	149
+72	112	563.6	0	112
+73	77	563.6	0	77
+74	73	563.6	0	73
+75	85	563.6	0	85
+76	85	563.6	0	85
+77	69	563.6	0	69
+78	62	563.6	0	62
+79	37	563.6	0	37
+80	95	563.6	0	95
+81	53	563.6	0	53
+82	61	563.6	0	61
+83	32	563.6	0	32
+84	29	563.6	0	29
+85	29	563.6	0	29
+86	21	563.6	0	21
+87	37	563.6	0	37
+88	38	563.6	0	38
+89	99	563.6	0	99
+90	52	563.6	0	52
+91	1808	563.6	0	1808
+92	624	563.6	0	624
+93	110	563.6	0	110
+94	134	563.6	0	134
+95	42	563.6	0	42
+96	59	563.6	0	59
+97	39	563.6	0	39
+98	36	563.6	0	36
+99	33	563.6	0	33
+100	37	563.6	0	37
+101	58	563.6	0	58
+102	63	563.6	0	63
+103	37	563.6	0	37
+104	34	563.6	0	34
+105	53	563.6	0	53
+106	23	563.6	0	23
+107	30	563.6	0	30
+108	49	563.6	0	49
+109	313	563.6	0	313
+110	65	563.6	0	65
+111	82	563.6	0	82
+112	32	563.6	0	32
+113	32	563.6	0	32
+114	31	563.6	0	31
+115	36	563.6	0	36
+116	16	563.6	0	16
+117	34	563.6	0	34
+118	202	563.6	0	202
+119	1349	563.6	0	1349
+120	140	563.6	0	140
+121	31	563.6	0	31
+122	26	563.6	0	26
+123	23	563.6	0	23
+124	32	563.6	0	32
+125	36	563.6	0	36
+126	40	563.6	0	40
+127	22	563.6	0	22
+128	28	563.6	0	28
+129	42	563.6	0	42
+130	18	563.6	0	18
+131	13	563.6	0	13
+132	41	563.6	0	41
+133	38	563.6	0	38
+134	92	563.6	0	92
+135	24	563.6	0	24
+136	75	563.6	0	75
+137	61	563.6	0	61
+138	78	563.6	0	78
+139	204	563.6	0	204
+140	60	563.6	0	60
+141	192	563.6	0	192
+142	58	563.6	0	58
+143	59	563.6	0	59
+144	23	563.6	0	23
+145	43	563.6	0	43
+146	91	563.6	0	91
+147	148	563.6	0	148
+148	204	563.6	0	204
+149	68	563.6	0	68
+150	378	563.6	0	378
+151	14960	563.6	0	14960
+This is cutadapt 4.0 with Python 3.9.5
+Command line parameters: -m 20 -j 0 -n 2 -a AGATCGGAAGAGC -a GGGGGG -o FFPE_1_PNK_S41_R1_trimmed.fastq FFPE_1_PNK_S41_R1_001.fastq.gz
+Processing single-end reads on 4 cores ...
+Finished in 0.04 s (352 µs/read; 0.17 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                     101
+Reads with adapters:                        93 (92.1%)
+
+== Read fate breakdown ==
+Reads that were too short:                  68 (67.3%)
+Reads written (passing filters):            33 (32.7%)
+
+Total basepairs processed:        15,251 bp
+Total written (filtered):          2,759 bp (18.1%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 87 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 12.6%
+  C: 55.2%
+  G: 20.7%
+  T: 11.5%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	1.6	0	1
+9	1	0.0	0	1
+33	1	0.0	1	1
+37	1	0.0	1	1
+46	1	0.0	1	1
+47	1	0.0	1	1
+84	1	0.0	1	1
+96	1	0.0	1	1
+113	1	0.0	1	1
+115	1	0.0	1	1
+121	1	0.0	1	1
+123	1	0.0	1	1
+127	2	0.0	1	2
+128	1	0.0	1	1
+129	1	0.0	1	1
+130	1	0.0	1	1
+131	2	0.0	1	2
+133	1	0.0	1	1
+142	2	0.0	1	2
+143	9	0.0	1	9
+144	18	0.0	1	17 1
+145	19	0.0	1	19
+146	14	0.0	1	14
+147	4	0.0	1	4
+148	1	0.0	1	1
+
+
+=== Adapter 2 ===
+
+Sequence: GGGGGG; Type: regular 3'; Length: 6; Trimmed: 8 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-6 bp: 0
+
+Bases preceding removed adapters:
+  A: 12.5%
+  C: 12.5%
+  G: 0.0%
+  T: 75.0%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+37	1	0.0	0	1
+48	1	0.0	0	1
+59	1	0.0	0	1
+61	1	0.0	0	1
+69	1	0.0	0	1
+70	1	0.0	0	1
+73	1	0.0	0	1
+80	1	0.0	0	1
+This is cutadapt 4.0 with Python 3.9.5
+Command line parameters: -m 20 -j 0 -n 2 -a AGATCGGAAGAGC -a GGGGGG -o FFPE1_S39_R1_trimmed.fastq FFPE1_S39_R1_001.fastq.gz
+Processing single-end reads on 4 cores ...
+Finished in 5.14 s (5 µs/read; 13.32 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               1,141,480
+Reads with adapters:                 1,059,612 (92.8%)
+
+== Read fate breakdown ==
+Reads that were too short:             791,789 (69.4%)
+Reads written (passing filters):       349,691 (30.6%)
+
+Total basepairs processed:   172,363,480 bp
+Total written (filtered):     33,396,259 bp (19.4%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 957934 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 18.0%
+  C: 57.3%
+  G: 15.0%
+  T: 9.0%
+  none/other: 0.6%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	5225	17835.6	0	5225
+4	979	4458.9	0	979
+5	253	1114.7	0	253
+6	163	278.7	0	163
+7	115	69.7	0	115
+8	123	17.4	0	123
+9	277	4.4	0	275 2
+10	603	1.1	1	572 31
+11	615	0.3	1	600 15
+12	1806	0.1	1	1755 51
+13	917	0.0	1	862 55
+14	547	0.0	1	515 32
+15	449	0.0	1	423 26
+16	210	0.0	1	200 10
+17	377	0.0	1	359 18
+18	419	0.0	1	406 13
+19	254	0.0	1	238 16
+20	259	0.0	1	249 10
+21	193	0.0	1	187 6
+22	178	0.0	1	170 8
+23	415	0.0	1	401 14
+24	1669	0.0	1	1609 60
+25	892	0.0	1	855 37
+26	499	0.0	1	483 16
+27	712	0.0	1	698 14
+28	825	0.0	1	802 23
+29	649	0.0	1	626 23
+30	1255	0.0	1	1220 35
+31	946	0.0	1	922 24
+32	346	0.0	1	331 15
+33	229	0.0	1	220 9
+34	233	0.0	1	224 9
+35	236	0.0	1	225 11
+36	434	0.0	1	419 15
+37	425	0.0	1	413 12
+38	684	0.0	1	650 34
+39	495	0.0	1	480 15
+40	293	0.0	1	276 17
+41	393	0.0	1	374 19
+42	739	0.0	1	706 33
+43	661	0.0	1	628 33
+44	442	0.0	1	424 18
+45	525	0.0	1	507 18
+46	739	0.0	1	714 25
+47	734	0.0	1	693 41
+48	1615	0.0	1	1527 88
+49	3793	0.0	1	3583 210
+50	7327	0.0	1	6895 432
+51	972	0.0	1	904 68
+52	607	0.0	1	571 36
+53	417	0.0	1	372 45
+54	351	0.0	1	330 21
+55	239	0.0	1	216 23
+56	260	0.0	1	238 22
+57	307	0.0	1	286 21
+58	377	0.0	1	347 30
+59	969	0.0	1	907 62
+60	3228	0.0	1	3147 81
+61	378	0.0	1	357 21
+62	395	0.0	1	381 14
+63	337	0.0	1	322 15
+64	333	0.0	1	323 10
+65	509	0.0	1	491 18
+66	819	0.0	1	793 26
+67	1885	0.0	1	1829 56
+68	2132	0.0	1	2066 66
+69	5575	0.0	1	5432 143
+70	14554	0.0	1	14209 345
+71	8565	0.0	1	8358 207
+72	747	0.0	1	718 29
+73	375	0.0	1	364 11
+74	502	0.0	1	487 15
+75	489	0.0	1	464 25
+76	720	0.0	1	689 31
+77	228	0.0	1	208 20
+78	402	0.0	1	388 14
+79	469	0.0	1	451 18
+80	382	0.0	1	361 21
+81	328	0.0	1	303 25
+82	572	0.0	1	549 23
+83	226	0.0	1	208 18
+84	236	0.0	1	219 17
+85	467	0.0	1	445 22
+86	244	0.0	1	225 19
+87	248	0.0	1	228 20
+88	245	0.0	1	229 16
+89	230	0.0	1	218 12
+90	215	0.0	1	195 20
+91	222	0.0	1	205 17
+92	303	0.0	1	280 23
+93	246	0.0	1	227 19
+94	209	0.0	1	195 14
+95	203	0.0	1	192 11
+96	234	0.0	1	214 20
+97	219	0.0	1	197 22
+98	280	0.0	1	253 27
+99	216	0.0	1	200 16
+100	313	0.0	1	280 33
+101	288	0.0	1	272 16
+102	328	0.0	1	304 24
+103	292	0.0	1	270 22
+104	343	0.0	1	320 23
+105	307	0.0	1	279 28
+106	695	0.0	1	646 49
+107	479	0.0	1	397 82
+108	704	0.0	1	567 137
+109	719	0.0	1	589 130
+110	868	0.0	1	731 137
+111	910	0.0	1	764 146
+112	1458	0.0	1	1243 215
+113	1982	0.0	1	1750 232
+114	3275	0.0	1	2904 371
+115	3971	0.0	1	3539 432
+116	3916	0.0	1	3510 406
+117	3112	0.0	1	2757 355
+118	2246	0.0	1	1959 287
+119	2010	0.0	1	1678 332
+120	1996	0.0	1	1724 272
+121	1693	0.0	1	1425 268
+122	1672	0.0	1	1431 241
+123	1918	0.0	1	1664 254
+124	1870	0.0	1	1626 244
+125	2062	0.0	1	1791 271
+126	2612	0.0	1	2291 321
+127	3879	0.0	1	3456 423
+128	4696	0.0	1	4248 448
+129	6348	0.0	1	5736 612
+130	9430	0.0	1	8570 860
+131	8491	0.0	1	8231 260
+132	5751	0.0	1	5621 130
+133	3664	0.0	1	3558 106
+134	2334	0.0	1	2272 62
+135	1489	0.0	1	1454 35
+136	1615	0.0	1	1570 45
+137	1628	0.0	1	1590 38
+138	2222	0.0	1	2167 55
+139	4264	0.0	1	4183 81
+140	6521	0.0	1	6360 161
+141	7905	0.0	1	7712 193
+142	16643	0.0	1	16056 587
+143	70475	0.0	1	68952 1523
+144	203904	0.0	1	198554 5350
+145	195567	0.0	1	191383 4184
+146	152315	0.0	1	148392 3923
+147	69676	0.0	1	67762 1914
+148	22174	0.0	1	21391 783
+149	11309	0.0	1	10959 350
+150	2954	0.0	1	2873 81
+151	5808	0.0	1	5630 178
+
+
+=== Adapter 2 ===
+
+Sequence: GGGGGG; Type: regular 3'; Length: 6; Trimmed: 123786 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-6 bp: 0
+
+Bases preceding removed adapters:
+  A: 14.6%
+  C: 19.2%
+  G: 0.0%
+  T: 65.4%
+  none/other: 0.8%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	5012	17835.6	0	5012
+4	2921	4458.9	0	2921
+5	5194	1114.7	0	5194
+6	3778	278.7	0	3778
+7	931	278.7	0	931
+8	419	278.7	0	419
+9	440	278.7	0	440
+10	519	278.7	0	519
+11	382	278.7	0	382
+12	657	278.7	0	657
+13	623	278.7	0	623
+14	718	278.7	0	718
+15	482	278.7	0	482
+16	582	278.7	0	582
+17	573	278.7	0	573
+18	578	278.7	0	578
+19	619	278.7	0	619
+20	645	278.7	0	645
+21	568	278.7	0	568
+22	748	278.7	0	748
+23	637	278.7	0	637
+24	634	278.7	0	634
+25	673	278.7	0	673
+26	601	278.7	0	601
+27	658	278.7	0	658
+28	689	278.7	0	689
+29	573	278.7	0	573
+30	656	278.7	0	656
+31	641	278.7	0	641
+32	599	278.7	0	599
+33	533	278.7	0	533
+34	672	278.7	0	672
+35	696	278.7	0	696
+36	937	278.7	0	937
+37	797	278.7	0	797
+38	1040	278.7	0	1040
+39	973	278.7	0	973
+40	933	278.7	0	933
+41	1083	278.7	0	1083
+42	1146	278.7	0	1146
+43	903	278.7	0	903
+44	1355	278.7	0	1355
+45	969	278.7	0	969
+46	1468	278.7	0	1468
+47	763	278.7	0	763
+48	780	278.7	0	780
+49	1092	278.7	0	1092
+50	1157	278.7	0	1157
+51	1424	278.7	0	1424
+52	1425	278.7	0	1425
+53	2127	278.7	0	2127
+54	3131	278.7	0	3131
+55	3192	278.7	0	3192
+56	3775	278.7	0	3775
+57	6928	278.7	0	6928
+58	6373	278.7	0	6373
+59	9721	278.7	0	9721
+60	5690	278.7	0	5690
+61	3559	278.7	0	3559
+62	1849	278.7	0	1849
+63	1141	278.7	0	1141
+64	846	278.7	0	846
+65	1204	278.7	0	1204
+66	1474	278.7	0	1474
+67	1315	278.7	0	1315
+68	1465	278.7	0	1465
+69	1923	278.7	0	1923
+70	1061	278.7	0	1061
+71	1616	278.7	0	1616
+72	2817	278.7	0	2817
+73	3660	278.7	0	3660
+74	1160	278.7	0	1160
+75	612	278.7	0	612
+76	392	278.7	0	392
+77	286	278.7	0	286
+78	303	278.7	0	303
+79	238	278.7	0	238
+80	112	278.7	0	112
+81	85	278.7	0	85
+82	60	278.7	0	60
+83	26	278.7	0	26
+84	14	278.7	0	14
+85	19	278.7	0	19
+86	13	278.7	0	13
+87	7	278.7	0	7
+88	20	278.7	0	20
+89	16	278.7	0	16
+90	17	278.7	0	17
+91	15	278.7	0	15
+92	7	278.7	0	7
+93	6	278.7	0	6
+94	6	278.7	0	6
+95	7	278.7	0	7
+96	13	278.7	0	13
+97	5	278.7	0	5
+98	12	278.7	0	12
+99	13	278.7	0	13
+100	15	278.7	0	15
+101	16	278.7	0	16
+102	3	278.7	0	3
+103	8	278.7	0	8
+104	10	278.7	0	10
+105	11	278.7	0	11
+106	3	278.7	0	3
+107	5	278.7	0	5
+108	4	278.7	0	4
+109	13	278.7	0	13
+110	10	278.7	0	10
+111	6	278.7	0	6
+112	4	278.7	0	4
+113	14	278.7	0	14
+114	14	278.7	0	14
+115	15	278.7	0	15
+116	8	278.7	0	8
+117	9	278.7	0	9
+118	9	278.7	0	9
+119	10	278.7	0	10
+120	14	278.7	0	14
+121	10	278.7	0	10
+122	13	278.7	0	13
+123	13	278.7	0	13
+124	6	278.7	0	6
+125	13	278.7	0	13
+126	11	278.7	0	11
+127	5	278.7	0	5
+128	9	278.7	0	9
+129	14	278.7	0	14
+130	4	278.7	0	4
+131	8	278.7	0	8
+132	7	278.7	0	7
+133	5	278.7	0	5
+134	9	278.7	0	9
+135	4	278.7	0	4
+136	12	278.7	0	12
+137	28	278.7	0	28
+138	72	278.7	0	72
+139	52	278.7	0	52
+140	144	278.7	0	144
+141	162	278.7	0	162
+142	291	278.7	0	291
+143	704	278.7	0	704
+144	410	278.7	0	410
+145	212	278.7	0	212
+146	22	278.7	0	22
+147	7	278.7	0	7
+148	17	278.7	0	17
+149	42	278.7	0	42
+150	23	278.7	0	23
+151	29	278.7	0	29
+This is cutadapt 4.0 with Python 3.9.5
+Command line parameters: -m 20 -j 0 -n 2 -a AGATCGGAAGAGC -a GGGGGG -o FFPE_3_PNK_S42_R1_trimmed.fastq FFPE_3_PNK_S42_R1_001.fastq.gz
+Processing single-end reads on 4 cores ...
+Finished in 0.04 s (1201 µs/read; 0.05 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                      32
+Reads with adapters:                        28 (87.5%)
+
+== Read fate breakdown ==
+Reads that were too short:                  14 (43.8%)
+Reads written (passing filters):            18 (56.2%)
+
+Total basepairs processed:         4,832 bp
+Total written (filtered):          1,795 bp (37.1%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 27 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 14.8%
+  C: 37.0%
+  G: 40.7%
+  T: 7.4%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+24	2	0.0	1	2
+27	1	0.0	1	0 1
+41	1	0.0	1	1
+44	1	0.0	1	1
+54	1	0.0	1	1
+69	1	0.0	1	1
+71	1	0.0	1	1
+74	1	0.0	1	1
+81	1	0.0	1	1
+125	1	0.0	1	1
+129	1	0.0	1	1
+131	1	0.0	1	1
+136	1	0.0	1	1
+138	1	0.0	1	1
+141	1	0.0	1	1
+144	4	0.0	1	4
+145	6	0.0	1	5 1
+146	1	0.0	1	1
+
+
+=== Adapter 2 ===
+
+Sequence: GGGGGG; Type: regular 3'; Length: 6; Trimmed: 2 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-6 bp: 0
+
+Bases preceding removed adapters:
+  A: 0.0%
+  C: 50.0%
+  G: 0.0%
+  T: 50.0%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+6	1	0.0	0	1
+23	1	0.0	0	1
+This is cutadapt 4.0 with Python 3.9.5
+Command line parameters: -m 20 -j 0 -n 2 -a AGATCGGAAGAGC -a GGGGGG -o FFPE3_S40_R1_trimmed.fastq FFPE3_S40_R1_001.fastq.gz
+Processing single-end reads on 4 cores ...
+Finished in 0.86 s (6 µs/read; 9.83 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                 140,655
+Reads with adapters:                   132,383 (94.1%)
+
+== Read fate breakdown ==
+Reads that were too short:              97,962 (69.6%)
+Reads written (passing filters):        42,693 (30.4%)
+
+Total basepairs processed:    21,238,905 bp
+Total written (filtered):      3,864,370 bp (18.2%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 121474 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 18.5%
+  C: 56.8%
+  G: 15.0%
+  T: 9.1%
+  none/other: 0.6%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	680	2197.7	0	680
+4	131	549.4	0	131
+5	34	137.4	0	34
+6	23	34.3	0	23
+7	11	8.6	0	11
+8	26	2.1	0	26
+9	28	0.5	0	28
+10	76	0.1	1	70 6
+11	63	0.0	1	57 6
+12	227	0.0	1	216 11
+13	114	0.0	1	104 10
+14	56	0.0	1	51 5
+15	59	0.0	1	55 4
+16	29	0.0	1	25 4
+17	43	0.0	1	41 2
+18	40	0.0	1	34 6
+19	39	0.0	1	38 1
+20	23	0.0	1	21 2
+21	28	0.0	1	27 1
+22	32	0.0	1	30 2
+23	75	0.0	1	72 3
+24	222	0.0	1	211 11
+25	137	0.0	1	133 4
+26	75	0.0	1	72 3
+27	104	0.0	1	100 4
+28	119	0.0	1	114 5
+29	78	0.0	1	75 3
+30	183	0.0	1	179 4
+31	151	0.0	1	139 12
+32	48	0.0	1	47 1
+33	19	0.0	1	17 2
+34	28	0.0	1	26 2
+35	33	0.0	1	32 1
+36	71	0.0	1	67 4
+37	59	0.0	1	57 2
+38	79	0.0	1	76 3
+39	66	0.0	1	63 3
+40	32	0.0	1	32
+41	61	0.0	1	59 2
+42	100	0.0	1	94 6
+43	89	0.0	1	86 3
+44	73	0.0	1	73
+45	53	0.0	1	48 5
+46	103	0.0	1	97 6
+47	127	0.0	1	119 8
+48	239	0.0	1	219 20
+49	507	0.0	1	471 36
+50	1051	0.0	1	985 66
+51	133	0.0	1	127 6
+52	77	0.0	1	72 5
+53	48	0.0	1	41 7
+54	53	0.0	1	48 5
+55	27	0.0	1	26 1
+56	42	0.0	1	39 3
+57	36	0.0	1	36
+58	41	0.0	1	37 4
+59	123	0.0	1	118 5
+60	460	0.0	1	443 17
+61	63	0.0	1	63
+62	59	0.0	1	57 2
+63	48	0.0	1	47 1
+64	45	0.0	1	43 2
+65	81	0.0	1	79 2
+66	128	0.0	1	126 2
+67	284	0.0	1	272 12
+68	317	0.0	1	309 8
+69	861	0.0	1	835 26
+70	2226	0.0	1	2162 64
+71	1311	0.0	1	1276 35
+72	94	0.0	1	88 6
+73	51	0.0	1	50 1
+74	63	0.0	1	60 3
+75	72	0.0	1	66 6
+76	102	0.0	1	100 2
+77	32	0.0	1	29 3
+78	39	0.0	1	38 1
+79	65	0.0	1	61 4
+80	57	0.0	1	50 7
+81	44	0.0	1	44
+82	84	0.0	1	83 1
+83	28	0.0	1	24 4
+84	42	0.0	1	40 2
+85	52	0.0	1	50 2
+86	27	0.0	1	25 2
+87	34	0.0	1	34
+88	35	0.0	1	30 5
+89	31	0.0	1	27 4
+90	38	0.0	1	38
+91	34	0.0	1	34
+92	24	0.0	1	23 1
+93	30	0.0	1	27 3
+94	11	0.0	1	11
+95	25	0.0	1	22 3
+96	35	0.0	1	30 5
+97	30	0.0	1	29 1
+98	30	0.0	1	26 4
+99	37	0.0	1	34 3
+100	37	0.0	1	35 2
+101	34	0.0	1	33 1
+102	47	0.0	1	42 5
+103	45	0.0	1	42 3
+104	50	0.0	1	48 2
+105	44	0.0	1	40 4
+106	66	0.0	1	60 6
+107	60	0.0	1	49 11
+108	106	0.0	1	81 25
+109	93	0.0	1	74 19
+110	106	0.0	1	92 14
+111	143	0.0	1	127 16
+112	193	0.0	1	162 31
+113	227	0.0	1	199 28
+114	395	0.0	1	346 49
+115	511	0.0	1	461 50
+116	502	0.0	1	450 52
+117	385	0.0	1	338 47
+118	255	0.0	1	213 42
+119	278	0.0	1	237 41
+120	235	0.0	1	210 25
+121	247	0.0	1	205 42
+122	210	0.0	1	179 31
+123	234	0.0	1	208 26
+124	276	0.0	1	234 42
+125	283	0.0	1	241 42
+126	411	0.0	1	361 50
+127	557	0.0	1	485 72
+128	717	0.0	1	634 83
+129	921	0.0	1	819 102
+130	1468	0.0	1	1323 145
+131	1287	0.0	1	1241 46
+132	957	0.0	1	927 30
+133	589	0.0	1	572 17
+134	326	0.0	1	316 10
+135	230	0.0	1	221 9
+136	214	0.0	1	206 8
+137	231	0.0	1	225 6
+138	303	0.0	1	295 8
+139	624	0.0	1	607 17
+140	942	0.0	1	917 25
+141	1109	0.0	1	1086 23
+142	2192	0.0	1	2105 87
+143	8836	0.0	1	8603 233
+144	25801	0.0	1	25023 778
+145	24075	0.0	1	23458 617
+146	18056	0.0	1	17547 509
+147	8158	0.0	1	7918 240
+148	2566	0.0	1	2468 98
+149	1326	0.0	1	1277 49
+150	356	0.0	1	346 10
+151	707	0.0	1	671 36
+
+
+=== Adapter 2 ===
+
+Sequence: GGGGGG; Type: regular 3'; Length: 6; Trimmed: 13581 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-6 bp: 0
+
+Bases preceding removed adapters:
+  A: 15.3%
+  C: 18.1%
+  G: 0.0%
+  T: 65.7%
+  none/other: 0.9%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	588	2197.7	0	588
+4	330	549.4	0	330
+5	571	137.4	0	571
+6	433	34.3	0	433
+7	87	34.3	0	87
+8	43	34.3	0	43
+9	36	34.3	0	36
+10	56	34.3	0	56
+11	31	34.3	0	31
+12	65	34.3	0	65
+13	49	34.3	0	49
+14	61	34.3	0	61
+15	51	34.3	0	51
+16	57	34.3	0	57
+17	55	34.3	0	55
+18	57	34.3	0	57
+19	66	34.3	0	66
+20	61	34.3	0	61
+21	67	34.3	0	67
+22	80	34.3	0	80
+23	65	34.3	0	65
+24	60	34.3	0	60
+25	68	34.3	0	68
+26	41	34.3	0	41
+27	72	34.3	0	72
+28	76	34.3	0	76
+29	70	34.3	0	70
+30	70	34.3	0	70
+31	67	34.3	0	67
+32	63	34.3	0	63
+33	57	34.3	0	57
+34	65	34.3	0	65
+35	77	34.3	0	77
+36	85	34.3	0	85
+37	88	34.3	0	88
+38	89	34.3	0	89
+39	102	34.3	0	102
+40	125	34.3	0	125
+41	121	34.3	0	121
+42	119	34.3	0	119
+43	93	34.3	0	93
+44	153	34.3	0	153
+45	121	34.3	0	121
+46	163	34.3	0	163
+47	74	34.3	0	74
+48	90	34.3	0	90
+49	125	34.3	0	125
+50	136	34.3	0	136
+51	218	34.3	0	218
+52	180	34.3	0	180
+53	259	34.3	0	259
+54	403	34.3	0	403
+55	388	34.3	0	388
+56	438	34.3	0	438
+57	792	34.3	0	792
+58	658	34.3	0	658
+59	901	34.3	0	901
+60	550	34.3	0	550
+61	309	34.3	0	309
+62	176	34.3	0	176
+63	130	34.3	0	130
+64	106	34.3	0	106
+65	148	34.3	0	148
+66	201	34.3	0	201
+67	182	34.3	0	182
+68	172	34.3	0	172
+69	223	34.3	0	223
+70	140	34.3	0	140
+71	179	34.3	0	179
+72	325	34.3	0	325
+73	446	34.3	0	446
+74	152	34.3	0	152
+75	64	34.3	0	64
+76	59	34.3	0	59
+77	42	34.3	0	42
+78	44	34.3	0	44
+79	31	34.3	0	31
+80	14	34.3	0	14
+81	11	34.3	0	11
+82	9	34.3	0	9
+83	2	34.3	0	2
+84	2	34.3	0	2
+85	4	34.3	0	4
+86	2	34.3	0	2
+87	4	34.3	0	4
+88	3	34.3	0	3
+90	1	34.3	0	1
+91	2	34.3	0	2
+92	1	34.3	0	1
+93	1	34.3	0	1
+98	2	34.3	0	2
+100	1	34.3	0	1
+102	2	34.3	0	2
+104	1	34.3	0	1
+105	2	34.3	0	2
+106	1	34.3	0	1
+107	3	34.3	0	3
+108	1	34.3	0	1
+109	1	34.3	0	1
+112	1	34.3	0	1
+114	1	34.3	0	1
+116	1	34.3	0	1
+117	2	34.3	0	2
+119	1	34.3	0	1
+121	1	34.3	0	1
+124	2	34.3	0	2
+125	1	34.3	0	1
+126	2	34.3	0	2
+132	1	34.3	0	1
+135	2	34.3	0	2
+136	1	34.3	0	1
+138	11	34.3	0	11
+139	2	34.3	0	2
+140	12	34.3	0	12
+141	21	34.3	0	21
+142	33	34.3	0	33
+143	57	34.3	0	57
+144	30	34.3	0	30
+145	23	34.3	0	23
+146	6	34.3	0	6
+147	1	34.3	0	1
+148	3	34.3	0	3
+150	1	34.3	0	1
+This is cutadapt 4.0 with Python 3.9.5
+Command line parameters: -m 20 -j 0 -n 2 -a AGATCGGAAGAGC -a GGGGGG -o FFPE_WC_S1_R1_trimmed.fastq FFPE_WC_S1_R1_001.fastq.gz
+Processing single-end reads on 4 cores ...
+Finished in 0.24 s (25 µs/read; 2.40 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                   9,482
+Reads with adapters:                     9,348 (98.6%)
+
+== Read fate breakdown ==
+Reads that were too short:               8,640 (91.1%)
+Reads written (passing filters):           842 (8.9%)
+
+Total basepairs processed:     1,431,782 bp
+Total written (filtered):         63,557 bp (4.4%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 9139 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 16.5%
+  C: 59.7%
+  G: 13.4%
+  T: 9.6%
+  none/other: 0.9%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	40	148.2	0	40
+4	7	37.0	0	7
+9	1	0.0	0	1
+12	2	0.0	1	1 1
+14	2	0.0	1	1 1
+16	1	0.0	1	1
+17	1	0.0	1	1
+18	1	0.0	1	1
+20	1	0.0	1	1
+24	1	0.0	1	1
+25	1	0.0	1	1
+29	1	0.0	1	1
+32	1	0.0	1	1
+39	2	0.0	1	2
+41	1	0.0	1	1
+42	2	0.0	1	2
+43	1	0.0	1	1
+45	1	0.0	1	1
+46	2	0.0	1	1 1
+47	1	0.0	1	1
+49	6	0.0	1	6
+50	11	0.0	1	11
+51	2	0.0	1	2
+52	1	0.0	1	1
+53	1	0.0	1	1
+57	1	0.0	1	1
+60	6	0.0	1	6
+61	1	0.0	1	1
+65	1	0.0	1	1
+67	1	0.0	1	1
+68	4	0.0	1	4
+69	7	0.0	1	7
+70	14	0.0	1	13 1
+71	8	0.0	1	6 2
+72	1	0.0	1	1
+78	1	0.0	1	1
+79	1	0.0	1	1
+81	1	0.0	1	1
+91	1	0.0	1	1
+93	1	0.0	1	1
+99	1	0.0	1	1
+100	2	0.0	1	2
+109	4	0.0	1	4
+110	4	0.0	1	2 2
+112	2	0.0	1	0 2
+113	10	0.0	1	7 3
+114	5	0.0	1	5
+115	8	0.0	1	7 1
+116	10	0.0	1	6 4
+117	7	0.0	1	3 4
+118	8	0.0	1	8
+119	9	0.0	1	7 2
+120	5	0.0	1	3 2
+121	7	0.0	1	5 2
+122	4	0.0	1	2 2
+123	10	0.0	1	9 1
+124	13	0.0	1	9 4
+125	12	0.0	1	8 4
+126	16	0.0	1	13 3
+127	25	0.0	1	19 6
+128	30	0.0	1	26 4
+129	39	0.0	1	34 5
+130	78	0.0	1	68 10
+131	70	0.0	1	62 8
+132	74	0.0	1	71 3
+133	27	0.0	1	24 3
+134	21	0.0	1	20 1
+135	18	0.0	1	16 2
+136	16	0.0	1	13 3
+137	14	0.0	1	12 2
+138	24	0.0	1	22 2
+139	41	0.0	1	39 2
+140	49	0.0	1	43 6
+141	48	0.0	1	43 5
+142	136	0.0	1	126 10
+143	686	0.0	1	658 28
+144	2115	0.0	1	1959 156
+145	2155	0.0	1	2070 85
+146	1790	0.0	1	1706 84
+147	873	0.0	1	833 40
+148	263	0.0	1	237 26
+149	150	0.0	1	135 15
+150	39	0.0	1	38 1
+151	81	0.0	1	73 8
+
+
+=== Adapter 2 ===
+
+Sequence: GGGGGG; Type: regular 3'; Length: 6; Trimmed: 379 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-6 bp: 0
+
+Bases preceding removed adapters:
+  A: 24.0%
+  C: 18.7%
+  G: 0.0%
+  T: 52.5%
+  none/other: 4.7%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	37	148.2	0	37
+4	19	37.0	0	19
+5	38	9.3	0	38
+6	26	2.3	0	26
+7	6	2.3	0	6
+8	2	2.3	0	2
+9	3	2.3	0	3
+11	3	2.3	0	3
+12	3	2.3	0	3
+13	1	2.3	0	1
+16	1	2.3	0	1
+17	2	2.3	0	2
+18	4	2.3	0	4
+19	4	2.3	0	4
+20	2	2.3	0	2
+21	5	2.3	0	5
+22	1	2.3	0	1
+23	1	2.3	0	1
+24	3	2.3	0	3
+25	4	2.3	0	4
+26	2	2.3	0	2
+27	4	2.3	0	4
+28	3	2.3	0	3
+29	4	2.3	0	4
+30	2	2.3	0	2
+31	2	2.3	0	2
+32	1	2.3	0	1
+33	1	2.3	0	1
+34	2	2.3	0	2
+35	3	2.3	0	3
+36	3	2.3	0	3
+37	6	2.3	0	6
+38	5	2.3	0	5
+39	2	2.3	0	2
+41	4	2.3	0	4
+43	2	2.3	0	2
+44	4	2.3	0	4
+45	4	2.3	0	4
+46	6	2.3	0	6
+47	3	2.3	0	3
+48	7	2.3	0	7
+49	5	2.3	0	5
+50	3	2.3	0	3
+51	3	2.3	0	3
+52	2	2.3	0	2
+53	10	2.3	0	10
+54	6	2.3	0	6
+55	3	2.3	0	3
+56	6	2.3	0	6
+57	5	2.3	0	5
+58	7	2.3	0	7
+59	6	2.3	0	6
+60	9	2.3	0	9
+61	1	2.3	0	1
+62	5	2.3	0	5
+63	3	2.3	0	3
+65	2	2.3	0	2
+66	3	2.3	0	3
+67	4	2.3	0	4
+68	5	2.3	0	5
+69	2	2.3	0	2
+70	1	2.3	0	1
+71	4	2.3	0	4
+72	5	2.3	0	5
+73	10	2.3	0	10
+74	7	2.3	0	7
+75	4	2.3	0	4
+76	2	2.3	0	2
+77	4	2.3	0	4
+78	1	2.3	0	1
+79	1	2.3	0	1
+81	1	2.3	0	1
+117	1	2.3	0	1
+128	1	2.3	0	1
+141	1	2.3	0	1
+142	1	2.3	0	1
+143	7	2.3	0	7
+144	2	2.3	0	2
+149	1	2.3	0	1
+This is cutadapt 4.0 with Python 3.9.5
+Command line parameters: -m 20 -j 0 -n 2 -a AGATCGGAAGAGC -a GGGGGG -o HF_HI_P_S37_R1_trimmed.fastq HF_HI_P_S37_R1_001.fastq.gz
+Processing single-end reads on 4 cores ...
+Finished in 10.55 s (5 µs/read; 12.61 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               2,217,022
+Reads with adapters:                 1,871,762 (84.4%)
+
+== Read fate breakdown ==
+Reads that were too short:             712,972 (32.2%)
+Reads written (passing filters):     1,504,050 (67.8%)
+
+Total basepairs processed:   334,770,322 bp
+Total written (filtered):    145,884,822 bp (43.6%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 1806246 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 18.8%
+  C: 50.0%
+  G: 23.2%
+  T: 7.8%
+  none/other: 0.2%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	22898	34641.0	0	22898
+4	6745	8660.2	0	6745
+5	5137	2165.1	0	5137
+6	5446	541.3	0	5446
+7	5120	135.3	0	5120
+8	5570	33.8	0	5570
+9	5832	8.5	0	5793 39
+10	6135	2.1	1	5872 263
+11	6063	0.5	1	5924 139
+12	7612	0.1	1	7457 155
+13	6138	0.0	1	5924 214
+14	5830	0.0	1	5642 188
+15	5989	0.0	1	5812 177
+16	5950	0.0	1	5779 171
+17	5870	0.0	1	5728 142
+18	6324	0.0	1	6156 168
+19	6063	0.0	1	5917 146
+20	6061	0.0	1	5931 130
+21	6599	0.0	1	6418 181
+22	6608	0.0	1	6461 147
+23	7644	0.0	1	7473 171
+24	9960	0.0	1	9683 277
+25	8668	0.0	1	8473 195
+26	7021	0.0	1	6874 147
+27	7395	0.0	1	7256 139
+28	7096	0.0	1	6948 148
+29	6634	0.0	1	6497 137
+30	7057	0.0	1	6909 148
+31	7166	0.0	1	7001 165
+32	7079	0.0	1	6925 154
+33	7352	0.0	1	7212 140
+34	6685	0.0	1	6500 185
+35	6346	0.0	1	6169 177
+36	6499	0.0	1	6334 165
+37	6639	0.0	1	6443 196
+38	6936	0.0	1	6749 187
+39	6875	0.0	1	6720 155
+40	6772	0.0	1	6617 155
+41	6913	0.0	1	6733 180
+42	7080	0.0	1	6851 229
+43	7243	0.0	1	7038 205
+44	6482	0.0	1	6289 193
+45	6783	0.0	1	6630 153
+46	7237	0.0	1	7031 206
+47	7428	0.0	1	7027 401
+48	9401	0.0	1	8875 526
+49	15363	0.0	1	14450 913
+50	30474	0.0	1	28874 1600
+51	8603	0.0	1	8175 428
+52	7640	0.0	1	7253 387
+53	7661	0.0	1	7230 431
+54	7260	0.0	1	6857 403
+55	7347	0.0	1	6963 384
+56	7317	0.0	1	6930 387
+57	7066	0.0	1	6663 403
+58	7434	0.0	1	7060 374
+59	9335	0.0	1	8821 514
+60	18383	0.0	1	17977 406
+61	7426	0.0	1	7288 138
+62	7384	0.0	1	7208 176
+63	7079	0.0	1	6912 167
+64	6793	0.0	1	6650 143
+65	8266	0.0	1	8121 145
+66	8345	0.0	1	8180 165
+67	11210	0.0	1	10983 227
+68	12211	0.0	1	11971 240
+69	25713	0.0	1	25250 463
+70	44544	0.0	1	43720 824
+71	30856	0.0	1	30338 518
+72	7905	0.0	1	7756 149
+73	7323	0.0	1	7211 112
+74	7508	0.0	1	7354 154
+75	7453	0.0	1	7249 204
+76	7836	0.0	1	7453 383
+77	6735	0.0	1	6456 279
+78	6629	0.0	1	6414 215
+79	6723	0.0	1	6464 259
+80	5972	0.0	1	5766 206
+81	5714	0.0	1	5562 152
+82	6786	0.0	1	6635 151
+83	5761	0.0	1	5598 163
+84	5456	0.0	1	5251 205
+85	6490	0.0	1	6263 227
+86	5519	0.0	1	5332 187
+87	6141	0.0	1	5891 250
+88	6237	0.0	1	6047 190
+89	5921	0.0	1	5698 223
+90	6004	0.0	1	5778 226
+91	5979	0.0	1	5772 207
+92	5951	0.0	1	5764 187
+93	5625	0.0	1	5449 176
+94	5261	0.0	1	5071 190
+95	5040	0.0	1	4853 187
+96	4964	0.0	1	4790 174
+97	4760	0.0	1	4578 182
+98	4964	0.0	1	4758 206
+99	4722	0.0	1	4519 203
+100	4659	0.0	1	4450 209
+101	4781	0.0	1	4599 182
+102	4854	0.0	1	4664 190
+103	4656	0.0	1	4482 174
+104	4943	0.0	1	4743 200
+105	4724	0.0	1	4518 206
+106	6535	0.0	1	6258 277
+107	4377	0.0	1	4120 257
+108	4637	0.0	1	4350 287
+109	4489	0.0	1	4247 242
+110	4879	0.0	1	4568 311
+111	4947	0.0	1	4635 312
+112	6335	0.0	1	5911 424
+113	8555	0.0	1	7943 612
+114	12395	0.0	1	11476 919
+115	15329	0.0	1	13941 1388
+116	17047	0.0	1	15706 1341
+117	13373	0.0	1	12411 962
+118	9380	0.0	1	8392 988
+119	7661	0.0	1	6904 757
+120	6427	0.0	1	5758 669
+121	5493	0.0	1	4949 544
+122	4770	0.0	1	4297 473
+123	5462	0.0	1	4912 550
+124	5114	0.0	1	4642 472
+125	5253	0.0	1	4730 523
+126	7102	0.0	1	6477 625
+127	11758	0.0	1	10665 1093
+128	14765	0.0	1	13559 1206
+129	20609	0.0	1	18930 1679
+130	33976	0.0	1	31337 2639
+131	30001	0.0	1	29446 555
+132	18717	0.0	1	18423 294
+133	11676	0.0	1	11438 238
+134	6752	0.0	1	6623 129
+135	4308	0.0	1	4243 65
+136	3926	0.0	1	3856 70
+137	3195	0.0	1	3153 42
+138	4498	0.0	1	4433 65
+139	9448	0.0	1	9307 141
+140	14128	0.0	1	13917 211
+141	14208	0.0	1	13959 249
+142	20333	0.0	1	19722 611
+143	64189	0.0	1	63296 893
+144	173537	0.0	1	170344 3193
+145	161294	0.0	1	159038 2256
+146	118466	0.0	1	116154 2312
+147	51043	0.0	1	50032 1011
+148	14607	0.0	1	14241 366
+149	6779	0.0	1	6632 147
+150	1650	0.0	1	1597 53
+151	2736	0.0	1	2637 99
+
+
+=== Adapter 2 ===
+
+Sequence: GGGGGG; Type: regular 3'; Length: 6; Trimmed: 168675 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-6 bp: 0
+
+Bases preceding removed adapters:
+  A: 20.1%
+  C: 52.2%
+  G: 0.0%
+  T: 27.1%
+  none/other: 0.6%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	23966	34641.0	0	23966
+4	11687	8660.2	0	11687
+5	16387	2165.1	0	16387
+6	24074	541.3	0	24074
+7	2288	541.3	0	2288
+8	1409	541.3	0	1409
+9	895	541.3	0	895
+10	866	541.3	0	866
+11	245	541.3	0	245
+12	552	541.3	0	552
+13	499	541.3	0	499
+14	582	541.3	0	582
+15	540	541.3	0	540
+16	520	541.3	0	520
+17	546	541.3	0	546
+18	643	541.3	0	643
+19	589	541.3	0	589
+20	486	541.3	0	486
+21	588	541.3	0	588
+22	2484	541.3	0	2484
+23	753	541.3	0	753
+24	809	541.3	0	809
+25	487	541.3	0	487
+26	527	541.3	0	527
+27	824	541.3	0	824
+28	965	541.3	0	965
+29	978	541.3	0	978
+30	1012	541.3	0	1012
+31	807	541.3	0	807
+32	895	541.3	0	895
+33	838	541.3	0	838
+34	854	541.3	0	854
+35	1533	541.3	0	1533
+36	3686	541.3	0	3686
+37	2295	541.3	0	2295
+38	6042	541.3	0	6042
+39	1640	541.3	0	1640
+40	936	541.3	0	936
+41	1151	541.3	0	1151
+42	1050	541.3	0	1050
+43	1006	541.3	0	1006
+44	1082	541.3	0	1082
+45	892	541.3	0	892
+46	1091	541.3	0	1091
+47	696	541.3	0	696
+48	576	541.3	0	576
+49	562	541.3	0	562
+50	412	541.3	0	412
+51	486	541.3	0	486
+52	546	541.3	0	546
+53	612	541.3	0	612
+54	828	541.3	0	828
+55	847	541.3	0	847
+56	1542	541.3	0	1542
+57	2148	541.3	0	2148
+58	2140	541.3	0	2140
+59	4432	541.3	0	4432
+60	2494	541.3	0	2494
+61	1749	541.3	0	1749
+62	1323	541.3	0	1323
+63	819	541.3	0	819
+64	758	541.3	0	758
+65	801	541.3	0	801
+66	1048	541.3	0	1048
+67	766	541.3	0	766
+68	896	541.3	0	896
+69	1192	541.3	0	1192
+70	671	541.3	0	671
+71	1053	541.3	0	1053
+72	2167	541.3	0	2167
+73	3602	541.3	0	3602
+74	2082	541.3	0	2082
+75	1215	541.3	0	1215
+76	539	541.3	0	539
+77	297	541.3	0	297
+78	286	541.3	0	286
+79	254	541.3	0	254
+80	179	541.3	0	179
+81	146	541.3	0	146
+82	102	541.3	0	102
+83	58	541.3	0	58
+84	68	541.3	0	68
+85	52	541.3	0	52
+86	70	541.3	0	70
+87	54	541.3	0	54
+88	57	541.3	0	57
+89	74	541.3	0	74
+90	96	541.3	0	96
+91	61	541.3	0	61
+92	98	541.3	0	98
+93	63	541.3	0	63
+94	129	541.3	0	129
+95	136	541.3	0	136
+96	94	541.3	0	94
+97	59	541.3	0	59
+98	87	541.3	0	87
+99	131	541.3	0	131
+100	93	541.3	0	93
+101	74	541.3	0	74
+102	102	541.3	0	102
+103	159	541.3	0	159
+104	202	541.3	0	202
+105	214	541.3	0	214
+106	167	541.3	0	167
+107	138	541.3	0	138
+108	154	541.3	0	154
+109	116	541.3	0	116
+110	186	541.3	0	186
+111	148	541.3	0	148
+112	181	541.3	0	181
+113	180	541.3	0	180
+114	171	541.3	0	171
+115	86	541.3	0	86
+116	59	541.3	0	59
+117	80	541.3	0	80
+118	82	541.3	0	82
+119	75	541.3	0	75
+120	100	541.3	0	100
+121	135	541.3	0	135
+122	79	541.3	0	79
+123	49	541.3	0	49
+124	45	541.3	0	45
+125	87	541.3	0	87
+126	90	541.3	0	90
+127	90	541.3	0	90
+128	55	541.3	0	55
+129	60	541.3	0	60
+130	49	541.3	0	49
+131	39	541.3	0	39
+132	40	541.3	0	40
+133	40	541.3	0	40
+134	33	541.3	0	33
+135	49	541.3	0	49
+136	77	541.3	0	77
+137	69	541.3	0	69
+138	64	541.3	0	64
+139	60	541.3	0	60
+140	245	541.3	0	245
+141	220	541.3	0	220
+142	152	541.3	0	152
+143	165	541.3	0	165
+144	57	541.3	0	57
+145	53	541.3	0	53
+146	19	541.3	0	19
+147	20	541.3	0	20
+148	15	541.3	0	15
+149	34	541.3	0	34
+150	29	541.3	0	29
+151	37	541.3	0	37
+This is cutadapt 4.0 with Python 3.9.5
+Command line parameters: -m 20 -j 0 -n 2 -a AGATCGGAAGAGC -a GGGGGG -o HF_PC_P_S38_R1_trimmed.fastq HF_PC_P_S38_R1_001.fastq.gz
+Processing single-end reads on 4 cores ...
+Finished in 12.20 s (5 µs/read; 12.25 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               2,489,440
+Reads with adapters:                 2,028,313 (81.5%)
+
+== Read fate breakdown ==
+Reads that were too short:             674,417 (27.1%)
+Reads written (passing filters):     1,815,023 (72.9%)
+
+Total basepairs processed:   375,905,440 bp
+Total written (filtered):    165,310,490 bp (44.0%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 1871896 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 16.7%
+  C: 54.5%
+  G: 20.0%
+  T: 8.5%
+  none/other: 0.3%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	23195	38897.5	0	23195
+4	7120	9724.4	0	7120
+5	4646	2431.1	0	4646
+6	5003	607.8	0	5003
+7	4492	151.9	0	4492
+8	4966	38.0	0	4966
+9	5075	9.5	0	5052 23
+10	5313	2.4	1	5035 278
+11	5158	0.6	1	5034 124
+12	6646	0.1	1	6506 140
+13	5361	0.0	1	5154 207
+14	5134	0.0	1	4951 183
+15	5167	0.0	1	4989 178
+16	4980	0.0	1	4798 182
+17	4959	0.0	1	4841 118
+18	5584	0.0	1	5433 151
+19	5315	0.0	1	5192 123
+20	5294	0.0	1	5131 163
+21	5604	0.0	1	5431 173
+22	5713	0.0	1	5557 156
+23	6249	0.0	1	6102 147
+24	7907	0.0	1	7693 214
+25	6909	0.0	1	6734 175
+26	5829	0.0	1	5698 131
+27	5908	0.0	1	5779 129
+28	5839	0.0	1	5709 130
+29	5299	0.0	1	5187 112
+30	5807	0.0	1	5668 139
+31	5696	0.0	1	5557 139
+32	6055	0.0	1	5927 128
+33	5987	0.0	1	5853 134
+34	5186	0.0	1	5036 150
+35	5078	0.0	1	4932 146
+36	5001	0.0	1	4867 134
+37	5061	0.0	1	4906 155
+38	5253	0.0	1	5099 154
+39	5351	0.0	1	5211 140
+40	5220	0.0	1	5061 159
+41	5225	0.0	1	5080 145
+42	5780	0.0	1	5587 193
+43	5436	0.0	1	5272 164
+44	4945	0.0	1	4789 156
+45	5000	0.0	1	4890 110
+46	5539	0.0	1	5400 139
+47	5546	0.0	1	5267 279
+48	7038	0.0	1	6622 416
+49	11603	0.0	1	10943 660
+50	23093	0.0	1	21863 1230
+51	6384	0.0	1	6015 369
+52	5368	0.0	1	5053 315
+53	5318	0.0	1	5019 299
+54	5182	0.0	1	4897 285
+55	5198	0.0	1	4908 290
+56	5084	0.0	1	4842 242
+57	5088	0.0	1	4796 292
+58	5223	0.0	1	4938 285
+59	6568	0.0	1	6239 329
+60	12448	0.0	1	12201 247
+61	5273	0.0	1	5156 117
+62	5129	0.0	1	5021 108
+63	5017	0.0	1	4904 113
+64	4758	0.0	1	4636 122
+65	5134	0.0	1	5017 117
+66	5624	0.0	1	5493 131
+67	7207	0.0	1	7030 177
+68	7629	0.0	1	7463 166
+69	13320	0.0	1	13026 294
+70	23862	0.0	1	23417 445
+71	16529	0.0	1	16237 292
+72	5033	0.0	1	4918 115
+73	5053	0.0	1	4942 111
+74	5112	0.0	1	4953 159
+75	5009	0.0	1	4862 147
+76	5312	0.0	1	5048 264
+77	4856	0.0	1	4633 223
+78	4700	0.0	1	4512 188
+79	4881	0.0	1	4676 205
+80	4459	0.0	1	4280 179
+81	4437	0.0	1	4264 173
+82	5310	0.0	1	5148 162
+83	4564	0.0	1	4428 136
+84	4759	0.0	1	4534 225
+85	5569	0.0	1	5349 220
+86	5098	0.0	1	4907 191
+87	5497	0.0	1	5200 297
+88	5574	0.0	1	5339 235
+89	5611	0.0	1	5330 281
+90	5515	0.0	1	5212 303
+91	5880	0.0	1	5595 285
+92	6166	0.0	1	5886 280
+93	6189	0.0	1	5867 322
+94	6035	0.0	1	5733 302
+95	6043	0.0	1	5704 339
+96	6489	0.0	1	6121 368
+97	6865	0.0	1	6464 401
+98	7159	0.0	1	6669 490
+99	7294	0.0	1	6808 486
+100	7629	0.0	1	7139 490
+101	7908	0.0	1	7460 448
+102	8323	0.0	1	7831 492
+103	8347	0.0	1	7820 527
+104	8415	0.0	1	7838 577
+105	8502	0.0	1	7912 590
+106	9730	0.0	1	9154 576
+107	8652	0.0	1	8016 636
+108	9750	0.0	1	8993 757
+109	10845	0.0	1	10039 806
+110	13075	0.0	1	12123 952
+111	15326	0.0	1	14159 1167
+112	18815	0.0	1	17440 1375
+113	24126	0.0	1	22196 1930
+114	34199	0.0	1	31544 2655
+115	45400	0.0	1	41788 3612
+116	49629	0.0	1	45871 3758
+117	38506	0.0	1	35530 2976
+118	26211	0.0	1	23276 2935
+119	19608	0.0	1	17576 2032
+120	16135	0.0	1	14512 1623
+121	13724	0.0	1	12237 1487
+122	11568	0.0	1	10374 1194
+123	10840	0.0	1	9801 1039
+124	10532	0.0	1	9549 983
+125	11613	0.0	1	10468 1145
+126	14545	0.0	1	13255 1290
+127	17093	0.0	1	15600 1493
+128	18708	0.0	1	17153 1555
+129	23265	0.0	1	21426 1839
+130	30650	0.0	1	28295 2355
+131	29207	0.0	1	28745 462
+132	25945	0.0	1	25543 402
+133	20678	0.0	1	20308 370
+134	14453	0.0	1	14237 216
+135	11164	0.0	1	10968 196
+136	10087	0.0	1	9928 159
+137	7933	0.0	1	7799 134
+138	10927	0.0	1	10743 184
+139	18674	0.0	1	18401 273
+140	27309	0.0	1	26944 365
+141	30386	0.0	1	29911 475
+142	32078	0.0	1	31424 654
+143	53475	0.0	1	52791 684
+144	109398	0.0	1	107225 2173
+145	128312	0.0	1	126650 1662
+146	100349	0.0	1	98523 1826
+147	44005	0.0	1	43173 832
+148	12567	0.0	1	12258 309
+149	5783	0.0	1	5645 138
+150	1593	0.0	1	1536 57
+151	2527	0.0	1	2455 72
+
+
+=== Adapter 2 ===
+
+Sequence: GGGGGG; Type: regular 3'; Length: 6; Trimmed: 245639 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-6 bp: 0
+
+Bases preceding removed adapters:
+  A: 14.6%
+  C: 36.8%
+  G: 0.0%
+  T: 47.9%
+  none/other: 0.6%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	23826	38897.5	0	23826
+4	11880	9724.4	0	11880
+5	15374	2431.1	0	15374
+6	21021	607.8	0	21021
+7	2469	607.8	0	2469
+8	1305	607.8	0	1305
+9	973	607.8	0	973
+10	1185	607.8	0	1185
+11	445	607.8	0	445
+12	740	607.8	0	740
+13	676	607.8	0	676
+14	815	607.8	0	815
+15	833	607.8	0	833
+16	746	607.8	0	746
+17	860	607.8	0	860
+18	967	607.8	0	967
+19	935	607.8	0	935
+20	881	607.8	0	881
+21	927	607.8	0	927
+22	2359	607.8	0	2359
+23	1251	607.8	0	1251
+24	1232	607.8	0	1232
+25	966	607.8	0	966
+26	980	607.8	0	980
+27	1398	607.8	0	1398
+28	1670	607.8	0	1670
+29	1598	607.8	0	1598
+30	1713	607.8	0	1713
+31	1467	607.8	0	1467
+32	1551	607.8	0	1551
+33	1502	607.8	0	1502
+34	1665	607.8	0	1665
+35	2264	607.8	0	2264
+36	4079	607.8	0	4079
+37	2947	607.8	0	2947
+38	6231	607.8	0	6231
+39	3043	607.8	0	3043
+40	2743	607.8	0	2743
+41	3447	607.8	0	3447
+42	3328	607.8	0	3328
+43	3075	607.8	0	3075
+44	3536	607.8	0	3536
+45	2555	607.8	0	2555
+46	2728	607.8	0	2728
+47	1942	607.8	0	1942
+48	1707	607.8	0	1707
+49	1713	607.8	0	1713
+50	1795	607.8	0	1795
+51	1774	607.8	0	1774
+52	2149	607.8	0	2149
+53	2690	607.8	0	2690
+54	3112	607.8	0	3112
+55	2527	607.8	0	2527
+56	2704	607.8	0	2704
+57	3598	607.8	0	3598
+58	2941	607.8	0	2941
+59	4173	607.8	0	4173
+60	2858	607.8	0	2858
+61	2620	607.8	0	2620
+62	2353	607.8	0	2353
+63	2211	607.8	0	2211
+64	2359	607.8	0	2359
+65	3227	607.8	0	3227
+66	3654	607.8	0	3654
+67	3739	607.8	0	3739
+68	3397	607.8	0	3397
+69	3620	607.8	0	3620
+70	2289	607.8	0	2289
+71	3161	607.8	0	3161
+72	6150	607.8	0	6150
+73	6856	607.8	0	6856
+74	2556	607.8	0	2556
+75	1148	607.8	0	1148
+76	601	607.8	0	601
+77	397	607.8	0	397
+78	288	607.8	0	288
+79	256	607.8	0	256
+80	217	607.8	0	217
+81	154	607.8	0	154
+82	136	607.8	0	136
+83	97	607.8	0	97
+84	83	607.8	0	83
+85	93	607.8	0	93
+86	114	607.8	0	114
+87	78	607.8	0	78
+88	138	607.8	0	138
+89	178	607.8	0	178
+90	207	607.8	0	207
+91	195	607.8	0	195
+92	209	607.8	0	209
+93	110	607.8	0	110
+94	272	607.8	0	272
+95	242	607.8	0	242
+96	157	607.8	0	157
+97	118	607.8	0	118
+98	229	607.8	0	229
+99	346	607.8	0	346
+100	197	607.8	0	197
+101	157	607.8	0	157
+102	189	607.8	0	189
+103	297	607.8	0	297
+104	459	607.8	0	459
+105	431	607.8	0	431
+106	369	607.8	0	369
+107	374	607.8	0	374
+108	377	607.8	0	377
+109	254	607.8	0	254
+110	276	607.8	0	276
+111	338	607.8	0	338
+112	364	607.8	0	364
+113	402	607.8	0	402
+114	334	607.8	0	334
+115	171	607.8	0	171
+116	119	607.8	0	119
+117	178	607.8	0	178
+118	165	607.8	0	165
+119	141	607.8	0	141
+120	167	607.8	0	167
+121	225	607.8	0	225
+122	164	607.8	0	164
+123	126	607.8	0	126
+124	120	607.8	0	120
+125	159	607.8	0	159
+126	151	607.8	0	151
+127	154	607.8	0	154
+128	81	607.8	0	81
+129	49	607.8	0	49
+130	48	607.8	0	48
+131	53	607.8	0	53
+132	55	607.8	0	55
+133	44	607.8	0	44
+134	43	607.8	0	43
+135	37	607.8	0	37
+136	93	607.8	0	93
+137	142	607.8	0	142
+138	66	607.8	0	66
+139	92	607.8	0	92
+140	412	607.8	0	412
+141	413	607.8	0	413
+142	314	607.8	0	314
+143	289	607.8	0	289
+144	117	607.8	0	117
+145	70	607.8	0	70
+146	18	607.8	0	18
+147	21	607.8	0	21
+148	29	607.8	0	29
+149	53	607.8	0	53
+150	50	607.8	0	50
+151	68	607.8	0	68
+This is cutadapt 4.0 with Python 3.9.5
+Command line parameters: -m 20 -j 0 -n 2 -a AGATCGGAAGAGC -a GGGGGG -o HF_P_S36_R1_trimmed.fastq HF_P_S36_R1_001.fastq.gz
+Processing single-end reads on 4 cores ...
+Finished in 11.40 s (5 µs/read; 12.15 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               2,308,652
+Reads with adapters:                 1,975,797 (85.6%)
+
+== Read fate breakdown ==
+Reads that were too short:             835,436 (36.2%)
+Reads written (passing filters):     1,473,216 (63.8%)
+
+Total basepairs processed:   348,606,452 bp
+Total written (filtered):    143,146,988 bp (41.1%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 1937343 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 18.3%
+  C: 51.9%
+  G: 22.9%
+  T: 6.7%
+  none/other: 0.2%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	14913	36072.7	0	14913
+4	2472	9018.2	0	2472
+5	1557	2254.5	0	1557
+6	990	563.6	0	990
+7	1108	140.9	0	1108
+8	955	35.2	0	955
+9	2968	8.8	0	2964 4
+10	5294	2.2	1	5107 187
+11	4193	0.6	1	4103 90
+12	19300	0.1	1	18966 334
+13	6553	0.0	1	6297 256
+14	3522	0.0	1	3386 136
+15	2754	0.0	1	2648 106
+16	1304	0.0	1	1263 41
+17	2321	0.0	1	2256 65
+18	5257	0.0	1	5112 145
+19	3513	0.0	1	3434 79
+20	3518	0.0	1	3435 83
+21	3597	0.0	1	3500 97
+22	2460	0.0	1	2383 77
+23	6064	0.0	1	5931 133
+24	19472	0.0	1	19046 426
+25	13417	0.0	1	13174 243
+26	4762	0.0	1	4651 111
+27	6475	0.0	1	6367 108
+28	7075	0.0	1	6958 117
+29	3234	0.0	1	3169 65
+30	6528	0.0	1	6411 117
+31	5867	0.0	1	5761 106
+32	5843	0.0	1	5746 97
+33	4904	0.0	1	4819 85
+34	2337	0.0	1	2274 63
+35	1886	0.0	1	1830 56
+36	2839	0.0	1	2768 71
+37	1972	0.0	1	1909 63
+38	4910	0.0	1	4769 141
+39	4637	0.0	1	4517 120
+40	1595	0.0	1	1546 49
+41	3923	0.0	1	3820 103
+42	9985	0.0	1	9668 317
+43	7577	0.0	1	7320 257
+44	4482	0.0	1	4363 119
+45	7739	0.0	1	7595 144
+46	10081	0.0	1	9857 224
+47	9250	0.0	1	8754 496
+48	18560	0.0	1	17526 1034
+49	42421	0.0	1	40254 2167
+50	123541	0.0	1	117233 6308
+51	12540	0.0	1	11916 624
+52	5865	0.0	1	5500 365
+53	3889	0.0	1	3621 268
+54	2944	0.0	1	2795 149
+55	1754	0.0	1	1655 99
+56	2004	0.0	1	1895 109
+57	2274	0.0	1	2150 124
+58	3437	0.0	1	3262 175
+59	10518	0.0	1	10047 471
+60	46051	0.0	1	45235 816
+61	6088	0.0	1	5966 122
+62	3390	0.0	1	3316 74
+63	4601	0.0	1	4511 90
+64	2178	0.0	1	2139 39
+65	7750	0.0	1	7634 116
+66	5043	0.0	1	4960 83
+67	11375	0.0	1	11217 158
+68	13892	0.0	1	13641 251
+69	55970	0.0	1	55128 842
+70	89142	0.0	1	87813 1329
+71	47403	0.0	1	46725 678
+72	2239	0.0	1	2196 43
+73	2258	0.0	1	2204 54
+74	3832	0.0	1	3761 71
+75	2009	0.0	1	1962 47
+76	3941	0.0	1	3796 145
+77	1403	0.0	1	1348 55
+78	1941	0.0	1	1891 50
+79	2907	0.0	1	2827 80
+80	1501	0.0	1	1443 58
+81	1796	0.0	1	1747 49
+82	7223	0.0	1	7076 147
+83	2166	0.0	1	2108 58
+84	2049	0.0	1	1978 71
+85	8810	0.0	1	8578 232
+86	1674	0.0	1	1622 52
+87	2367	0.0	1	2286 81
+88	2679	0.0	1	2600 79
+89	3145	0.0	1	3030 115
+90	2267	0.0	1	2182 85
+91	2009	0.0	1	1915 94
+92	2647	0.0	1	2578 69
+93	1787	0.0	1	1722 65
+94	1437	0.0	1	1379 58
+95	809	0.0	1	760 49
+96	1122	0.0	1	1079 43
+97	1261	0.0	1	1196 65
+98	1573	0.0	1	1497 76
+99	866	0.0	1	816 50
+100	886	0.0	1	830 56
+101	888	0.0	1	828 60
+102	1799	0.0	1	1717 82
+103	1098	0.0	1	1029 69
+104	1672	0.0	1	1597 75
+105	1486	0.0	1	1407 79
+106	8249	0.0	1	7903 346
+107	1290	0.0	1	1160 130
+108	1852	0.0	1	1590 262
+109	1690	0.0	1	1513 177
+110	2019	0.0	1	1812 207
+111	2248	0.0	1	2043 205
+112	3458	0.0	1	3163 295
+113	6339	0.0	1	5878 461
+114	8349	0.0	1	7686 663
+115	10892	0.0	1	9903 989
+116	11918	0.0	1	10946 972
+117	10038	0.0	1	9180 858
+118	6935	0.0	1	6176 759
+119	5871	0.0	1	5242 629
+120	4929	0.0	1	4486 443
+121	3732	0.0	1	3341 391
+122	3359	0.0	1	3014 345
+123	3939	0.0	1	3576 363
+124	4322	0.0	1	3938 384
+125	5056	0.0	1	4605 451
+126	7159	0.0	1	6537 622
+127	15866	0.0	1	14449 1417
+128	19511	0.0	1	17921 1590
+129	25731	0.0	1	23779 1952
+130	44426	0.0	1	40971 3455
+131	39096	0.0	1	38507 589
+132	21523	0.0	1	21189 334
+133	12379	0.0	1	12206 173
+134	8482	0.0	1	8364 118
+135	3737	0.0	1	3686 51
+136	3419	0.0	1	3376 43
+137	2598	0.0	1	2567 31
+138	3616	0.0	1	3568 48
+139	9829	0.0	1	9713 116
+140	16731	0.0	1	16533 198
+141	13647	0.0	1	13483 164
+142	17227	0.0	1	16866 361
+143	66467	0.0	1	65747 720
+144	184650	0.0	1	181403 3247
+145	212471	0.0	1	210040 2431
+146	161097	0.0	1	158553 2544
+147	65371	0.0	1	64392 979
+148	18487	0.0	1	18071 416
+149	6942	0.0	1	6802 140
+150	1725	0.0	1	1702 23
+151	3091	0.0	1	3020 71
+
+
+=== Adapter 2 ===
+
+Sequence: GGGGGG; Type: regular 3'; Length: 6; Trimmed: 82697 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-6 bp: 0
+
+Bases preceding removed adapters:
+  A: 23.5%
+  C: 26.4%
+  G: 0.0%
+  T: 48.6%
+  none/other: 1.5%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	12791	36072.7	0	12791
+4	5964	9018.2	0	5964
+5	6790	2254.5	0	6790
+6	4235	563.6	0	4235
+7	1333	563.6	0	1333
+8	293	563.6	0	293
+9	193	563.6	0	193
+10	473	563.6	0	473
+11	135	563.6	0	135
+12	154	563.6	0	154
+13	90	563.6	0	90
+14	85	563.6	0	85
+15	65	563.6	0	65
+16	89	563.6	0	89
+17	101	563.6	0	101
+18	110	563.6	0	110
+19	113	563.6	0	113
+20	138	563.6	0	138
+21	147	563.6	0	147
+22	448	563.6	0	448
+23	189	563.6	0	189
+24	95	563.6	0	95
+25	138	563.6	0	138
+26	140	563.6	0	140
+27	177	563.6	0	177
+28	166	563.6	0	166
+29	146	563.6	0	146
+30	167	563.6	0	167
+31	145	563.6	0	145
+32	187	563.6	0	187
+33	149	563.6	0	149
+34	244	563.6	0	244
+35	255	563.6	0	255
+36	338	563.6	0	338
+37	305	563.6	0	305
+38	472	563.6	0	472
+39	353	563.6	0	353
+40	317	563.6	0	317
+41	445	563.6	0	445
+42	396	563.6	0	396
+43	351	563.6	0	351
+44	425	563.6	0	425
+45	269	563.6	0	269
+46	386	563.6	0	386
+47	251	563.6	0	251
+48	271	563.6	0	271
+49	309	563.6	0	309
+50	455	563.6	0	455
+51	582	563.6	0	582
+52	906	563.6	0	906
+53	1279	563.6	0	1279
+54	1986	563.6	0	1986
+55	1788	563.6	0	1788
+56	1675	563.6	0	1675
+57	2854	563.6	0	2854
+58	2356	563.6	0	2356
+59	2493	563.6	0	2493
+60	1322	563.6	0	1322
+61	886	563.6	0	886
+62	671	563.6	0	671
+63	595	563.6	0	595
+64	618	563.6	0	618
+65	1163	563.6	0	1163
+66	1414	563.6	0	1414
+67	1392	563.6	0	1392
+68	1371	563.6	0	1371
+69	1654	563.6	0	1654
+70	986	563.6	0	986
+71	1506	563.6	0	1506
+72	3517	563.6	0	3517
+73	4356	563.6	0	4356
+74	1239	563.6	0	1239
+75	492	563.6	0	492
+76	222	563.6	0	222
+77	233	563.6	0	233
+78	134	563.6	0	134
+79	107	563.6	0	107
+80	90	563.6	0	90
+81	51	563.6	0	51
+82	37	563.6	0	37
+83	21	563.6	0	21
+84	8	563.6	0	8
+85	22	563.6	0	22
+86	16	563.6	0	16
+87	9	563.6	0	9
+88	15	563.6	0	15
+89	17	563.6	0	17
+90	13	563.6	0	13
+91	15	563.6	0	15
+92	20	563.6	0	20
+93	5	563.6	0	5
+94	40	563.6	0	40
+95	14	563.6	0	14
+96	10	563.6	0	10
+97	16	563.6	0	16
+98	46	563.6	0	46
+99	36	563.6	0	36
+100	31	563.6	0	31
+101	27	563.6	0	27
+102	40	563.6	0	40
+103	22	563.6	0	22
+104	52	563.6	0	52
+105	18	563.6	0	18
+106	13	563.6	0	13
+107	12	563.6	0	12
+108	6	563.6	0	6
+109	11	563.6	0	11
+110	20	563.6	0	20
+111	25	563.6	0	25
+112	33	563.6	0	33
+113	24	563.6	0	24
+114	9	563.6	0	9
+115	33	563.6	0	33
+116	21	563.6	0	21
+117	13	563.6	0	13
+118	17	563.6	0	17
+119	19	563.6	0	19
+120	24	563.6	0	24
+121	19	563.6	0	19
+122	11	563.6	0	11
+123	13	563.6	0	13
+124	12	563.6	0	12
+125	10	563.6	0	10
+126	18	563.6	0	18
+127	8	563.6	0	8
+128	4	563.6	0	4
+129	4	563.6	0	4
+130	10	563.6	0	10
+131	5	563.6	0	5
+132	8	563.6	0	8
+133	8	563.6	0	8
+134	7	563.6	0	7
+135	8	563.6	0	8
+136	4	563.6	0	4
+137	7	563.6	0	7
+138	19	563.6	0	19
+139	17	563.6	0	17
+140	31	563.6	0	31
+141	37	563.6	0	37
+142	39	563.6	0	39
+143	97	563.6	0	97
+144	52	563.6	0	52
+145	43	563.6	0	43
+146	14	563.6	0	14
+147	5	563.6	0	5
+148	30	563.6	0	30
+149	39	563.6	0	39
+150	26	563.6	0	26
+151	36	563.6	0	36
+/var/spool/slurmd/job42351684/slurm_script: line 53: [-d: command not found
+Started analysis of FFPE_1_PNK_S41_R1_trimmed.fastq
+Analysis complete for FFPE_1_PNK_S41_R1_trimmed.fastq
+Started analysis of FFPE_1_PNK_S41_R2_trimmed.fastq
+Analysis complete for FFPE_1_PNK_S41_R2_trimmed.fastq
+Started analysis of FFPE1_S39_R1_trimmed.fastq
+Approx 5% complete for FFPE1_S39_R1_trimmed.fastq
+Approx 10% complete for FFPE1_S39_R1_trimmed.fastq
+Approx 15% complete for FFPE1_S39_R1_trimmed.fastq
+Approx 20% complete for FFPE1_S39_R1_trimmed.fastq
+Approx 25% complete for FFPE1_S39_R1_trimmed.fastq
+Approx 30% complete for FFPE1_S39_R1_trimmed.fastq
+Approx 35% complete for FFPE1_S39_R1_trimmed.fastq
+Approx 40% complete for FFPE1_S39_R1_trimmed.fastq
+Approx 45% complete for FFPE1_S39_R1_trimmed.fastq
+Approx 50% complete for FFPE1_S39_R1_trimmed.fastq
+Approx 55% complete for FFPE1_S39_R1_trimmed.fastq
+Approx 60% complete for FFPE1_S39_R1_trimmed.fastq
+Approx 65% complete for FFPE1_S39_R1_trimmed.fastq
+Approx 70% complete for FFPE1_S39_R1_trimmed.fastq
+Approx 75% complete for FFPE1_S39_R1_trimmed.fastq
+Approx 80% complete for FFPE1_S39_R1_trimmed.fastq
+Approx 85% complete for FFPE1_S39_R1_trimmed.fastq
+Approx 90% complete for FFPE1_S39_R1_trimmed.fastq
+Approx 95% complete for FFPE1_S39_R1_trimmed.fastq
+Analysis complete for FFPE1_S39_R1_trimmed.fastq
+Started analysis of FFPE1_S39_R2_trimmed.fastq
+Approx 5% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 10% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 15% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 20% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 25% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 30% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 35% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 40% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 45% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 50% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 55% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 60% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 65% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 70% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 75% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 80% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 85% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 90% complete for FFPE1_S39_R2_trimmed.fastq
+Approx 95% complete for FFPE1_S39_R2_trimmed.fastq
+Analysis complete for FFPE1_S39_R2_trimmed.fastq
+Started analysis of FFPE_3_PNK_S42_R1_trimmed.fastq
+Analysis complete for FFPE_3_PNK_S42_R1_trimmed.fastq
+Started analysis of FFPE_3_PNK_S42_R2_trimmed.fastq
+Analysis complete for FFPE_3_PNK_S42_R2_trimmed.fastq
+Started analysis of FFPE3_S40_R1_trimmed.fastq
+Approx 5% complete for FFPE3_S40_R1_trimmed.fastq
+Approx 10% complete for FFPE3_S40_R1_trimmed.fastq
+Approx 15% complete for FFPE3_S40_R1_trimmed.fastq
+Approx 20% complete for FFPE3_S40_R1_trimmed.fastq
+Approx 25% complete for FFPE3_S40_R1_trimmed.fastq
+Approx 30% complete for FFPE3_S40_R1_trimmed.fastq
+Approx 35% complete for FFPE3_S40_R1_trimmed.fastq
+Approx 40% complete for FFPE3_S40_R1_trimmed.fastq
+Approx 45% complete for FFPE3_S40_R1_trimmed.fastq
+Approx 50% complete for FFPE3_S40_R1_trimmed.fastq
+Approx 55% complete for FFPE3_S40_R1_trimmed.fastq
+Approx 60% complete for FFPE3_S40_R1_trimmed.fastq
+Approx 65% complete for FFPE3_S40_R1_trimmed.fastq
+Approx 70% complete for FFPE3_S40_R1_trimmed.fastq
+Approx 75% complete for FFPE3_S40_R1_trimmed.fastq
+Approx 80% complete for FFPE3_S40_R1_trimmed.fastq
+Approx 85% complete for FFPE3_S40_R1_trimmed.fastq
+Approx 90% complete for FFPE3_S40_R1_trimmed.fastq
+Approx 95% complete for FFPE3_S40_R1_trimmed.fastq
+Analysis complete for FFPE3_S40_R1_trimmed.fastq
+Started analysis of FFPE3_S40_R2_trimmed.fastq
+Approx 5% complete for FFPE3_S40_R2_trimmed.fastq
+Approx 10% complete for FFPE3_S40_R2_trimmed.fastq
+Approx 15% complete for FFPE3_S40_R2_trimmed.fastq
+Approx 20% complete for FFPE3_S40_R2_trimmed.fastq
+Approx 25% complete for FFPE3_S40_R2_trimmed.fastq
+Approx 30% complete for FFPE3_S40_R2_trimmed.fastq
+Approx 35% complete for FFPE3_S40_R2_trimmed.fastq
+Approx 40% complete for FFPE3_S40_R2_trimmed.fastq
+Approx 45% complete for FFPE3_S40_R2_trimmed.fastq
+Approx 50% complete for FFPE3_S40_R2_trimmed.fastq
+Approx 55% complete for FFPE3_S40_R2_trimmed.fastq
+Approx 60% complete for FFPE3_S40_R2_trimmed.fastq
+Approx 65% complete for FFPE3_S40_R2_trimmed.fastq
+Approx 70% complete for FFPE3_S40_R2_trimmed.fastq
+Approx 75% complete for FFPE3_S40_R2_trimmed.fastq
+Approx 80% complete for FFPE3_S40_R2_trimmed.fastq
+Approx 85% complete for FFPE3_S40_R2_trimmed.fastq
+Approx 90% complete for FFPE3_S40_R2_trimmed.fastq
+Approx 95% complete for FFPE3_S40_R2_trimmed.fastq
+Analysis complete for FFPE3_S40_R2_trimmed.fastq
+Started analysis of FFPE_WC_S1_R1_trimmed.fastq
+Analysis complete for FFPE_WC_S1_R1_trimmed.fastq
+Started analysis of FFPE_WC_S1_R2_trimmed.fastq
+Analysis complete for FFPE_WC_S1_R2_trimmed.fastq
+Started analysis of HF_HI_P_S37_R1_trimmed.fastq
+Approx 5% complete for HF_HI_P_S37_R1_trimmed.fastq
+Approx 10% complete for HF_HI_P_S37_R1_trimmed.fastq
+Approx 15% complete for HF_HI_P_S37_R1_trimmed.fastq
+Approx 20% complete for HF_HI_P_S37_R1_trimmed.fastq
+Approx 25% complete for HF_HI_P_S37_R1_trimmed.fastq
+Approx 30% complete for HF_HI_P_S37_R1_trimmed.fastq
+Approx 35% complete for HF_HI_P_S37_R1_trimmed.fastq
+Approx 40% complete for HF_HI_P_S37_R1_trimmed.fastq
+Approx 45% complete for HF_HI_P_S37_R1_trimmed.fastq
+Approx 50% complete for HF_HI_P_S37_R1_trimmed.fastq
+Approx 55% complete for HF_HI_P_S37_R1_trimmed.fastq
+Approx 60% complete for HF_HI_P_S37_R1_trimmed.fastq
+Approx 65% complete for HF_HI_P_S37_R1_trimmed.fastq
+Approx 70% complete for HF_HI_P_S37_R1_trimmed.fastq
+Approx 75% complete for HF_HI_P_S37_R1_trimmed.fastq
+Approx 80% complete for HF_HI_P_S37_R1_trimmed.fastq
+Approx 85% complete for HF_HI_P_S37_R1_trimmed.fastq
+Approx 90% complete for HF_HI_P_S37_R1_trimmed.fastq
+Approx 95% complete for HF_HI_P_S37_R1_trimmed.fastq
+Analysis complete for HF_HI_P_S37_R1_trimmed.fastq
+Started analysis of HF_HI_P_S37_R2_trimmed.fastq
+Approx 5% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 10% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 15% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 20% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 25% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 30% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 35% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 40% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 45% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 50% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 55% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 60% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 65% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 70% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 75% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 80% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 85% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 90% complete for HF_HI_P_S37_R2_trimmed.fastq
+Approx 95% complete for HF_HI_P_S37_R2_trimmed.fastq
+Analysis complete for HF_HI_P_S37_R2_trimmed.fastq
+Started analysis of HF_PC_P_S38_R1_trimmed.fastq
+Approx 5% complete for HF_PC_P_S38_R1_trimmed.fastq
+Approx 10% complete for HF_PC_P_S38_R1_trimmed.fastq
+Approx 15% complete for HF_PC_P_S38_R1_trimmed.fastq
+Approx 20% complete for HF_PC_P_S38_R1_trimmed.fastq
+Approx 25% complete for HF_PC_P_S38_R1_trimmed.fastq
+Approx 30% complete for HF_PC_P_S38_R1_trimmed.fastq
+Approx 35% complete for HF_PC_P_S38_R1_trimmed.fastq
+Approx 40% complete for HF_PC_P_S38_R1_trimmed.fastq
+Approx 45% complete for HF_PC_P_S38_R1_trimmed.fastq
+Approx 50% complete for HF_PC_P_S38_R1_trimmed.fastq
+Approx 55% complete for HF_PC_P_S38_R1_trimmed.fastq
+Approx 60% complete for HF_PC_P_S38_R1_trimmed.fastq
+Approx 65% complete for HF_PC_P_S38_R1_trimmed.fastq
+Approx 70% complete for HF_PC_P_S38_R1_trimmed.fastq
+Approx 75% complete for HF_PC_P_S38_R1_trimmed.fastq
+Approx 80% complete for HF_PC_P_S38_R1_trimmed.fastq
+Approx 85% complete for HF_PC_P_S38_R1_trimmed.fastq
+Approx 90% complete for HF_PC_P_S38_R1_trimmed.fastq
+Approx 95% complete for HF_PC_P_S38_R1_trimmed.fastq
+Approx 100% complete for HF_PC_P_S38_R1_trimmed.fastq
+Analysis complete for HF_PC_P_S38_R1_trimmed.fastq
+Started analysis of HF_PC_P_S38_R2_trimmed.fastq
+Approx 5% complete for HF_PC_P_S38_R2_trimmed.fastq
+Approx 10% complete for HF_PC_P_S38_R2_trimmed.fastq
+Approx 15% complete for HF_PC_P_S38_R2_trimmed.fastq
+Approx 20% complete for HF_PC_P_S38_R2_trimmed.fastq
+Approx 25% complete for HF_PC_P_S38_R2_trimmed.fastq
+Approx 30% complete for HF_PC_P_S38_R2_trimmed.fastq
+Approx 35% complete for HF_PC_P_S38_R2_trimmed.fastq
+Approx 40% complete for HF_PC_P_S38_R2_trimmed.fastq
+Approx 45% complete for HF_PC_P_S38_R2_trimmed.fastq
+Approx 50% complete for HF_PC_P_S38_R2_trimmed.fastq
+Approx 55% complete for HF_PC_P_S38_R2_trimmed.fastq
+Approx 60% complete for HF_PC_P_S38_R2_trimmed.fastq
+Approx 65% complete for HF_PC_P_S38_R2_trimmed.fastq
+Approx 70% complete for HF_PC_P_S38_R2_trimmed.fastq
+Approx 75% complete for HF_PC_P_S38_R2_trimmed.fastq
+Approx 80% complete for HF_PC_P_S38_R2_trimmed.fastq
+Approx 85% complete for HF_PC_P_S38_R2_trimmed.fastq
+Approx 90% complete for HF_PC_P_S38_R2_trimmed.fastq
+Approx 95% complete for HF_PC_P_S38_R2_trimmed.fastq
+Analysis complete for HF_PC_P_S38_R2_trimmed.fastq
+Started analysis of HF_P_S36_R1_trimmed.fastq
+Approx 5% complete for HF_P_S36_R1_trimmed.fastq
+Approx 10% complete for HF_P_S36_R1_trimmed.fastq
+Approx 15% complete for HF_P_S36_R1_trimmed.fastq
+Approx 20% complete for HF_P_S36_R1_trimmed.fastq
+Approx 25% complete for HF_P_S36_R1_trimmed.fastq
+Approx 30% complete for HF_P_S36_R1_trimmed.fastq
+Approx 35% complete for HF_P_S36_R1_trimmed.fastq
+Approx 40% complete for HF_P_S36_R1_trimmed.fastq
+Approx 45% complete for HF_P_S36_R1_trimmed.fastq
+Approx 50% complete for HF_P_S36_R1_trimmed.fastq
+Approx 55% complete for HF_P_S36_R1_trimmed.fastq
+Approx 60% complete for HF_P_S36_R1_trimmed.fastq
+Approx 65% complete for HF_P_S36_R1_trimmed.fastq
+Approx 70% complete for HF_P_S36_R1_trimmed.fastq
+Approx 75% complete for HF_P_S36_R1_trimmed.fastq
+Approx 80% complete for HF_P_S36_R1_trimmed.fastq
+Approx 85% complete for HF_P_S36_R1_trimmed.fastq
+Approx 90% complete for HF_P_S36_R1_trimmed.fastq
+Approx 95% complete for HF_P_S36_R1_trimmed.fastq
+Analysis complete for HF_P_S36_R1_trimmed.fastq
+Started analysis of HF_P_S36_R2_trimmed.fastq
+Approx 5% complete for HF_P_S36_R2_trimmed.fastq
+Approx 10% complete for HF_P_S36_R2_trimmed.fastq
+Approx 15% complete for HF_P_S36_R2_trimmed.fastq
+Approx 20% complete for HF_P_S36_R2_trimmed.fastq
+Approx 25% complete for HF_P_S36_R2_trimmed.fastq
+Approx 30% complete for HF_P_S36_R2_trimmed.fastq
+Approx 35% complete for HF_P_S36_R2_trimmed.fastq
+Approx 40% complete for HF_P_S36_R2_trimmed.fastq
+Approx 45% complete for HF_P_S36_R2_trimmed.fastq
+Approx 50% complete for HF_P_S36_R2_trimmed.fastq
+Approx 55% complete for HF_P_S36_R2_trimmed.fastq
+Approx 60% complete for HF_P_S36_R2_trimmed.fastq
+Approx 65% complete for HF_P_S36_R2_trimmed.fastq
+Approx 70% complete for HF_P_S36_R2_trimmed.fastq
+Approx 75% complete for HF_P_S36_R2_trimmed.fastq
+Approx 80% complete for HF_P_S36_R2_trimmed.fastq
+Approx 85% complete for HF_P_S36_R2_trimmed.fastq
+Approx 90% complete for HF_P_S36_R2_trimmed.fastq
+Approx 95% complete for HF_P_S36_R2_trimmed.fastq
+Analysis complete for HF_P_S36_R2_trimmed.fastq
+/var/spool/slurmd/job42351684/slurm_script: line 65: [-d: command not found
+Nov 03 14:42:02 ..... started STAR run
+Nov 03 14:42:02 ..... loading genome
+Nov 03 14:42:29 ..... started mapping
+Nov 03 14:42:30 ..... finished mapping
+Nov 03 14:42:32 ..... started sorting BAM
+Nov 03 14:42:32 ..... finished successfully
+Nov 03 14:42:32 ..... started STAR run
+Nov 03 14:42:32 ..... loading genome
+Nov 03 14:42:58 ..... started mapping
+Nov 03 14:43:26 ..... finished mapping
+Nov 03 14:43:28 ..... started sorting BAM
+Nov 03 14:43:29 ..... finished successfully
+Nov 03 14:43:29 ..... started STAR run
+Nov 03 14:43:29 ..... loading genome
+Nov 03 14:43:54 ..... started mapping
+Nov 03 14:43:56 ..... finished mapping
+Nov 03 14:43:57 ..... started sorting BAM
+Nov 03 14:43:58 ..... finished successfully
+Nov 03 14:43:58 ..... started STAR run
+Nov 03 14:43:58 ..... loading genome
+Nov 03 14:44:21 ..... started mapping
+Nov 03 14:44:37 ..... finished mapping
+Nov 03 14:44:39 ..... started sorting BAM
+Nov 03 14:44:40 ..... finished successfully
+Nov 03 14:44:40 ..... started STAR run
+Nov 03 14:44:40 ..... loading genome
+Nov 03 14:45:05 ..... started mapping
+Nov 03 14:45:14 ..... finished mapping
+Nov 03 14:45:16 ..... started sorting BAM
+Nov 03 14:45:16 ..... finished successfully
+Nov 03 14:45:17 ..... started STAR run
+Nov 03 14:45:17 ..... loading genome
+Nov 03 14:45:38 ..... started mapping
+Nov 03 14:47:58 ..... finished mapping
+Nov 03 14:48:01 ..... started sorting BAM
+Nov 03 14:48:05 ..... finished successfully
+Nov 03 14:48:06 ..... started STAR run
+Nov 03 14:48:06 ..... loading genome
+Nov 03 14:48:29 ..... started mapping
+Nov 03 14:50:07 ..... finished mapping
+Nov 03 14:50:09 ..... started sorting BAM
+Nov 03 14:50:14 ..... finished successfully
+Nov 03 14:50:15 ..... started STAR run
+Nov 03 14:50:15 ..... loading genome
+Nov 03 14:50:39 ..... started mapping
+Nov 03 14:51:51 ..... finished mapping
+Nov 03 14:51:52 ..... started sorting BAM
+Nov 03 14:51:55 ..... finished successfully
+Nov 03 14:51:56 ..... started STAR run
+Nov 03 14:51:56 ..... loading genome
+Nov 03 14:52:21 ..... started mapping
+Nov 03 14:52:22 ..... finished mapping
+Nov 03 14:52:24 ..... started sorting BAM
+Nov 03 14:52:24 ..... finished successfully
+Nov 03 14:52:24 ..... started STAR run
+Nov 03 14:52:24 ..... loading genome
+Nov 03 14:52:52 ..... started mapping
+Nov 03 14:54:21 ..... finished mapping
+Nov 03 14:54:22 ..... started sorting BAM
+Nov 03 14:54:23 ..... finished successfully
+Nov 03 14:54:24 ..... started STAR run
+Nov 03 14:54:24 ..... loading genome
+Nov 03 14:54:49 ..... started mapping
+Nov 03 14:54:51 ..... finished mapping
+Nov 03 14:54:52 ..... started sorting BAM
+Nov 03 14:54:53 ..... finished successfully
+Nov 03 14:54:53 ..... started STAR run
+Nov 03 14:54:53 ..... loading genome
+Nov 03 14:55:20 ..... started mapping
+Nov 03 14:56:27 ..... finished mapping
+Nov 03 14:56:28 ..... started sorting BAM
+Nov 03 14:56:29 ..... finished successfully
+Nov 03 14:56:29 ..... started STAR run
+Nov 03 14:56:29 ..... loading genome
+Nov 03 14:56:53 ..... started mapping
+Nov 03 14:56:55 ..... finished mapping
+Nov 03 14:56:56 ..... started sorting BAM
+Nov 03 14:56:56 ..... finished successfully
+Nov 03 14:56:56 ..... started STAR run
+Nov 03 14:56:56 ..... loading genome
+Nov 03 14:57:20 ..... started mapping
+Nov 03 14:59:54 ..... finished mapping
+Nov 03 14:59:56 ..... started sorting BAM
+Nov 03 14:59:59 ..... finished successfully
+Nov 03 15:00:00 ..... started STAR run
+Nov 03 15:00:00 ..... loading genome
+Nov 03 15:00:26 ..... started mapping
+Nov 03 15:01:47 ..... finished mapping
+Nov 03 15:01:49 ..... started sorting BAM
+Nov 03 15:01:53 ..... finished successfully
+Nov 03 15:01:53 ..... started STAR run
+Nov 03 15:01:53 ..... loading genome
+Nov 03 15:02:19 ..... started mapping
+Nov 03 15:03:41 ..... finished mapping
+Nov 03 15:03:42 ..... started sorting BAM
+Nov 03 15:03:45 ..... finished successfully
+/var/spool/slurmd/job42351684/slurm_script: line 105: [-d: command not found
