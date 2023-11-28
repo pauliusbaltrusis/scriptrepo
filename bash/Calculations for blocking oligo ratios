@@ -1,0 +1,32 @@
+Calculations for blocking oligo ratios
+
+rRNA concentration in a fixed amount/vol sample
+:::
+
+1. 18S and 28S rRNA (human) sizes are 1900 nt and 5000 nt = 6900 nt
+
+2. Let's say my input is 100 ng, then: 
+	100ng / (6900 x 330 g/mol) = 100 x 10^-9 g / 2277000 g/mol = 0.000043917435222 x 10^-9 mol = 4.39 x 10^-14 mol (4.39 x 10^-5 nmol)
+3. Let's assume this 100ng is in 1.5 ul, then:
+	4.39 x 10^-14 mol / 1.5 ul = 2.93 x 10^(-8) M
+
+	2.93 x 10^-8 M = 29.3 nM
+
+:::
+
+Concetration of my stock blocking oligo mix v1
+;;;
+
+1. 200uM stock of each oligo -> 1 ul of each -> 251 ul, thus:
+	Stock oligo mix v1 concentration is 200 uM / 251 = 0.79 uM (0.79 *10^3 nmol/10^6 ul = 79 x 10^-5 nmol/ul)
+
+;;;
+
+To generate 1:10 and 1:100 ratios, i would need
+
+---
+
+1. 1:10 ratio would be 0.293 uM (or 43.9 x 10^-5 nmol) added to the RNA sample, which is 0.5556 ul of stock blocking oligo mix v1
+2. 1:50 ratio would be 2.195 uM (or 219.5 x 10^-5 nmol) added to the RNA sample, which is 2.778 ul of stock blocking oligo mix v1
+
+---
